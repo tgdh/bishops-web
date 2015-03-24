@@ -7,14 +7,14 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['assets/sass/*/*/*.scss', 'assets/sass/*/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'cssmin'],
+                tasks: ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'cssmin', 'ftpush'],
                 options: {
                     spawn: false,
                 }
             },
             scripts: {
                 files: ['assets/js/*/*.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['concat', 'uglify', 'ftpush'],
                 options: {
                     spawn: false,
                 }
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
         },
         autoprefixer: {
             options: {
-                browsers: ['last 3 version']
+                browsers: ['last 4 version']
             },
             multiple_files: {
                 expand: true,
@@ -178,6 +178,33 @@ module.exports = function (grunt) {
                 }]
             }
         },
+
+        'ftpush': {
+            build: {
+                auth: {
+                    host: '217.147.85.119',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'assets',
+                dest: '/dev.bishops.co.uk/assets',
+                exclusions: [
+                    'css/dev',
+                    'iconfont',
+                    'js/dev',
+                    'js/snippets',
+                    'sass'
+                ],
+                keep: [
+                    'css/dev',
+                    'iconfont',
+                    'js/dev',
+                    'js/snippets',
+                    'sass'
+                ]
+            }
+        }
+
         /*iconizr: {
             options: {
                 dims: true,
@@ -194,19 +221,9 @@ module.exports = function (grunt) {
                 src: 'assets/img/icons/svg',
                 dest: 'assets/img/icons'
             }
-        },*/
+        }*/
 
-        //BROWSER SYNC
-        browserSync: {
-            dev: {
-                bsFiles: {
-                    src: ['assets/css/production/*.css', 'assets/js/production/*.js', '*.php']
-                },
-                options: {
-                    watchTask: true
-                }
-            }
-        }
+        
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -222,12 +239,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-imageoptim');
     grunt.loadNpmTasks('grunt-svgmin');
-    //grunt.loadNpmTasks('grunt-iconizr');
     
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-browser-sync');
 
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'remfallback', 'cssmin', 'concat', 'uglify', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'remfallback', 'cssmin', 'concat', 'uglify', 'watch']);
     grunt.registerTask('images', ['responsive_images'], ['imageoptim'], ['svgmin']);
 
 };
