@@ -1,0 +1,28 @@
+// ===========================================================
+//
+//	$GALLERY
+//
+// ===========================================================
+
+
+@include respond-max( $mq-medium ) {
+
+	.gallery__img-thumb {
+		@include column(7);
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.gallery {
+		float: right;
+		padding-left: 4rem;
+	}
+
+	.gallery__img-thumb {
+		display: block;
+		margin-bottom: $base-line-height;
+	}
+
+}

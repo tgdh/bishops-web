@@ -1,0 +1,48 @@
+// ===========================================================
+//
+//	$BLOCK
+//
+// ===========================================================
+
+.block {
+	background-color: $grey-2;
+	padding: 3rem;
+	margin-bottom: 8.3337%;
+}
+
+.block__title {
+	font-family: 'Open Sans';
+}
+
+.block table {
+	margin-bottom: 0;
+}
+
+.block td,
+.block th {
+	padding: .5rem 1rem .5rem 0;
+}
+
+.column__title {
+	text-align: center;
+	padding-bottom: 2;
+}
+
+.wrap--block-clear {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+@include respond-min( $mq-large ) {
+
+	.wrap--block {
+		width:48%;
+		float: left;
+		display: inline;
+	}
+
+	.wrap--block.wrap--first {
+		margin-right: 4%;
+	}
+
+}

@@ -1,0 +1,17 @@
+// ===========================================================
+//
+//	$ANCHOR
+//
+// ===========================================================
+
+a {
+	color: $pri;
+	transition: color $transition-speed ease;
+
+	&:hover {
+		color: $sec;
+	}
+	&:focus {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,179 @@
+// ===========================================================
+//
+//	$PROMO
+//
+// ===========================================================
+
+.cover--white {
+
+	&.cover--img {
+		border-bottom: 4px solid #06171c;
+
+		.cover__img {
+			display: block;
+		}
+
+		.cover__text {
+			color: #06171c;
+		}
+
+		.cover__copy {
+			margin-top: 0 !important;
+			color: #06171c;
+			background: transparent;
+
+			h1 {
+				color: #06171c;
+			}
+
+			em {
+				color: $pri;
+			}
+		}
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.cover--white {
+
+		.cover__copy  {
+			max-width: 56rem;
+		}
+
+	}
+
+}
+
+.JanPromo {
+
+	.cover--img {
+		border-bottom: 4px solid #06171c;
+
+		.cover__img {
+			display: block;
+		}
+
+		.cover__copy {
+			margin-top: 0 !important;
+			color: #06171c;
+			background: transparent;
+
+			h1 {
+				color: #06171c;
+			}
+
+			em {
+				color: $pri;
+			}
+		}
+	}
+
+	.col,
+	.row {
+		padding-bottom: 1.4em;
+	}
+
+	.col--image {
+		text-align: center;
+	}
+
+	hr {
+		color: #06171c;
+		border: 0;
+		background-color: #06171c;
+		height: 2px;
+	}
+
+	.col--todays-winner {
+		text-align: center;
+	}
+
+	.col__winner {
+		font-family: "chaparral-pro";
+		font-style: italic;
+	}
+
+	.row--winners h3 {
+		padding-bottom: 1.4em;
+	}
+
+	.row:last-child {
+		padding-bottom: 0;
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.JanPromo {
+
+		.cover__copy  {
+			max-width: 56rem;
+		}
+
+		hr {
+			margin: 1.4em 0;
+		}
+
+		.col {
+			@include column(7);
+		}
+
+		.row {
+			@include column(14);
+			padding: 1.4em 0 2.8em;
+		}
+
+		.col--img {
+			margin-top: -3rem;
+		}
+
+		.col--todays-winner {
+			
+			h3 {
+				padding-bottom: 2.4em;
+			}
+
+		}
+
+	}
+
+}
+
+
+@include respond-min( $mq-large ) {
+
+	.cover--white {
+
+		&.cover--img {
+
+			.cover__img {
+				border-bottom: 2px solid #06171c;
+			}
+		}
+
+	}
+
+	.JanPromo {
+
+		.cover__text {
+			padding-top: 8rem;
+		}
+
+		.col {
+			@include column(6.75);
+		}
+
+		.col--last {
+			float: right;
+		}
+
+		.cover__img {
+			border-bottom: 2px solid #06171c;
+		}
+
+	}
+
+}

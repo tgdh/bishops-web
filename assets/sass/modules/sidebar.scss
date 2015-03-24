@@ -1,0 +1,42 @@
+// ===========================================================
+//
+//	$SIDE BAR
+//
+// ===========================================================
+
+@include respond-min( $mq-large ) {
+
+	.two-col {
+		.main-content {
+			@include column(8);
+			margin-left: 0;
+		}
+		.side-content {
+			@include column(4);
+			float: right;
+			margin-right: 0;
+		}
+
+		.article__header,
+		.article__list {
+			text-align: left;
+		}
+	}
+
+	.side-content-detached .side-content__inner {
+		position: fixed;
+		top: 0;
+	}
+
+}
+
+@include respond-min( $mq-x-large ) {
+
+	.two-col {
+		.side-content {
+			@include column(3);
+			@include push(1);
+		}
+	}
+
+}

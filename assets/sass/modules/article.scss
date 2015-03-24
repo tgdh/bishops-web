@@ -1,0 +1,40 @@
+// ===========================================================
+//
+//	$ARTICLE
+//
+// ===========================================================
+
+.article__header {
+	text-align: center;
+}
+.article__list--meta {
+	margin-bottom: $base-line-height * 2;
+}
+.article__item--meta {
+	display: inline-block;
+	padding-right: $base-line-height;
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
+
+p .alpha {
+	line-height: 1.4;
+}
+
+
+.article {
+
+	h3,
+	h3 + p {
+		display: inline
+	}
+
+	h3:before {
+		content: "";
+		display: block;
+		padding-top: $base-line-height;
+	}
+
+}

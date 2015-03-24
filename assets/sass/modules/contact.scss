@@ -1,0 +1,95 @@
+// ===========================================================
+//
+//	$CONTACT
+//
+// ===========================================================
+
+.contourMessageOnSubmit {
+	position: fixed;
+	top: 0rem;
+	left: 0;
+	width: 100%;
+	background-color: $green-1;
+	z-index: 100;
+	padding: 2rem;
+	text-align: center;
+}
+
+.contourFieldSet legend {
+	display: none;
+}
+
+.title--contact {
+	text-transform: uppercase;
+}
+
+.contourNavigation {
+	padding-top: 2rem;
+}
+
+.contact__address {
+	line-height: 1.5;
+	padding-bottom: 1rem
+}
+
+.input--valid {
+	border-left-color: $green-1 !important;
+}
+
+.input--invalid {
+	border-left-color: $pri !important;
+}
+
+@include respond-min( $mq-medium ) {
+
+	.csstransforms {
+
+		.contourMessageOnSubmit {
+			max-width: 64rem;
+			top: 2rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+	}
+
+}
+
+.js {
+
+	&.contour-form-name__quote--open .contour.genearlenquiries,
+	.contour.genearlenquiries {
+		display: none;
+	}
+
+	&.contour-form-name__general--open .contour.quoterequests {
+		display: none;
+	}
+
+	&.contour-form-name__general--open .contour.genearlenquiries{
+		display: inline;
+	}
+}
+
+.contourField {
+	position: relative;
+}
+
+.contourField {
+
+	input[type="text"],
+	textarea {
+		border: none;
+		border-left: 1rem solid $sec;
+	}
+
+}
+
+
+/*
+.contourField.mandatory .jvFloat .placeHolder:after {
+	content: " *";
+	color: $pri;
+
+}
+*/

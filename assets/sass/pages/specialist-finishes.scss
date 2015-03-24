@@ -1,0 +1,105 @@
+/* ===========================================================
+//
+//	$specialist finishes
+//
+// ======================================================== */
+
+.tooltip__marker {
+	width: 1.6rem;
+	height: 1.6rem;
+	border: .2rem solid #fff;
+	display: inline-block;
+	background-color: $blue-1;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0px 0px 3px 0px rgba(18,69,107,1);
+	opacity: .75;
+	transition: opacity .3s ease-in;
+	cursor: pointer;
+	z-index: 10;
+
+	position: absolute;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.SpecialistFinishes {
+
+	.owl-nav .owl-next i, 
+	.owl-nav .owl-prev i {
+		color: $red-1;
+		transition: color .3s ease;
+
+		&:hover {
+			color: $blue-2;
+		}
+	}
+
+	.page__title {
+		color: $blue-1;
+		font-size: 3.4rem;
+		max-width: 38rem;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		em,
+		strong {
+			color: $red-1;
+			font-style: italic;
+		}
+	}
+
+	.section__title {
+		padding-top: 4rem;
+	}
+
+	.wrap--main {
+		padding: 4rem 0;
+	}
+
+	.slide__image {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.slide {
+		border: .2rem solid transparent;
+	}
+
+	.slide--white {
+		background-color: #fff;
+		border-color: $grey-1;
+	}
+
+	.slide--red {
+		color: #fff;
+		background-color: #ee3332;
+	}
+
+	.slide--blue {
+		color: #fff;
+		background-color: #004970;
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.SpecialistFinishes {
+
+		.wrap--main {
+			padding: 6rem 0;
+		}
+
+		.page__title {
+			font-size: 5.4rem;
+			max-width: 60rem;
+		}
+
+	}
+
+
+}

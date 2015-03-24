@@ -1,0 +1,45 @@
+// ===========================================================
+//
+//	$FAQS
+//
+// ===========================================================
+
+.accordion {
+
+}
+
+.accordion__title {
+	color: $sec;
+	cursor: pointer;
+
+	&:hover {
+		color: $pri;
+	}
+
+	& h3 {
+		padding-bottom: 0;
+	}
+}
+
+.accordion__title {
+	padding: 1.5rem 0;
+	border-bottom: 1px solid $grey-2;
+}
+
+.accordion__copy {
+	padding: 0;
+	background-color: $grey-2;
+}
+
+.accordion__copy-wrap {
+	padding: 2rem;
+}
+
+.js {
+
+	.accordion__copy {
+		height: 0;
+		overflow: hidden;
+	}
+
+}

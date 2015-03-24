@@ -1,0 +1,42 @@
+// ===========================================================
+//
+//	$WORK
+//
+// ===========================================================
+
+.page--work body {
+	background-image: none;
+}
+
+.work {
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.wrap--overlay {
+	background-color: #fff;
+}
+
+@include respond-min( $mq-medium ) {
+
+	.work__wrap {
+		@include column(12);
+		@include push(1);
+	}
+
+	.has--img .work__img-wrap {
+		@include column(3);
+	}
+
+	.has--img .work__content {
+		@include column(10);
+		@include push(1);
+	}
+
+	.work__title {
+		padding-bottom: 6rem;
+	}
+
+}

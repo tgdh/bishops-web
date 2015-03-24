@@ -1,0 +1,25 @@
+// ===========================================================
+//
+//	$BREADCRUMB
+//
+// ===========================================================
+
+.breadcrumb {
+	padding: $base-line-height 0;
+}
+
+.breadcrumb__item {
+	display: inline-block;
+	margin: 0;
+}
+
+.breadcrumb__link {
+	font-weight: 700;
+}
+
+@include respond-min( $mq-medium ) {
+
+	.breadcrumb {
+		padding: $base-line-height * 4 0 $base-line-height * 3;
+	}
+}

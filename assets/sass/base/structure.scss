@@ -1,0 +1,79 @@
+// ===========================================================
+//
+//	$STRUCTURE
+//
+// ===========================================================
+
+body {
+	width: 100%;
+	@include clearfix;
+	background-repeat: repeat-y;
+	background-size: cover;
+}
+
+.has-bg body {
+	background-image: url(../../img/page-bg.jpg);
+}
+
+.page--home body {
+	background-image: none;
+}
+
+.wrap,
+.wrap__medium,
+.wrap__inner {
+	margin: 0 auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.wrap {
+	max-width: 120rem;
+}
+.wrap__inner {
+	max-width: 67rem;
+}
+
+.wrap__medium {
+	max-width: 94rem;
+}
+
+.wrap--section {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.main-content .wrap {
+	background-color: #fff;
+}
+
+@include respond-min( $mq-medium ) {
+
+	.TextPage .main-content,
+	.ResourceFolder .main-content,
+	.Faqs .main-content {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+}
+
+@include respond-min( $mq-large ) {
+
+	.wrap--section {
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+	}
+
+}
+
+
+@include respond-min( $mq-x-large ) {
+
+	.wrap--section {
+		padding-top: 12rem;
+		padding-bottom: 12rem;
+	}
+
+
+}
+

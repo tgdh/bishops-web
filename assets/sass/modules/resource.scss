@@ -1,0 +1,59 @@
+// ===========================================================
+//
+//	$RESOURCE
+//
+// ===========================================================
+
+.resource {
+	padding-bottom: 4rem;
+}
+
+.resource__img {
+	margin: 0 auto 2rem;
+	display: block;
+}
+
+.resource-downloads {
+	font-weight: 700;
+}
+
+.resource .resource__title {
+	padding-bottom: 0;
+}
+
+.resource .resource__subtitle {
+	display: block;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.resource-downloads {
+	display: block;
+	padding: .5em 0;
+}
+
+p + .resource {
+	margin-top: 4rem;
+}
+
+@include respond-min( $mq-small ) {
+
+	.resource {
+		padding-bottom: 10rem;
+		padding-bottom: $base-line-height * 6;
+	}
+
+	.resource__img {
+		margin-bottom: 0;
+	}
+
+	.resource__img-wrap {
+		@include column(4);
+		padding-right: 3rem;
+	}
+
+	.resource__copy-wrap {
+		@include column(10);
+	}
+
+}

@@ -1,0 +1,124 @@
+// ===========================================================
+//
+//	$BASE
+//
+// ===========================================================
+
+$base-font-size: 1.4rem;
+$base-line-height: 1.4em;
+
+html {
+	font-size: 62.5%;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+	color: $base-colour;
+	font-family: 'Open Sans', Arial, Helvetica, Geneva, sans-serif;
+	font-size: $base-font-size;
+	font-feature-settings: 'liga', 'kern'; //= http://elliotjaystocks.com/blog/kerning/
+	font-kerning: normal; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: $base-line-height;
+}
+
+p + p,
+p + ul,
+p + ol,
+ul + p,
+ol + p {
+	margin-top: $base-line-height; //= Preserves verticle rythm being equal to line-height
+}
+
+p + h1, 
+p + h2, 
+p + h3, 
+p + h4, 
+p + h5, 
+p + h6,
+ul + h1, 
+ul + h2, 
+ul + h3, 
+ul + h4, 
+ul + h5, 
+ul + h6,
+ol + h1, 
+ol + h2, 
+ol + h3, 
+ol + h4, 
+ol + h5, 
+ol + h6 {
+	padding-top: $base-line-height;
+}
+
+em {
+	font-style: italic;
+}
+
+h1,
+h2,
+.title--sub,
+.resource .resource__subtitle {
+	font-family: "chaparral-pro", sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2,
+.title--page,
+.title--section {
+	text-transform: uppercase;
+}
+
+::selection,
+::-moz-selection {
+	color: #fff;
+	background: $pri;
+}
+
+.x-small {
+	font-size: 80%;
+}
+
+.title--page,
+.title--section {
+	text-align: center;
+}
+
+
+.text--red {
+	color: $red-1;
+}
+
+.text--blue {
+	color: $blue-1;
+}
+
+@include respond-min( $mq-medium ) {
+
+$base-font-size: 1.4rem;
+
+	body,
+	input,
+	textarea,
+	select,
+	button {
+		font-size: $base-font-size;
+	}
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+
+	p {
+		letter-spacing: 0.01em; /* Increase letter-spacing on high pixel density screens as they can appear too close */
+		word-spacing: 0.01em; /* Word-spacing same as letter-spacing for consistency */
+	}
+
+}

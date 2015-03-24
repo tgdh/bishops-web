@@ -1,0 +1,47 @@
+// ===========================================================
+//
+//	$BASE
+//
+// ===========================================================
+
+$base-colour: 				$black;
+$highlight-colour: 			$pri;
+
+$anchor-colour: 			$pri;
+$anchor-colour-hover: 		$sec;
+
+$small-caps-colour:			$pri;
+
+// ===========================================================
+//
+//	$COMPONENTS
+//
+// ===========================================================
+
+$figcaption-colour:			lighten($dark-2,20%);
+
+$button-bg--pri: 			$pri;
+$button-bg--pri-hover: 		$pri--alt;
+$button-colour--pri: 		$white;
+$button-colour--pri-hover: 	$white;
+
+$button-bg--sec: 			$sec;
+$button-bg--sec-hover: 		$sec--alt;
+$button-colour--sec: 		$white;
+$button-colour--sec-hover: 	$white;
+
+$input-border-colour:		$grey-1;
+$input-border-colour-focus:	$pri;
+$input-bg-disabled:			$grey-1;
+$input-placeholder-colour:	$grey-1;
+
+$table-border-colour:		$grey-1;
+
+
+// ===========================================================
+//
+//	$COVER
+//
+// ===========================================================
+
+$cover-colour:				$white;

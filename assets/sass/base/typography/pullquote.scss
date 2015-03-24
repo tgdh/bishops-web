@@ -1,0 +1,35 @@
+// ===========================================================
+//
+//	$PULLQUOTE
+//
+//	<aside class="pull-quote">
+//		<blockquote>
+//			<p></p>
+//		</blockquote>
+//	</aside>
+//
+// ===========================================================
+
+.pull-quote {
+	position: relative;
+	padding: 1em;
+}
+
+.pull-quote:before,
+.pull-quote:after {
+	opacity: 0.3;
+	position: absolute;
+	font-size: 4em;
+}
+
+.pull-quote:before {
+	content: '“';
+	top: 2rem;
+	left: 0;
+}
+
+.pull-quote:after {
+	content: '”';
+	bottom: -2rem;
+	right: 0;
+}

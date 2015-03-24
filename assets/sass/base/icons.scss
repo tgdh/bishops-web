@@ -1,0 +1,72 @@
+// ===========================================================
+//
+//	$ICONS
+//
+// ===========================================================
+
+@font-face {
+	font-family: 'Bishops-iconfont';
+	src:url('../../iconfont/fonts/Bishops-iconfont.eot?-6muxc4');
+	src:url('../../iconfont/fonts/Bishops-iconfont.eot?#iefix-6muxc4') format('embedded-opentype'),
+		url('../../iconfont/fonts/Bishops-iconfont.woff?-6muxc4') format('woff'),
+		url('../../iconfont/fonts/Bishops-iconfont.ttf?-6muxc4') format('truetype'),
+		url('../../iconfont/fonts/Bishops-iconfont.svg?-6muxc4#Bishops-iconfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="ico-"], 
+[class*=" ico-"],
+.select-wrap {
+	font-family: 'Bishops-iconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1.6rem;
+}
+
+.ico-arrow-down:before {
+	content: "\e608";
+}
+.ico-arrow-left:before {
+	content: "\e609";
+}
+.ico-arrow-right:before {
+	content: "\e60a";
+}
+.ico-arrow-up:before {
+	content: "\e60b";
+}
+
+.ico-facebook:before {
+	content: "\e600";
+}
+.ico-twitter:before {
+	content: "\e601";
+}
+.nav--main--open .ico-list:before,
+.ico-cross:before {
+	content: "\e602";
+}
+.ico-list:before {
+	content: "\e603";
+}
+.ico-mail:before {
+	content: "\e604";
+}
+.ico-phone:before {
+	content: "\e605";
+}
+.ico-place:before {
+	content: "\e606";
+}
+.ico-search:before {
+	content: "\e607";
+}

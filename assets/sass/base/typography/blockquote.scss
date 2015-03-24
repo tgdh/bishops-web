@@ -1,0 +1,45 @@
+// ===========================================================
+//
+//	$BLOCKQUOTE
+//
+//	<figure>
+//		<blockquote class="blockquote" cite="">
+//			<p></p>
+//		</blockquote>
+//		<figcaption>
+//			<cite>
+//				<small><a href=""></a></small>
+//			</cite>
+//		</figcaption>
+//	</figure>
+//
+// ===========================================================
+
+blockquote {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-weight: 600;
+	padding:1.3rem 0 0 5rem;
+	font-family: $font-family-sec;
+	margin-top: $base-line-height * 2;
+	background:url(../../../assets/img/icon_quote_red1.png) left top no-repeat;
+}
+
+.quote__author {
+	padding-top: $base-line-height;
+}
+
+figure {
+	margin: 20px auto;
+	margin: 2rem auto 2rem;
+}
+
+.blockquote + figcaption {
+	display: block;
+	font-size: inherit;
+	text-align: right;
+}
+
+.blockquote + figcaption:before {
+	content: "-"; /* "-" is your citation flourish */
+}

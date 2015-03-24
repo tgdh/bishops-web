@@ -1,0 +1,224 @@
+// ===========================================================
+//
+//	$NAV - PUSH
+//
+// ===========================================================
+
+
+html,
+body,
+#pageWrap,
+#pageWrapInner {
+	height: 100%;
+	position: relative;
+}
+
+.nav--main {
+	background-color: $blue-2;
+	background-color: rgba(0,73,112, .9);
+}
+
+.nav--main .nav__link {
+	color: #fff;
+	display: block;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-size:1.6rem;
+	font-weight: 700;
+	transition: background-color $transition-speed ease;
+
+	&:hover,
+	&:focus {
+		background-color:$sec;
+	}
+
+	&.active {
+		background-color: $blue-1;
+	}
+}
+
+.nav__item-level--3 .nav__link {
+	margin-left: 2rem;
+	font-weight: 500;
+	text-transform: inherit;
+}
+
+.nav__list {
+	list-style: none;
+	padding: 0;
+}
+
+.nav__item {
+	margin: 0;
+}
+
+.toggle--nav--main {
+	color: #fff;
+}
+
+//= NO JS ================================================
+
+.no-js {
+
+	&.no-touch .toggle--nav--main,
+	.toggle--nav--main {
+		display: none;
+	}
+
+}
+
+//= JS ===================================================
+
+.js.touch {
+
+	@import "partials/nav-sub";
+}
+
+
+@media only screen and ( max-width: $mq-small - 0.01em) {
+		
+	.js {
+		
+		@import "partials/nav-sub";
+
+	}
+}
+
+
+@include respond-min( $mq-small ) {
+
+	.no-touch {
+
+		.nav--main {
+			z-index: 2;
+			text-align: right;
+			position: relative;
+			background-color: transparent;
+			background-position:0 0;
+		}
+
+		.page-header__inner {
+			float: left;
+			padding: 1rem 0;
+		}
+
+		.nav--main .nav__list {
+			padding-right: 1rem;
+		}
+		.nav--main .nav__item {
+			display: inline-block;
+			position: relative;
+			&:last-child {
+				.main-nav__link {
+					padding-right: 0;
+				}
+			}
+		}
+
+		.toggle--nav--main {
+			display: none;
+		}
+
+		.nav--main .nav__item--level-2 > .nav__list--sub {
+			width: 20rem;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 15.2rem;
+			text-align: left;
+			padding: 1rem 0;
+			background-color: $blue-2;
+			background-color: rgba(0,73,112, .9);
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity	.3s ease-out, visibility .3s ease-out;
+
+			&:before {
+				content: "";
+				width: 0; 
+				height: 0; 
+				display: block;
+				border-left: 4rem solid transparent;
+				border-right: 4rem solid transparent;
+				border-bottom: 4rem solid $blue-2;
+				border-bottom: 4rem solid rgba(0,73,112, .9);
+				z-index: -1;
+				position: absolute;
+				top: -4rem;
+				left: 50%;
+				margin-left: -4rem;
+				transition: $transition-speed ease;
+			}
+		}
+
+		&.no-csstransforms .nav--main .nav__item--level-2 > .nav__list--sub {
+			margin-left: -10rem;
+		}
+
+		.nav--main .nav__item--level-2:hover > .nav__list--sub {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.nav--main .nav__item--child {
+			display: block;
+		}
+
+		.nav--main .nav__item--child .nav__link {
+			padding: 1rem 2rem;
+			margin: 0;
+		}
+
+	}
+
+}
+
+
+@include respond-min-max( $mq-small,$mq-medium ) {
+
+	.no-touch {
+	
+		.nav--main {
+			margin-top: -11rem;
+		}
+		
+		.nav--main .nav__link {
+			padding: 7rem 1.1rem 2rem;
+			font-size:100%;
+		}			
+	
+	}
+	
+}
+
+
+@include respond-min( $mq-medium ) {
+
+	.no-touch {
+		
+		.nav--main {
+			margin-top: -12rem;
+		}
+		
+		.nav--main .nav__list {
+		    padding-right: 2rem;
+		}		
+	
+		.nav--main .nav__link {
+			font-size: 1.6rem;
+			padding: 7.5rem 2.7rem 2.5rem;
+		}	
+
+		.nav--main #toggleSearch {
+			padding: 7.1rem 1rem 2.5rem;
+		}
+
+		.nav--main #toggleSearch i {
+			font-size: 2.4rem;
+			display: inline-block;
+			vertical-align: bottom;
+		}
+	
+	}
+
+}

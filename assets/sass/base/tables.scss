@@ -1,0 +1,35 @@
+// ===========================================================
+//
+//	$TABLES
+//
+// ===========================================================
+
+.table-responsive {
+	overflow-y: hidden;
+	overflow-x: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+}
+
+table {
+	background-color: $grey-2;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin-bottom: 4rem;
+}
+th, td {
+	border-top: 0;
+	padding: 1.5rem 2rem;
+	text-align: left;
+	vertical-align: top;
+}
+th {
+	font-weight: 600;
+}
+
+
+p + table {
+	margin-top: 4rem;
+}

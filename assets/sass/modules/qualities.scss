@@ -1,0 +1,128 @@
+// ===========================================================
+//
+//	$QUALITIES
+//
+// ===========================================================
+
+
+.qualities {
+	width:100%;
+	background-image: url('../../../assets/img/chart_graph_alpha5.png'),url('../../../assets/img/chart_grid_alpha5.png');
+	background-repeat: no-repeat, repeat; 
+	background-position:bottom left, top left;			
+	background-size: cover, auto;	
+}
+
+.qualities__list {
+	display:block;
+	width:100%;
+	list-style: none;
+	@include clearfix;
+}
+
+.wrap.qualities__list {
+	background-color: transparent;
+}
+
+.qualities__item {
+	display:block;
+	float:left;
+	width:16rem;
+	height:auto;
+	//border:1px dashed green;
+	margin:0;
+	text-align:center;		
+}
+
+.qualities__image {
+	display:inline-block;
+	margin-bottom:4rem;
+}
+
+.qualities__item-heading {
+	font-family: $font-family-pri;
+	font-size:1.4rem;
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+.qualities__item-heading em {
+	font-family: $font-family-sec;
+	font-size:4.8rem;
+	font-style:normal;
+	position: relative;
+	vertical-align: top;
+}
+
+.qualities__item-heading sup,
+.qualities__item-heading sub {
+	font-size: 60%;
+}
+
+.qualities__item-label {
+	color: $pri;
+	font-weight: 400;
+}
+
+.qualities__list li:before {
+	display: none !important;
+}
+
+
+// MOBILE
+@include respond-max( $mq-medium ) {
+
+	.qualities__list {
+		padding:8rem 0 0;
+	}
+
+	.qualities__item {
+		@include column(7);
+		padding-bottom:8rem;
+	}
+
+	.qualities__item-heading em {
+		font-size: 3.4rem;
+	}
+
+
+}
+
+
+// TABLET & DESKTOP
+@include respond-min( $mq-medium ) {
+
+	.qualities {
+		
+		min-height:46rem;
+		padding:12rem 0;
+	}
+	
+	.qualities__item {
+		@include column(3.5);
+	}
+
+
+}
+
+
+
+// TABLET
+@include respond-min-max( $mq-medium,$mq-large ) {
+
+
+
+
+}
+
+
+// DESKTOP
+@include respond-min( $mq-large ) {
+
+
+	.qualities__list {
+		
+		
+	}
+	
+}

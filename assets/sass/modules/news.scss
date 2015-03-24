@@ -1,0 +1,14 @@
+// ===========================================================
+//
+//	$NEWS
+//
+// ===========================================================
+
+.news__item--meta {
+	display: inline-block;
+	padding-right: $base-line-height;
+
+	&:last-child {
+		padding-right: 0;
+	}
+}

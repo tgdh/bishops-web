@@ -1,0 +1,90 @@
+// ===========================================================
+//
+//	$BUTTONS
+//
+// ===========================================================
+
+.button {
+	display: inline-block;
+	line-height: 1;
+	padding: 1.8rem 2rem;
+	position: relative;
+	z-index: 2;
+	transition: background $transition-speed ease, color $transition-speed ease;
+}
+
+.button--primary {
+	background: $pri;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background: $sec;
+		border-color: $sec;
+		color: $white;
+	}
+	&:after {
+		content: "";
+		width: 0; 
+		height: 0; 
+		display: block;
+		border-right: 5rem solid $red-2;
+		border-top: 5rem solid transparent;
+		z-index: -1;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transition: $transition-speed ease;
+	}
+	&:hover:after {
+		border-right: 5rem solid $blue-2;
+	}
+}
+
+.button--secondary {
+	border: $border-width solid $pri;
+	color: $pri;
+
+	&:hover,
+	&:focus {
+		background: $sec;
+		border-color: $sec;
+		color: $white;
+	}
+}
+
+.button--tertiary {
+	border: $border-width solid $sec;
+	color: $sec;
+
+	&:hover,
+	&:focus {
+		background: $sec;
+		border-color: $sec;
+		color: $white;
+	}
+}
+
+.button--outline {
+	color: #fff;
+	cursor: pointer;
+	background-color: transparent;
+	border: $border-width solid #fff;
+	transition: background-color $transition-speed ease;
+
+	&:hover {
+		color: #fff;
+		background-color: $blue-2;
+	}
+}
+
+@include respond-max( $mq-small ) {
+
+	.button {
+		width: 100%;
+	}
+	.button + .button {
+		margin-top: 1em;
+	}
+
+}

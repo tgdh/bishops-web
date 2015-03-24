@@ -1,0 +1,60 @@
+.nav--main {
+	width: 28rem;
+	height: 100%;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	transform: translate3d(-100%, 0, 0);
+}
+
+&.csstransforms.no-csstransforms3d .nav--main {
+	transition: transform $transition-speed ease, opacity $transition-speed ease, visibility $transition-speed ease;
+}
+
+&.csstransforms.no-csstransforms3d.nav--main--open .nav--main {
+	transform: translate(0,0);
+}
+
+
+&.csstransforms3d #pageWrapInner {
+	left: 0 !important;
+	transform: translate3d(0, 0, 0);
+	transition: transform $transition-speed ease;
+	backface-visibility: hidden;
+}
+
+&.csstransforms3d.nav--main--open #pageWrapInner {
+	transform: translate3d(28rem, 0, 0);
+}
+
+
+&.nav--main--open body {
+	overflow: hidden;
+}
+
+.page-header {
+	text-align: center;
+}
+
+.page-header .logo {
+	float: none;
+	display: inline-block;
+}
+
+.page-header .logo img {
+	height: 65px;
+}
+
+.toggle--nav--main {
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	margin-top: -1.6rem;
+}
+
+.toggle--nav--main i{
+	font-size: 3.2rem;
+}

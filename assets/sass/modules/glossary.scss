@@ -1,0 +1,45 @@
+// ===========================================================
+//
+//	$GLOSSARY
+//
+// ===========================================================
+
+.nav--glossary {
+	padding: 2rem 0;
+}
+
+.nav--glossary .nav__wrap {
+	display: none;
+}
+
+@include respond-min( $mq-large ) {
+
+	.nav--glossary .nav__wrap {
+		display: block;
+	}
+
+	.nav--glossary .select-wrap {
+		display: none;
+	}
+
+	.nav--glossary {
+		text-align: center;
+	}
+
+	.nav--glossary .nav__link {
+		display: inline-block;
+		padding: 1rem;
+		background: $grey-2;
+
+		&:hover {
+			color: #fff;
+			background: $pri;
+		}
+	}
+
+	.nav--glossary .active {
+		color: #fff;
+		background: $sec;
+	}
+
+}

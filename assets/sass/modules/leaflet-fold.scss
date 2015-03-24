@@ -1,0 +1,37 @@
+// ===========================================================
+//
+//	$LEAFLET FOLD
+//
+// ===========================================================
+
+.leaflet-fold {
+	@include column(7);
+	text-align: center;
+	padding: 2rem;
+}
+
+.leaflet-fold__title {
+	min-height: 4rem;
+}
+
+@include respond-min( $mq-medium ) {
+
+	p + .wrap--leaflet-fold,
+	.wrap--leaflet-fold + p {
+		padding-top: 4rem;
+	}
+
+	.leaflet-fold {
+		@include column(4.66666666667);
+	}
+
+}
+
+
+@include respond-min( $mq-x-large ) {
+
+	.leaflet-fold {
+		@include column(2.3);
+	}
+
+}

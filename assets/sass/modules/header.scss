@@ -1,0 +1,81 @@
+// ===========================================================
+//
+//	$HEADER
+//
+// ===========================================================
+
+.logo {
+	z-index: 10;
+	position: relative;
+}
+
+.logo img {
+	height: 8.5rem;
+}
+
+.page-header {
+	background: $blue-1;
+	position: relative;
+}
+
+.page-header__inner {
+	padding-top: 1rem;
+	position: relative;
+	@include clearfix;
+}
+
+.page-header .logo {
+	float: left;
+	margin: 1rem;
+}
+
+
+@include respond-min( $mq-small ) {
+
+	.no-touch {
+
+		.page-header {
+
+			background-color: rgba(0,73,112,.9);
+			
+		}
+
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.no-touch {
+	
+		.page-header {
+			height:12rem;
+		}	
+	
+		.page-header .logo {
+			margin: 2rem 0 1rem;
+		}
+		
+	}
+
+}
+
+@include respond-min-max( $mq-medium,$mq-large ) {
+	
+	.no-touch {
+	
+
+		
+	}	
+
+}
+
+
+@include respond-min( $mq-large ) {
+
+	.no-touch {
+	
+		
+	}
+
+}
