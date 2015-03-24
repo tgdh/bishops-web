@@ -40,7 +40,6 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .preload * {
-  -webkit-transition: none !important;
   transition: none !important;
 }
 
@@ -356,7 +355,6 @@ h5,
 }
 a {
   color: #da2028;
-  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 a:hover {
@@ -570,7 +568,6 @@ img {
   padding: 1.8rem 2rem;
   position: relative;
   z-index: 2;
-  -webkit-transition: background 0.3s ease, color 0.3s ease;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -594,7 +591,6 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .button--primary:hover:after {
@@ -626,7 +622,6 @@ img {
   cursor: pointer;
   background-color: transparent;
   border: 0.2rem solid white;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .button--outline:hover {
@@ -644,7 +639,6 @@ textarea {
   resize: none;
   text-indent: 1px;
   text-overflow: '';
-  -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
   margin: 0 0 1rem;
   width: 100%;
@@ -719,7 +713,6 @@ input[type=radio] {
   cursor: pointer;
   line-height: 1;
   vertical-align: middle;
-  -webkit-transition: background 0.3s, border 0.3s;
   transition: background 0.3s, border 0.3s;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -932,7 +925,6 @@ p + table {
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
-  -webkit-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
 
@@ -1049,7 +1041,6 @@ p + table {
  */
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
-  -webkit-transition: opacity 400ms ease;
   transition: opacity 400ms ease;
 }
 
@@ -1079,12 +1070,10 @@ p + table {
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: scale 100ms ease;
   transition: scale 100ms ease;
 }
 
 .owl-carousel .owl-video-play-icon:hover {
-  -webkit-transition: scale(1.3, 1.3);
   transition: scale(1.3, 1.3);
 }
 
@@ -1099,7 +1088,6 @@ p + table {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: opacity 400ms ease;
   transition: opacity 400ms ease;
 }
 
@@ -1588,7 +1576,6 @@ img.mfp-img {
   opacity: 0.001;
   -webkit-backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1655,7 +1642,6 @@ body,
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 700;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .nav--main .nav__link:hover, .nav--main .nav__link:focus {
@@ -1689,6 +1675,14 @@ body,
   display: none;
 }
 
+.js.touch {
+  /*
+  	@import "partials/nav-sub.scss";
+  */
+  /* 
+  
+  */
+}
 .js.touch .nav--main {
   width: 28rem;
   height: 100%;
@@ -1702,7 +1696,7 @@ body,
   transform: translate3d(-100%, 0, 0);
 }
 .js.touch.csstransforms.no-csstransforms3d .nav--main {
-  -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 .js.touch.csstransforms.no-csstransforms3d.nav--main--open .nav--main {
@@ -1714,7 +1708,7 @@ body,
   left: 0 !important;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1764,7 +1758,6 @@ body,
   top: 0;
   left: 50%;
   margin-left: -4rem;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
@@ -2046,7 +2039,6 @@ p + .resource {
   margin: 0;
   cursor: pointer;
   border: 0.2rem solid #004970;
-  -webkit-transition: background .3s ease, border .3s ease;
   transition: background .3s ease, border .3s ease;
 }
 
@@ -2414,7 +2406,7 @@ p + .resource {
   -webkit-transform: translate(0, 1em);
   -ms-transform: translate(0, 1em);
   transform: translate(0, 1em);
-  -webkit-transition: -webkit-transform 150ms, opacity 100ms, visibility 100ms;
+  transition: -webkit-transform 150ms, opacity 100ms, visibility 100ms;
   transition: transform 150ms, opacity 100ms, visibility 100ms;
   opacity: 0;
   visibility: hidden;
@@ -2433,7 +2425,7 @@ p + .resource {
   -webkit-transform: translate(0, 0em);
   -ms-transform: translate(0, 0em);
   transform: translate(0, 0em);
-  -webkit-transition: -webkit-transform 100ms, opacity 120ms, visibility 120ms;
+  transition: -webkit-transform 100ms, opacity 120ms, visibility 120ms;
   transition: transform 100ms, opacity 120ms, visibility 120ms;
   opacity: 1;
 }
@@ -2606,7 +2598,6 @@ p + .resource {
 /* Some CSS magic for the awesome animations - feel free to make your own custom animations and reference it in your Tooltipster settings! */
 .tooltipster-fade {
   opacity: 0;
-  -webkit-transition-property: opacity;
   transition-property: opacity;
 }
 
@@ -2618,7 +2609,7 @@ p + .resource {
   -webkit-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   transform: scale(0, 0);
-  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   transition-property: transform;
   -webkit-backface-visibility: hidden;
 }
@@ -2627,8 +2618,6 @@ p + .resource {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
 }
 
@@ -2637,7 +2626,7 @@ p + .resource {
   -webkit-transform: rotateZ(4deg);
   -ms-transform: rotateZ(4deg);
   transform: rotateZ(4deg);
-  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: -webkit-transform;
   transition-property: transform;
 }
 
@@ -2646,22 +2635,16 @@ p + .resource {
   -webkit-transform: rotateZ(0deg);
   -ms-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
-  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
   transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
 }
 
 .tooltipster-fall {
   top: 0;
-  -webkit-transition-property: top;
   transition-property: top;
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
 }
 
 .tooltipster-fall.tooltipster-dying {
-  -webkit-transition-property: all;
   transition-property: all;
   top: 0px !important;
   opacity: 0;
@@ -2669,15 +2652,11 @@ p + .resource {
 
 .tooltipster-slide {
   left: -40px;
-  -webkit-transition-property: left;
   transition-property: left;
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
 }
 
 .tooltipster-slide.tooltipster-dying {
-  -webkit-transition-property: all;
   transition-property: all;
   left: 0px !important;
   opacity: 0;
@@ -2800,7 +2779,6 @@ p + .resource {
   cursor: pointer;
   box-shadow: 0px 0px 3px 0px #12456b;
   opacity: .75;
-  -webkit-transition: opacity .3s ease-in;
   transition: opacity .3s ease-in;
   cursor: pointer;
   z-index: 10;
@@ -2813,7 +2791,6 @@ p + .resource {
 .SpecialistFinishes .owl-nav .owl-next i,
 .SpecialistFinishes .owl-nav .owl-prev i {
   color: #da2028;
-  -webkit-transition: color .3s ease;
   transition: color .3s ease;
 }
 .SpecialistFinishes .owl-nav .owl-next i:hover,
@@ -3321,6 +3298,14 @@ p + .resource {
   .button + .button {
     margin-top: 1em;
   }
+  .js {
+    /*
+    		@import "partials/nav-sub.scss";
+    */
+    /*
+    
+    */
+  }
   .js .nav--main {
     width: 28rem;
     height: 100%;
@@ -3334,7 +3319,7 @@ p + .resource {
     transform: translate3d(-100%, 0, 0);
   }
   .js.csstransforms.no-csstransforms3d .nav--main {
-    -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    transition: -webkit-transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
   }
   .js.csstransforms.no-csstransforms3d.nav--main--open .nav--main {
@@ -3346,7 +3331,7 @@ p + .resource {
     left: 0 !important;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -3513,7 +3498,6 @@ p + .resource {
     background-color: rgba(0, 73, 112, 0.9);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity	.3s ease-out, visibility .3s ease-out;
     transition: opacity	.3s ease-out, visibility .3s ease-out;
   }
   .no-touch .nav--main .nav__item--level-2 > .nav__list--sub:before {
@@ -3530,7 +3514,6 @@ p + .resource {
     top: -4rem;
     left: 50%;
     margin-left: -4rem;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
   }
   .no-touch.no-csstransforms .nav--main .nav__item--level-2 > .nav__list--sub {
@@ -3606,7 +3589,6 @@ p + .resource {
     transform: translateY(-50%);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   .js.no-touch.search-form--open .search-form {

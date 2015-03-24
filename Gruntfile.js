@@ -241,6 +241,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-svgmin');
     
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-ftpush');
 
     grunt.registerTask('default', ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'remfallback', 'cssmin', 'concat', 'uglify', 'watch']);
     grunt.registerTask('images', ['responsive_images'], ['imageoptim'], ['svgmin']);
