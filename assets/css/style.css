@@ -640,7 +640,7 @@ input.button:hover {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-select,
+.select,
 textarea {
   font-size: 1.2rem;
   border: 0.2rem solid transparent;
@@ -658,7 +658,7 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-select:focus,
+.select:focus,
 textarea:focus {
   border-color: #003857;
 }
@@ -667,20 +667,22 @@ input[type="email"]:disabled,
 input[type="email"]:disabled:hover,
 input[type="tel"]:disabled,
 input[type="tel"]:disabled:hover,
-select:disabled,
-select:disabled:hover,
+.select:disabled,
+.select:disabled:hover,
 textarea:disabled,
 textarea:disabled:hover {
   background: #f6f6f6;
   cursor: auto;
 }
 
-.label {
+.label,
+.fieldLabel {
   display: block;
   padding-top: 1.4em;
   padding-bottom: 0.7em;
 }
-.label:first-child {
+.label:first-child,
+.fieldLabel:first-child {
   padding-top: 0;
 }
 
@@ -694,6 +696,9 @@ textarea:disabled:hover {
 }
 .select:disabled {
   z-index: 0;
+}
+.select:hover {
+  cursor: pointer;
 }
 
 .select,
@@ -709,10 +714,16 @@ textarea:disabled:hover {
 .dropdownlist > div:after {
   color: #da2028;
   content: '\e608';
-  padding: 1.2rem 1.5rem;
+  padding: 1.7rem;
   position: absolute;
   right: 0;
   top: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdownlist > div:hover:after {
+  color: #fff;
+  background-color: #003857;
 }
 
 input[type=checkbox],
@@ -2398,6 +2409,45 @@ p + .resource {
 .qualities__list li:before {
   display: none !important;
 }
+/* ===========================================================
+//
+//	$FORM
+//
+// ======================================================== */
+.main-content .contourField + .contourField {
+  margin-top: 1.4em;
+}
+.main-content input[type="text"],
+.main-content input[type="email"],
+.main-content input[type="tel"] {
+  background-color: #f2f6f8;
+}
+.main-content .contour {
+  max-width: 67rem;
+  margin: 2.8em auto 0;
+}
+.main-content .contourNavigation {
+  text-align: right;
+}
+.main-content input[type=checkbox],
+.main-content input[type=radio] {
+  background-color: #d1dfe6;
+  border: 0.3rem solid #d1dfe6;
+}
+.main-content input[type=checkbox]:hover, .main-content input[type=checkbox]:checked,
+.main-content input[type=radio]:hover,
+.main-content input[type=radio]:checked {
+  background: #004970;
+  border-color: #004970;
+}
+.main-content input[type=checkbox] + label,
+.main-content input[type=radio] + label {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .9em;
+}
+
 /*
  * Default jvFloat theme.
  * modify it as you wish!

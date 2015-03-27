@@ -7,7 +7,7 @@
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-select,
+.select,
 textarea {
 	font-size: 1.2rem;
 	border: $border-width solid transparent;
@@ -39,7 +39,8 @@ textarea {
 //
 // ===========================================================
 
-.label {
+.label,
+.fieldLabel {
 	display: block;
 	padding-top: $base-line-height;
 	padding-bottom: $base-line-height / 2;
@@ -85,6 +86,10 @@ textarea {
 	&:disabled {
 		z-index: 0;
 	}
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 .select,
 .dropdownlist > div {
@@ -99,10 +104,24 @@ textarea {
 .dropdownlist > div:after {
 	color: $pri;
 	content: '\e608';
-	padding: 1.2rem 1.5rem;
+	padding: 1.7rem;
 	position: absolute;
 	right: 0;
 	top: 0;
+	transition: background $speed ease, color $speed ease;
+}
+
+.dropdownlist > div {
+
+	&:hover {
+		
+		&:after {
+			color: #fff;
+			background-color: $blue-2;
+		}
+
+	}
+
 }
 
 // ===========================================================
