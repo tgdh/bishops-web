@@ -561,7 +561,7 @@ body:after {
 }
 
 .has-bg body {
-  background-image: url(../../img/page-bg.jpg);
+  background-image: url(../img/page-bg.jpg);
 }
 
 .page--home body {
@@ -663,6 +663,15 @@ img {
   color: #fff;
 }
 
+input.button {
+  border: 2px solid transparent;
+  border: .2rem solid transparent;
+}
+
+input.button:hover {
+  cursor: pointer;
+}
+
 .button--tertiary {
   border: 2px solid #004970;
   border: .2rem solid #004970;
@@ -676,7 +685,8 @@ img {
   color: #fff;
 }
 
-.button--outline {
+.button--outline,
+.page-footer__section .button {
   color: #fff;
   cursor: pointer;
   background-color: transparent;
@@ -685,7 +695,8 @@ img {
   transition: background-color .3s ease;
 }
 
-.button--outline:hover {
+.button--outline:hover,
+.page-footer__section .button:hover {
   color: #fff;
   background-color: #003857;
 }
@@ -708,6 +719,7 @@ textarea {
   margin: 0 0 10px;
   margin: 0 0 1rem;
   width: 100%;
+  border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -754,16 +766,17 @@ textarea:disabled:hover {
   z-index: 0;
 }
 
-.select,
-.select-wrap {
+.dropdownlist>div,
+.select {
   position: relative;
 }
 
+.dropdownlist>div,
 .select-wrap {
   background-color: #f2f6f8;
 }
 
-.select-wrap:after {
+.dropdownlist>div:after {
   color: #da2028;
   content: '\e608';
   padding: 12px 15px;
@@ -881,13 +894,13 @@ p+table {
 
 @font-face {
   font-family: Bishops-iconfont;
-  src: url(../../iconfont/fonts/Bishops-iconfont.eot?-6muxc4);
-  src: url(../../iconfont/fonts/Bishops-iconfont.eot?#iefix-6muxc4) format("embedded-opentype"),url(../../iconfont/fonts/Bishops-iconfont.woff?-6muxc4) format("woff"),url(../../iconfont/fonts/Bishops-iconfont.ttf?-6muxc4) format("truetype"),url(../../iconfont/fonts/Bishops-iconfont.svg?-6muxc4#Bishops-iconfont) format("svg");
+  src: url(../iconfont/fonts/Bishops-iconfont.eot?-6muxc4);
+  src: url(../iconfont/fonts/Bishops-iconfont.eot?#iefix-6muxc4) format("embedded-opentype"),url(../iconfont/fonts/Bishops-iconfont.woff?-6muxc4) format("woff"),url(../iconfont/fonts/Bishops-iconfont.ttf?-6muxc4) format("truetype"),url(../iconfont/fonts/Bishops-iconfont.svg?-6muxc4#Bishops-iconfont) format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
-.select-wrap,
+.dropdownlist>div,
 [class*=" ico-"],
 [class^=ico-] {
   font-family: Bishops-iconfont;
@@ -1875,7 +1888,7 @@ html {
   cursor: default;
 }
 
-.contact__submit {
+.page-footer__section .button {
   padding: 18px 60px;
   padding: 1.8rem 6rem;
 }
@@ -1967,11 +1980,16 @@ html {
   position: relative;
 }
 
-.contourField input[type=text],
-.contourField textarea {
+.page-footer__section .contourField input[type=text],
+.page-footer__section .contourField textarea {
   border: none;
   border-left: 10px solid #004970;
   border-left: 1rem solid #004970;
+}
+
+.page-footer__section .contour .fieldLabel,
+.page-footer__section .contour br {
+  display: none;
 }
 
 .article__header {
@@ -2369,7 +2387,7 @@ p+.resource {
   line-height: 140%;
   text-indent: 0;
   color: #000;
-  background: url(../../../assets/img/icon_quote_red1.png) left top no-repeat;
+  background: url(../../assets/img/icon_quote_red1.png) left top no-repeat;
 }
 
 .cover {
@@ -2432,7 +2450,7 @@ p+.resource {
 
 .qualities {
   width: 100%;
-  background-image: url(../../../assets/img/chart_graph_alpha5.png),url(../../../assets/img/chart_grid_alpha5.png);
+  background-image: url(../../assets/img/chart_graph_alpha5.png),url(../../assets/img/chart_grid_alpha5.png);
   background-repeat: no-repeat,repeat;
   background-position: bottom left,top left;
   background-size: cover,auto;
@@ -3293,7 +3311,7 @@ p+.wrap--leaflet-fold {
 }
 
 .no-rgba .cover__copy {
-  background: url(../../img/transparent-blue.png);
+  background: url(../img/transparent-blue.png);
 }
 
 .csstransforms .cover__content {

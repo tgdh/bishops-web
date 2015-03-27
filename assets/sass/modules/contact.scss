@@ -75,12 +75,16 @@
 	position: relative;
 }
 
-.contourField {
+.page-footer__section {
 
-	input[type="text"],
-	textarea {
-		border: none;
-		border-left: 1rem solid $sec;
+	.contourField {
+
+		input[type="text"],
+		textarea {
+			border: none;
+			border-left: 1rem solid $sec;
+		}
+
 	}
 
 }
@@ -93,3 +97,19 @@
 
 }
 */
+
+
+/* updates for umbraco forms */
+
+.page-footer__section {
+
+	.contour {
+
+		.fieldLabel,
+		br {
+			display: none;
+		}
+
+	}
+
+}

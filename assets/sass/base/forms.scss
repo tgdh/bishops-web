@@ -18,6 +18,8 @@ textarea {
 	transition: border $transition-speed ease;
 	margin: 0 0 1rem;
 	width: 100%;
+	border-radius: 0;
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
 
@@ -85,15 +87,16 @@ textarea {
 	}
 }
 .select,
-.select-wrap {
+.dropdownlist > div {
 	position: relative;
 }
 
-.select-wrap {
+.select-wrap,
+.dropdownlist > div {
 	background-color: $grey-2;
 }
 
-.select-wrap:after {
+.dropdownlist > div:after {
 	color: $pri;
 	content: '\e608';
 	padding: 1.2rem 1.5rem;

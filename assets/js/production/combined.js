@@ -8785,20 +8785,21 @@ $(function(){
 
 	//form validation
 	var initFormValidation = function() {
-		var $contactForm = $('#contour_form_Contact').find('form');
+		var $contactForm = $('#contour_form_Contact').find('form'),
+			contactSubmit = $contactForm.find(':submit');
+			
+		contactSubmit.prop("disabled", true);
 
-		$(".contact__submit").prop("disabled", true);
-
-		$contactForm.find('.contact__submit').on('click', function () {
+		contactSubmit.on('click', function () {
 			$contactForm.parsley().validate();
 			validateFront();
 		});
 
 		var validateFront = function () {
 			if (true === $contactForm.parsley().isValid()) {
-				$(".contact__submit").prop("disabled", false);
+				contactSubmit.prop("disabled", false);
 			} else {
-				$(".contact__submit").prop("disabled", true);
+				contactSubmit.prop("disabled", true);
 			}
 		};
 

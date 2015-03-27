@@ -53,6 +53,14 @@
 	}
 }
 
+input.button {
+	border: .2rem solid transparent;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 .button--tertiary {
 	border: $border-width solid $sec;
 	color: $sec;
@@ -65,7 +73,8 @@
 	}
 }
 
-.button--outline {
+.button--outline,
+.page-footer__section .button {
 	color: #fff;
 	cursor: pointer;
 	background-color: transparent;

@@ -35,7 +35,7 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'assets/css/dev/style.css': 'assets/sass/style.scss'
+                    'assets/css/style.css': 'assets/sass/style.scss'
                 }
             }
         },
@@ -46,8 +46,8 @@ module.exports = function (grunt) {
             multiple_files: {
                 expand: true,
                 flatten: true,
-                src: 'assets/css/dev/style.css',
-                dest: 'assets/css/dev/'
+                src: 'assets/css/style.css',
+                dest: 'assets/css/'
             }
         },
         css_mqpacker: {
@@ -56,9 +56,9 @@ module.exports = function (grunt) {
             },
             main: {
                 expand: true,
-                cwd: 'assets/css/dev/',
+                cwd: 'assets/css/',
                 src: 'style.css',
-                dest: 'assets/css/dev/'
+                dest: 'assets/css/'
             }
         },
         stripmq: {
@@ -68,7 +68,7 @@ module.exports = function (grunt) {
             },
             all: {
                 files: {
-                    'assets/css/dev/style-ie.css': ['assets/css/dev/style.css']
+                    'assets/css/style-ie.css': ['assets/css/style.css']
                 }
             }
         },
@@ -79,21 +79,37 @@ module.exports = function (grunt) {
                     replace: false
                 },
                 files: {
-                    'assets/css/production/style-ie.min.css': ['assets/css/dev/style-ie.css']
+                    'assets/css/style-ie.min.css': ['assets/css/style-ie.css']
                 }
             },
         },
         cssmin: {
             main: {
                 expand: true,
-                cwd: 'assets/css/dev/',
-                src: 'style.css',
-                dest: 'assets/css/production',
+                cwd: 'assets/css/',
+                src: '*.css',
+                dest: 'assets/build/css/',
                 ext: '.min.css'
             }
         },
 
         //COMBINE JS & MINIFY
+        concat: {
+            dist: {
+                src: ['assets/js/plugin/*.js','assets/js/module/*.js','assets/js/*.js'],
+                dest: 'assets/build/js/script.min.js'
+            }
+        },
+        uglify: {
+            build: {
+                src: 'assets/build/js/script.min.js',
+                dest: 'assets/build/js/script.min.js'
+            }
+        },
+
+/*
+
+
         concat: {
             dist: {
                 src: ['assets/js/dev/*.js'],
@@ -106,7 +122,7 @@ module.exports = function (grunt) {
                 dest: 'assets/js/production/script.min.js'
             }
         },
-
+*/
         //RESPONSIVE IMAGE, IMAGEOPTIM & SVGMIN
         responsive_images: {
             options: {
@@ -186,22 +202,10 @@ module.exports = function (grunt) {
                     port: 21,
                     authKey: 'key1'
                 },
-                src: 'assets',
+                src: 'assets/build',
                 dest: '/dev.bishops.co.uk/assets',
-                exclusions: [
-                    'css/dev',
-                    'iconfont',
-                    'js/dev',
-                    'js/snippets',
-                    'sass'
-                ],
-                keep: [
-                    'css/dev',
-                    'iconfont',
-                    'js/dev',
-                    'js/snippets',
-                    'sass'
-                ]
+                exclusions: [''],
+                keep: ['']
             }
         }
 
@@ -243,7 +247,39 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftpush');
 
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'remfallback', 'cssmin', 'concat', 'uglify', 'watch']);
-    grunt.registerTask('images', ['responsive_images'], ['imageoptim'], ['svgmin']);
+
+    grunt.registerTask('dev', [
+        'css',
+        'js',
+        'watch'
+    ]);
+
+    grunt.registerTask('build', [
+        'css',
+        'js'
+    ]);
+
+    grunt.registerTask('css', [
+        'sass', 
+        'autoprefixer', 
+        'css_mqpacker', 
+        'stripmq', 
+        'remfallback', 
+        'cssmin'
+    ]);
+
+    grunt.registerTask('js', [
+        'concat',
+        'uglify'
+    ]);
+
+
+    grunt.registerTask('images', [
+        'responsive_images',
+        'svgmin',
+        'imageoptim'
+    ]);
+
+    grunt.registerTask('deploy', 'ftpush:build');
 
 };

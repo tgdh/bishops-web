@@ -517,7 +517,7 @@ body:after {
 }
 
 .has-bg body {
-  background-image: url(../../img/page-bg.jpg);
+  background-image: url(../img/page-bg.jpg);
 }
 
 .page--home body {
@@ -607,6 +607,13 @@ img {
   color: white;
 }
 
+input.button {
+  border: .2rem solid transparent;
+}
+input.button:hover {
+  cursor: pointer;
+}
+
 .button--tertiary {
   border: 0.2rem solid #004970;
   color: #004970;
@@ -617,14 +624,16 @@ img {
   color: white;
 }
 
-.button--outline {
+.button--outline,
+.page-footer__section .button {
   color: #fff;
   cursor: pointer;
   background-color: transparent;
   border: 0.2rem solid white;
   transition: background-color 0.3s ease;
 }
-.button--outline:hover {
+.button--outline:hover,
+.page-footer__section .button:hover {
   color: #fff;
   background-color: #003857;
 }
@@ -642,6 +651,7 @@ textarea {
   transition: border 0.3s ease;
   margin: 0 0 1rem;
   width: 100%;
+  border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -687,15 +697,16 @@ textarea:disabled:hover {
 }
 
 .select,
-.select-wrap {
+.dropdownlist > div {
   position: relative;
 }
 
-.select-wrap {
+.select-wrap,
+.dropdownlist > div {
   background-color: #f2f6f8;
 }
 
-.select-wrap:after {
+.dropdownlist > div:after {
   color: #da2028;
   content: '\e608';
   padding: 1.2rem 1.5rem;
@@ -801,14 +812,14 @@ p + table {
 
 @font-face {
   font-family: 'Bishops-iconfont';
-  src: url("../../iconfont/fonts/Bishops-iconfont.eot?-6muxc4");
-  src: url("../../iconfont/fonts/Bishops-iconfont.eot?#iefix-6muxc4") format("embedded-opentype"), url("../../iconfont/fonts/Bishops-iconfont.woff?-6muxc4") format("woff"), url("../../iconfont/fonts/Bishops-iconfont.ttf?-6muxc4") format("truetype"), url("../../iconfont/fonts/Bishops-iconfont.svg?-6muxc4#Bishops-iconfont") format("svg");
+  src: url("../iconfont/fonts/Bishops-iconfont.eot?-6muxc4");
+  src: url("../iconfont/fonts/Bishops-iconfont.eot?#iefix-6muxc4") format("embedded-opentype"), url("../iconfont/fonts/Bishops-iconfont.woff?-6muxc4") format("woff"), url("../iconfont/fonts/Bishops-iconfont.ttf?-6muxc4") format("truetype"), url("../iconfont/fonts/Bishops-iconfont.svg?-6muxc4#Bishops-iconfont") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 [class^="ico-"],
 [class*=" ico-"],
-.select-wrap {
+.dropdownlist > div {
   font-family: 'Bishops-iconfont';
   speak: none;
   font-style: normal;
@@ -1677,10 +1688,10 @@ body,
 
 .js.touch {
   /*
-  	@import "partials/nav-sub.scss";
+  	@import "partials/nav-sub";
   */
-  /* 
-  
+  /*
+  	end nav
   */
 }
 .js.touch .nav--main {
@@ -1779,7 +1790,7 @@ body,
   cursor: default;
 }
 
-.contact__submit {
+.page-footer__section .button {
   padding: 1.8rem 6rem;
 }
 
@@ -1867,8 +1878,8 @@ body,
   position: relative;
 }
 
-.contourField input[type="text"],
-.contourField textarea {
+.page-footer__section .contourField input[type="text"],
+.page-footer__section .contourField textarea {
   border: none;
   border-left: 1rem solid #004970;
 }
@@ -1880,6 +1891,12 @@ body,
 
 }
 */
+/* updates for umbraco forms */
+.page-footer__section .contour .fieldLabel,
+.page-footer__section .contour br {
+  display: none;
+}
+
 .article__header {
   text-align: center;
 }
@@ -2250,7 +2267,7 @@ p + .resource {
   line-height: 140%;
   text-indent: 0;
   color: black;
-  background: url(../../../assets/img/icon_quote_red1.png) left top no-repeat;
+  background: url(../../assets/img/icon_quote_red1.png) left top no-repeat;
 }
 .cover {
   position: relative;
@@ -2316,7 +2333,7 @@ p + .resource {
 }
 .qualities {
   width: 100%;
-  background-image: url("../../../assets/img/chart_graph_alpha5.png"), url("../../../assets/img/chart_grid_alpha5.png");
+  background-image: url("../../assets/img/chart_graph_alpha5.png"), url("../../assets/img/chart_grid_alpha5.png");
   background-repeat: no-repeat, repeat;
   background-position: bottom left, top left;
   background-size: cover, auto;
@@ -3125,7 +3142,7 @@ p + .resource {
   }
 
   .no-rgba .cover__copy {
-    background: url(../../img/transparent-blue.png) repeat;
+    background: url(../img/transparent-blue.png) repeat;
   }
 
   .csstransforms .cover__content {
@@ -3299,11 +3316,11 @@ p + .resource {
     margin-top: 1em;
   }
   .js {
-    /*
-    		@import "partials/nav-sub.scss";
+    /* 
+    @import "partials/nav-sub";
     */
     /*
-    
+    	end nav
     */
   }
   .js .nav--main {
