@@ -750,6 +750,8 @@ textarea:disabled:hover {
 .fieldLabel,
 .label {
   display: block;
+  font-weight: 700;
+  font-size: .9em;
   padding-top: 1.4em;
   padding-bottom: .7em;
 }
@@ -2545,6 +2547,10 @@ p+.resource {
   max-width: 670px;
   max-width: 67rem;
   margin: 2.8em auto 0;
+}
+
+.main-content .contour+p {
+  margin-top: 2.8em;
 }
 
 .main-content .contourNavigation {

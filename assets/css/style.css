@@ -678,6 +678,8 @@ textarea:disabled:hover {
 .label,
 .fieldLabel {
   display: block;
+  font-weight: 700;
+  font-size: .9em;
   padding-top: 1.4em;
   padding-bottom: 0.7em;
 }
@@ -2425,6 +2427,9 @@ p + .resource {
 .main-content .contour {
   max-width: 67rem;
   margin: 2.8em auto 0;
+}
+.main-content .contour + p {
+  margin-top: 2.8em;
 }
 .main-content .contourNavigation {
   text-align: right;

@@ -22,6 +22,10 @@
 		margin: $base-line-height * 2 auto 0;
 	}
 
+	.contour + p {
+		margin-top: $base-line-height * 2;
+	}
+
 	.contourNavigation {
 		text-align: right;
 	}
