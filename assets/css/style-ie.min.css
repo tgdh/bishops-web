@@ -645,6 +645,7 @@ img {
   transition: .3s ease;
 }
 
+.button--primary:focus:after,
 .button--primary:hover:after {
   border-right: 50px solid #003857;
   border-right: 5rem solid #003857;

@@ -6,14 +6,14 @@ module.exports = function (grunt) {
         //WATCH TASKS
         watch: {
             css: {
-                files: ['assets/sass/*/*/*.scss', 'assets/sass/*/*.scss'],
+                files: ['assets/sass/*/*.scss', 'assets/sass/*.scss'],
                 tasks: ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'cssmin', 'ftpush'],
                 options: {
                     spawn: false,
                 }
             },
             scripts: {
-                files: ['assets/js/*/*.js'],
+                files: ['assets/js/*.js'],
                 tasks: ['concat', 'uglify', 'ftpush'],
                 options: {
                     spawn: false,

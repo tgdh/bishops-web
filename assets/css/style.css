@@ -593,7 +593,7 @@ img {
   right: 0;
   transition: 0.3s ease;
 }
-.button--primary:hover:after {
+.button--primary:hover:after, .button--primary:focus:after {
   border-right: 5rem solid #003857;
 }
 

@@ -36,7 +36,8 @@
 		right: 0;
 		transition: $transition-speed ease;
 	}
-	&:hover:after {
+	&:hover:after,
+	&:focus:after {
 		border-right: 5rem solid $blue-2;
 	}
 }
