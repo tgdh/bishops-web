@@ -26,14 +26,17 @@ body {
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
-.wrap {
+.wrap,
+.wrap--x-large {
 	max-width: 120rem;
 }
-.wrap__inner {
+.wrap__inner,
+.wrap--medium {
 	max-width: 67rem;
 }
 
-.wrap__medium {
+.wrap__medium,
+.wrap--large {
 	max-width: 94rem;
 }
 
@@ -44,6 +47,11 @@ body {
 
 .main-content .wrap {
 	background-color: #fff;
+}
+
+.wrap--center {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @include respond-min( $mq-medium ) {

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* ===========================================================
 
-Author: Kev Simpson
+	STYLESHEET IMPORTS
 
 =========================================================== */
 .clearfix:before, .clearfix:after {
@@ -532,15 +532,18 @@ body:after {
   padding-right: 2rem;
 }
 
-.wrap {
+.wrap,
+.wrap--x-large {
   max-width: 120rem;
 }
 
-.wrap__inner {
+.wrap__inner,
+.wrap--medium {
   max-width: 67rem;
 }
 
-.wrap__medium {
+.wrap__medium,
+.wrap--large {
   max-width: 94rem;
 }
 
@@ -551,6 +554,11 @@ body:after {
 
 .main-content .wrap {
   background-color: #fff;
+}
+
+.wrap--center {
+  margin-left: auto;
+  margin-right: auto;
 }
 img {
   max-width: 100%;
@@ -904,6 +912,15 @@ p + table {
   text-align: center;
 }
 
+/* ===========================================================
+//
+//	$PAGE
+//
+// ======================================================== */
+.wrap--header {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
 /* 
  *  Owl Carousel - Animate Plugin
  */
@@ -1613,6 +1630,30 @@ img.mfp-img {
 
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* fade */
+.mfp-with-fade {
+  /* before-open state */
+  /* open state  */
+  /* closed state  */
+}
+.mfp-with-fade .mfp-content,
+.mfp-with-fade .mfp-arrow, .mfp-with-fade.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  transition: opacity 0.3s ease-out;
+}
+.mfp-with-fade.mfp-ready .mfp-content,
+.mfp-with-fade.mfp-ready .mfp-arrow {
+  opacity: 1;
+}
+.mfp-with-fade.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-with-fade.mfp-removing .mfp-content,
+.mfp-with-fade.mfp-removing .mfp-arrow, .mfp-with-fade.mfp-removing.mfp-bg {
   opacity: 0;
 }
 
@@ -2453,6 +2494,19 @@ p + .resource {
   font-size: .9em;
 }
 
+/* ===========================================================
+//
+//	$LISTING - IMAGE ARTICLE
+//
+// ======================================================== */
+.listing--image-article .listing__image,
+.listing--image-article .listing__link {
+  display: block;
+  width: 100%;
+}
+.listing--image-article .listing__content {
+  padding: 2rem;
+}
 /*
  * Default jvFloat theme.
  * modify it as you wish!
@@ -3229,6 +3283,24 @@ p + .resource {
     width: 23.21429%;
     margin: 0 0.89286%;
   }
+  .listing--image-article .listing__image-wrap,
+  .listing--image-article .listing__content {
+    float: left;
+    display: inline;
+  }
+  .listing--image-article .listing__image-wrap {
+    width: 50%;
+  }
+  .listing--image-article .listing__content {
+    width: 50%;
+    max-width: 60rem;
+  }
+  .listing--image-article .listing__item:nth-child(2n+2) {
+    background-color: #f6f6f6;
+  }
+  .listing--image-article .listing__content {
+    padding: 4rem;
+  }
   .cover--white .cover__copy {
     max-width: 56rem;
   }
@@ -3280,6 +3352,10 @@ p + .resource {
   .wrap--section {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+  .wrap--header {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
   }
   .nav--glossary .nav__wrap {
     display: block;
@@ -3350,6 +3426,10 @@ p + .resource {
   .wrap--section {
     padding-top: 12rem;
     padding-bottom: 12rem;
+  }
+  .wrap--header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
   }
   .leaflet-fold {
     display: inline;

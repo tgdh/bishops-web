@@ -191,6 +191,23 @@ $(function(){
 
 	}
 
+	var fullViewModal = function() {
+
+		var modal = $('.js-modal-image');
+
+		modal.magnificPopup({
+			type: 'image',
+			removalDelay: 300,
+			closeOnContentClick: true,
+			closeBtnInside: false,
+			mainClass: 'mfp-no-margins mfp-with-fade', // class to remove default margin from left and right side
+			image: {
+				verticalFit: true
+			}
+		});
+
+	}
+
 // ===========================================================
 //
 //	$INIT
@@ -201,6 +218,13 @@ $(function(){
 	$('.tooltip__marker').tooltipster({
 		'theme': 'tooltipster-bishops'
 	});
+
+	$(document).ready(function() {
+
+		fullViewModal();
+
+	});
+	
 
 
 // ===========================================================

@@ -578,16 +578,19 @@ body:after {
   padding-right: 2rem;
 }
 
-.wrap {
+.wrap,
+.wrap--x-large {
   max-width: 1200px;
   max-width: 120rem;
 }
 
+.wrap--medium,
 .wrap__inner {
   max-width: 670px;
   max-width: 67rem;
 }
 
+.wrap--large,
 .wrap__medium {
   max-width: 940px;
   max-width: 94rem;
@@ -595,6 +598,11 @@ body:after {
 
 .main-content .wrap {
   background-color: #fff;
+}
+
+.wrap--center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
@@ -1692,6 +1700,29 @@ img.mfp-img {
   opacity: 0;
 }
 
+.mfp-with-fade .mfp-arrow,
+.mfp-with-fade .mfp-content,
+.mfp-with-fade.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  transition: opacity .3s ease-out;
+}
+
+.mfp-with-fade.mfp-ready .mfp-arrow,
+.mfp-with-fade.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-with-fade.mfp-ready.mfp-bg {
+  opacity: .8;
+}
+
+.mfp-with-fade.mfp-removing .mfp-arrow,
+.mfp-with-fade.mfp-removing .mfp-content,
+.mfp-with-fade.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 .logo {
   z-index: 10;
   position: relative;
@@ -2580,6 +2611,12 @@ p+.resource {
   font-size: .9em;
 }
 
+.listing--image-article .listing__image,
+.listing--image-article .listing__link {
+  display: block;
+  width: 100%;
+}
+
 .jvFloat {
   position: relative;
   display: block;
@@ -3409,6 +3446,31 @@ p+.wrap--leaflet-fold {
   margin: 0 .89286%;
 }
 
+.listing--image-article .listing__content,
+.listing--image-article .listing__image-wrap {
+  float: left;
+  display: inline;
+}
+
+.listing--image-article .listing__image-wrap {
+  width: 50%;
+}
+
+.listing--image-article .listing__content {
+  width: 50%;
+  max-width: 600px;
+  max-width: 60rem;
+}
+
+.listing--image-article .listing__item:nth-child(2n+2) {
+  background-color: #f6f6f6;
+}
+
+.listing--image-article .listing__content {
+  padding: 40px;
+  padding: 4rem;
+}
+
 .JanPromo .cover__copy,
 .cover--white .cover__copy {
   max-width: 560px;
@@ -3453,6 +3515,13 @@ p+.wrap--leaflet-fold {
   padding-top: 8rem;
   padding-bottom: 80px;
   padding-bottom: 8rem;
+}
+
+.wrap--header {
+  padding-top: 80px;
+  padding-top: 8rem;
+  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 
 .nav--glossary .nav__wrap {

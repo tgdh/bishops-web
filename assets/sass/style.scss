@@ -1,6 +1,6 @@
 /* ===========================================================
 
-Author: Kev Simpson
+	STYLESHEET IMPORTS
 
 =========================================================== */
 
@@ -29,6 +29,7 @@ Author: Kev Simpson
 @import "base/tables.scss";
 @import "base/icons.scss";
 @import "base/section.scss";
+@import "base/page.scss";
 
 // ========================================================= //
 
@@ -60,6 +61,7 @@ Author: Kev Simpson
 @import "modules/cover.scss";
 @import "modules/qualities.scss";
 @import "modules/form.scss";
+@import "modules/listing-image-article.scss";
 
 // ========================================================= //
 

@@ -1,0 +1,50 @@
+/* ===========================================================
+//
+//	$LISTING - IMAGE ARTICLE
+//
+// ======================================================== */
+
+.listing--image-article {
+
+	.listing__image,
+	.listing__link {
+		display: block;
+		width: 100%;
+	}
+
+	.listing__content {
+		padding: 2rem;
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.listing--image-article {
+
+		.listing__image-wrap,
+		.listing__content {
+			float: left;
+			display: inline;
+		}
+
+		.listing__image-wrap {
+			width: 50%;
+		}
+
+		.listing__content {
+			width: 50%;
+			max-width: 60rem;
+		}
+
+		.listing__item:nth-child(2n+2) {
+			background-color: $grey-1;
+		}
+
+		.listing__content {
+			padding: 4rem;
+		}
+
+	}
+
+}

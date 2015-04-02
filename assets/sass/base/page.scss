@@ -1,0 +1,29 @@
+/* ===========================================================
+//
+//	$PAGE
+//
+// ======================================================== */
+
+.wrap--header {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+}
+
+@include respond-min( $mq-large ) {
+
+	.wrap--header {
+		padding-top: 8rem;
+		padding-bottom: 4rem;
+	}
+
+}
+
+
+@include respond-min( $mq-x-large ) {
+
+	.wrap--header {
+		padding-top: 12rem;
+		padding-bottom: 6rem;
+	}
+
+}
