@@ -198,11 +198,23 @@ $(function(){
 		modal.magnificPopup({
 			type: 'image',
 			removalDelay: 300,
-			closeOnContentClick: true,
+			closeOnContentClick: false,
 			closeBtnInside: false,
 			mainClass: 'mfp-no-margins mfp-with-fade', // class to remove default margin from left and right side
+			callbacks: {
+			    open: function() {
+					    var self = this;
+					    self.wrap.on('click.pinhandler', 'img', function() {
+					  	  self.wrap.toggleClass('mfp-force-scrollbars');
+					    });
+				    },
+				    beforeClose: function() {
+					    this.wrap.off('click.pinhandler');
+					    this.wrap.removeClass('mfp-force-scrollbars');
+				    }
+		    },
 			image: {
-				verticalFit: true
+				verticalFit: false
 			}
 		});
 

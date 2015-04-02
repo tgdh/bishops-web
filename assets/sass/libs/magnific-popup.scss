@@ -439,3 +439,25 @@ img.mfp-img {
   
   
 }
+
+/* Additional change for the Specialist finishes zoom in on click */
+.mfp-img {
+  cursor: pointer; 
+  cursor: -webkit-zoom-in; 
+  cursor: -moz-zoom-in;
+}
+.mfp-force-scrollbars {
+  .mfp-img {
+    cursor: ew-resize;  
+  }
+  &.mfp-wrap {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+  }
+  .mfp-img {
+    max-width: none;
+  }
+  .mfp-close {
+    position: fixed;
+  }
+}

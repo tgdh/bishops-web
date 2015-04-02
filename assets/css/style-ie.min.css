@@ -627,14 +627,14 @@ img {
 
 .button--primary {
   background: #da2028;
-  color: #fff;
+  color: #FFF;
 }
 
 .button--primary:focus,
 .button--primary:hover {
   background: #004970;
   border-color: #004970;
-  color: #fff;
+  color: #FFF;
 }
 
 .button--primary:after {
@@ -669,7 +669,7 @@ img {
 .button--secondary:hover {
   background: #004970;
   border-color: #004970;
-  color: #fff;
+  color: #FFF;
 }
 
 input.button {
@@ -691,7 +691,7 @@ input.button:hover {
 .button--tertiary:hover {
   background: #004970;
   border-color: #004970;
-  color: #fff;
+  color: #FFF;
 }
 
 .button--outline,
@@ -1890,7 +1890,7 @@ html {
 .page-footer {
   width: 100%;
   background-color: #004970;
-  color: #fff;
+  color: #FFF;
   position: relative;
 }
 
@@ -2997,6 +2997,28 @@ p+.resource {
 
 .JanPromo .row:last-child {
   padding-bottom: 0;
+}
+
+.mfp-img {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+}
+
+.mfp-force-scrollbars {
+  cursor: ew-resize;
+}
+
+.mfp-force-scrollbars.mfp-wrap {
+  overflow-y: auto!important;
+  overflow-x: auto!important;
+}
+
+.mfp-force-scrollbars .mfp-img {
+  max-width: none;
+}
+
+.mfp-force-scrollbars .mfp-close {
+  position: fixed;
 }
 
 .tooltip__marker {
