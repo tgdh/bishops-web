@@ -1723,6 +1723,28 @@ img.mfp-img {
   opacity: 0;
 }
 
+.mfp-img {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+}
+
+.mfp-force-scrollbars .mfp-img {
+  cursor: ew-resize;
+}
+
+.mfp-force-scrollbars.mfp-wrap {
+  overflow-y: auto!important;
+  overflow-x: auto!important;
+}
+
+.mfp-force-scrollbars .mfp-img {
+  max-width: none;
+}
+
+.mfp-force-scrollbars .mfp-close {
+  position: fixed;
+}
+
 .logo {
   z-index: 10;
   position: relative;
@@ -2999,26 +3021,11 @@ p+.resource {
   padding-bottom: 0;
 }
 
-.mfp-img {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-}
-
-.mfp-force-scrollbars {
-  cursor: ew-resize;
-}
-
-.mfp-force-scrollbars.mfp-wrap {
-  overflow-y: auto!important;
-  overflow-x: auto!important;
-}
-
-.mfp-force-scrollbars .mfp-img {
-  max-width: none;
-}
-
-.mfp-force-scrollbars .mfp-close {
-  position: fixed;
+.ico-bullet-point:before {
+  content: "\e60c";
+  color: #da2028;
+  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .tooltip__marker {
@@ -3472,25 +3479,15 @@ p+.wrap--leaflet-fold {
 .listing--image-article .listing__image-wrap {
   float: left;
   display: inline;
-}
-
-.listing--image-article .listing__image-wrap {
   width: 50%;
-}
-
-.listing--image-article .listing__content {
-  width: 50%;
-  max-width: 600px;
-  max-width: 60rem;
 }
 
 .listing--image-article .listing__item:nth-child(2n+2) {
   background-color: #f6f6f6;
 }
 
-.listing--image-article .listing__content {
-  padding: 40px;
-  padding: 4rem;
+.listing--image-article .listing__item:nth-child(2n+2) .listing__image-wrap {
+  float: right;
 }
 
 .JanPromo .cover__copy,
@@ -3592,6 +3589,11 @@ p+.wrap--leaflet-fold {
 
 .cover__content {
   margin: auto 0;
+}
+
+.listing--image-article .listing__content {
+  padding: 100px 80px 80px;
+  padding: 10rem 8rem 8rem;
 }
 
 .cover--white.cover--img .cover__img {

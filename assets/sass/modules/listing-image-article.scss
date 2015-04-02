@@ -34,15 +34,48 @@
 
 		.listing__content {
 			width: 50%;
-			max-width: 60rem;
+			/*max-width: 60rem;*/
 		}
 
 		.listing__item:nth-child(2n+2) {
 			background-color: $grey-1;
+
+			.listing__image-wrap {
+				float: right;
+			}
 		}
 
 		.listing__content {
 			padding: 4rem;
+		}
+
+	}
+
+}
+
+@include respond-min( $mq-large ) {
+
+	.listing--image-article {
+
+		.listing__content {
+			padding: 5rem;
+			padding-bottom: 4rem;
+		}
+
+	}
+
+}
+
+
+@include respond-min( $mq-x-large ) {
+
+	.listing--image-article {
+
+		.listing__content {
+			padding: 6rem;
+			padding-left: 8rem;
+			padding-right: 8rem;
+			padding-bottom: 4rem;
 		}
 
 	}

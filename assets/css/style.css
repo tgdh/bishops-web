@@ -844,6 +844,10 @@ p + table {
   font-size: 1.6rem;
 }
 
+.ico-bullet-point:before {
+  content: "\e60c";
+}
+
 .ico-arrow-down:before {
   content: "\e608";
 }
@@ -1643,6 +1647,26 @@ img.mfp-img {
 .mfp-with-fade.mfp-removing .mfp-content,
 .mfp-with-fade.mfp-removing .mfp-arrow, .mfp-with-fade.mfp-removing.mfp-bg {
   opacity: 0;
+}
+
+/* Additional change for the Specialist finishes zoom in on click */
+.mfp-img {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+}
+
+.mfp-force-scrollbars .mfp-img {
+  cursor: ew-resize;
+}
+.mfp-force-scrollbars.mfp-wrap {
+  overflow-y: auto !important;
+  overflow-x: auto !important;
+}
+.mfp-force-scrollbars .mfp-img {
+  max-width: none;
+}
+.mfp-force-scrollbars .mfp-close {
+  position: fixed;
 }
 
 .logo {
@@ -2883,6 +2907,12 @@ p + .resource {
 //	$specialist finishes
 //
 // ======================================================== */
+.ico-bullet-point:before {
+  content: "\e60c";
+  color: #da2028;
+  margin-right: 1rem;
+}
+
 .tooltip__marker {
   width: 1.6rem;
   height: 1.6rem;
@@ -3283,10 +3313,13 @@ p + .resource {
   }
   .listing--image-article .listing__content {
     width: 50%;
-    max-width: 60rem;
+    /*max-width: 60rem;*/
   }
   .listing--image-article .listing__item:nth-child(2n+2) {
     background-color: #f6f6f6;
+  }
+  .listing--image-article .listing__item:nth-child(2n+2) .listing__image-wrap {
+    float: right;
   }
   .listing--image-article .listing__content {
     padding: 4rem;
@@ -3389,6 +3422,10 @@ p + .resource {
   .cover__content {
     margin: auto 0;
   }
+  .listing--image-article .listing__content {
+    padding: 5rem;
+    padding-bottom: 4rem;
+  }
   .cover--white.cover--img .cover__img {
     border-bottom: 2px solid #06171c;
   }
@@ -3426,6 +3463,12 @@ p + .resource {
     float: left;
     width: 14.64286%;
     margin: 0 0.89286%;
+  }
+  .listing--image-article .listing__content {
+    padding: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
   }
   .foo {
     color: #f00;
@@ -3934,5 +3977,12 @@ p + .resource {
   }
   .foo {
     color: #f00;
+  }
+}
+@media only screen and (min-width: 105em) {
+  .listing__feature {
+    width: 40%;
+    margin-right: 3rem;
+    float: left;
   }
 }

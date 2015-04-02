@@ -31,6 +31,9 @@
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 1.6rem;
 }
+.ico-bullet-point:before {
+	content: "\e60c";
+}
 
 .ico-arrow-down:before {
 	content: "\e608";
