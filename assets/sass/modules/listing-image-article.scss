@@ -10,6 +10,10 @@
 	.listing__link {
 		display: block;
 		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+
 	}
 
 	.listing__content {
@@ -17,9 +21,19 @@
 	}
 
 }
-
+@include respond-max( $mq-medium ) {
+	.listing__image-wrap {
+		padding-top: 30%;
+	}
+}
 @include respond-min( $mq-medium ) {
+	
+	.listing__item {
+		display: table;
+		height: 100%;
+		width: 100%;
 
+	}
 	.listing--image-article {
 
 		.listing__image-wrap,
@@ -30,6 +44,9 @@
 
 		.listing__image-wrap {
 			width: 50%;
+			display: table-cell;
+			height: 100%;
+			vertical-align: middle;
 		}
 
 		.listing__content {

@@ -443,8 +443,8 @@ img.mfp-img {
 /* Additional change for the Specialist finishes zoom in on click */
 .mfp-img {
   cursor: pointer; 
-  cursor: -webkit-zoom-in; 
-  cursor: -moz-zoom-in;
+  cursor: zoom-in; 
+
 }
 .mfp-force-scrollbars {
   .mfp-img {
@@ -460,4 +460,19 @@ img.mfp-img {
   .mfp-close {
     position: fixed;
   }
+}
+
+@include respond-min( 50em ) {
+  .mfp-img {
+    cursor: pointer; 
+    cursor: zoom-out;
+
+  }
+  .mfp-force-scrollbars {
+    .mfp-img {
+      cursor: zoom-out;
+    }
+
+  }
+
 }

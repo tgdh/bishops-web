@@ -1653,6 +1653,7 @@ img.mfp-img {
 .mfp-img {
   cursor: pointer;
   cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .mfp-force-scrollbars .mfp-img {
@@ -1668,7 +1669,6 @@ img.mfp-img {
 .mfp-force-scrollbars .mfp-close {
   position: fixed;
 }
-
 .logo {
   z-index: 10;
   position: relative;
@@ -2515,6 +2515,9 @@ p + .resource {
 .listing--image-article .listing__link {
   display: block;
   width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 .listing--image-article .listing__content {
   padding: 2rem;
@@ -3073,6 +3076,16 @@ p + .resource {
     width: 41.07143%;
     margin: 0 0.89286%;
   }
+  .mfp-img {
+    cursor: pointer;
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+  }
+
+  .mfp-force-scrollbars .mfp-img {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+  }
   .no-touch .page-header {
     height: 12rem;
   }
@@ -3303,6 +3316,12 @@ p + .resource {
     width: 23.21429%;
     margin: 0 0.89286%;
   }
+  .listing__item {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
   .listing--image-article .listing__image-wrap,
   .listing--image-article .listing__content {
     float: left;
@@ -3310,6 +3329,9 @@ p + .resource {
   }
   .listing--image-article .listing__image-wrap {
     width: 50%;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
   }
   .listing--image-article .listing__content {
     width: 50%;
@@ -3947,6 +3969,9 @@ p + .resource {
 
   .qualities__item-heading em {
     font-size: 3.4rem;
+  }
+  .listing__image-wrap {
+    padding-top: 30%;
   }
 }
 @media only screen and (min-width: 50em) and (max-width: 62.49em) {
