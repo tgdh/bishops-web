@@ -1723,12 +1723,6 @@ img.mfp-img {
   opacity: 0;
 }
 
-.mfp-img {
-  cursor: pointer;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
-}
-
 .mfp-force-scrollbars.mfp-wrap {
   overflow-y: auto!important;
   overflow-x: auto!important;
@@ -3216,6 +3210,12 @@ h5 {
   margin: 0 .89286%;
 }
 
+.mfp-img {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
 .mfp-force-scrollbars .mfp-img {
   cursor: zoom-out;
 }
@@ -3480,21 +3480,26 @@ p+.wrap--leaflet-fold {
 }
 
 .listing__item {
-  display: table;
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .listing--image-article .listing__content,
 .listing--image-article .listing__image-wrap {
-  float: left;
-  display: inline;
+  width: 50%;
+  display: block;
 }
 
 .listing--image-article .listing__image-wrap {
-  width: 50%;
-  display: table-cell;
-  height: 100%;
   vertical-align: middle;
 }
 
@@ -3504,10 +3509,26 @@ p+.wrap--leaflet-fold {
 
 .listing--image-article .listing__item:nth-child(2n+2) {
   background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.listing--image-article .listing__item:nth-child(2n+2) .listing__image-wrap {
-  float: right;
+.no-flexbox .listing__item {
+  display: table;
+}
+
+.no-flexbox .listing__content,
+.no-flexbox .listing__image-wrap {
+  display: table-cell;
+  width: 50%;
+  height: 100%;
 }
 
 .JanPromo .cover__copy,

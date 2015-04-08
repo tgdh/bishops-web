@@ -3317,20 +3317,34 @@ p + .resource {
     margin: 0 0.89286%;
   }
   .listing__item {
-    display: table;
+    /*display: table;*/
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .listing--image-article .listing__image-wrap,
   .listing--image-article .listing__content {
-    float: left;
-    display: inline;
+    width: 50%;
+    display: block;
+    /*			flex: 1;
+    			position: relative;
+    			flex-direction: column;*/
+    /*			float: left;
+    			display: inline;*/
   }
   .listing--image-article .listing__image-wrap {
-    width: 50%;
-    display: table-cell;
-    height: 100%;
+    /*			width: 50%;
+    			display: table-cell;*/
+    /*			height: 100%;*/
     vertical-align: middle;
   }
   .listing--image-article .listing__content {
@@ -3339,12 +3353,39 @@ p + .resource {
   }
   .listing--image-article .listing__item:nth-child(2n+2) {
     background-color: #f6f6f6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   .listing--image-article .listing__item:nth-child(2n+2) .listing__image-wrap {
-    float: right;
+    /*				order: 1;*/
+  }
+  .listing--image-article .listing__item:nth-child(2n+2) .listing__content {
+    /*order: 0;*/
+  }
+  .listing--image-article .listing__item:nth-child(2n+2) .listing__image-wrap,
+  .listing--image-article .listing__item:nth-child(2n+2) .listing__content {
+    /*				float: right;*/
+    /*				flex-direction: row-reverse;*/
   }
   .listing--image-article .listing__content {
     padding: 4rem;
+  }
+
+  .no-flexbox .listing__item {
+    display: table;
+  }
+  .no-flexbox .listing__image-wrap,
+  .no-flexbox .listing__content {
+    display: table-cell;
+    width: 50%;
+    height: 100%;
   }
   .cover--white .cover__copy {
     max-width: 56rem;
