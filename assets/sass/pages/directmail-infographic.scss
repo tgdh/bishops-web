@@ -1,0 +1,115 @@
+/* ===========================================================
+//
+//	$direct mail infographic
+//
+// ======================================================== */
+
+.fig {
+	padding: 2rem 0;
+
+	.fig__val,
+	h2 {
+		font-family: "Chaparral Pro";
+		text-transform: inherit;
+	}
+
+	.fig__small {
+		font-size: .85em;
+	}
+
+	h2 {
+		color: $blue-1;
+	}
+
+	.col__val {
+		line-height: 1;
+	}
+
+}
+
+.fig--1 {
+
+	.fig__val {
+		font-size: 8rem;
+	}
+
+	.fig__small {
+		display: block;
+	}
+
+}
+
+.fig--3 {
+
+	.fig__val {
+		font-size: 6rem;
+	}
+
+	.fig__val {
+		width: 14rem;
+		float: left;
+	}
+
+	.fig__small {
+		width: calc(100% - 14rem);
+		float: left;
+		line-height: 1.4;
+	}
+
+	.col--content p {
+		line-height: 4rem;
+	}
+
+	.col--content p + p{
+		padding: 0;
+	}
+
+}
+
+
+@include respond-max( $mq-medium ) {
+
+	.fig {
+
+		.fig__copy {
+			text-align: center;
+		}
+
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.fig--1 {
+
+		.col--graphic,
+		.col--content {
+			@include column(7);
+		}
+
+	}
+
+	.fig--2 {
+
+		.col--graphic {
+			@include column(8);
+		}
+
+		.col--content {
+			@include column(6);
+			float: right;
+		}
+
+	}
+
+	.fig--3 {
+
+		.col--graphic,
+		.col--content {
+			@include column(7);
+		}
+
+	}
+
+}

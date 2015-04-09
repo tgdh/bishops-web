@@ -627,14 +627,14 @@ img {
 
 .button--primary {
   background: #da2028;
-  color: #FFF;
+  color: #fff;
 }
 
 .button--primary:focus,
 .button--primary:hover {
   background: #004970;
   border-color: #004970;
-  color: #FFF;
+  color: #fff;
 }
 
 .button--primary:after {
@@ -669,7 +669,7 @@ img {
 .button--secondary:hover {
   background: #004970;
   border-color: #004970;
-  color: #FFF;
+  color: #fff;
 }
 
 input.button {
@@ -691,7 +691,7 @@ input.button:hover {
 .button--tertiary:hover {
   background: #004970;
   border-color: #004970;
-  color: #FFF;
+  color: #fff;
 }
 
 .button--outline,
@@ -1903,7 +1903,7 @@ html {
 .page-footer {
   width: 100%;
   background-color: #004970;
-  color: #FFF;
+  color: #fff;
   position: relative;
 }
 
@@ -3098,6 +3098,56 @@ p+.resource {
   background-color: #004970;
 }
 
+.fig {
+  padding: 20px 0;
+  padding: 2rem 0;
+}
+
+.fig .fig__val,
+.fig h2 {
+  font-family: "Chaparral Pro";
+  text-transform: inherit;
+}
+
+.fig .fig__small {
+  font-size: .85em;
+}
+
+.fig h2 {
+  color: #004970;
+}
+
+.fig .col__val {
+  line-height: 1;
+}
+
+.fig--1 .fig__val {
+  font-size: 80px;
+  font-size: 8rem;
+}
+
+.fig--1 .fig__small {
+  display: block;
+}
+
+.fig--3 .fig__val {
+  font-size: 60px;
+  font-size: 6rem;
+  width: 140px;
+  width: 14rem;
+  float: left;
+}
+
+.fig--3 .fig__small {
+  width: calc(100% - 14rem);
+  float: left;
+}
+
+.fig--3 .col--content p+p {
+  margin-top: 20px;
+  margin-top: 2rem;
+}
+
 .js.cssanimations .qualities__item.pre-animate,
 .js.cssanimations .work__img.pre-animate {
   opacity: 0;
@@ -3568,6 +3618,36 @@ p+.wrap--leaflet-fold {
   font-size: 5.4rem;
   max-width: 600px;
   max-width: 60rem;
+}
+
+.fig--1 .col--content,
+.fig--1 .col--graphic {
+  display: inline;
+  float: left;
+  width: 48.21429%;
+  margin: 0 .89286%;
+}
+
+.fig--2 .col--graphic {
+  display: inline;
+  float: left;
+  width: 55.35714%;
+  margin: 0 .89286%;
+}
+
+.fig--2 .col--content {
+  display: inline;
+  width: 41.07143%;
+  margin: 0 .89286%;
+  float: right;
+}
+
+.fig--3 .col--content,
+.fig--3 .col--graphic {
+  display: inline;
+  float: left;
+  width: 48.21429%;
+  margin: 0 .89286%;
 }
 
 .wrap--section {

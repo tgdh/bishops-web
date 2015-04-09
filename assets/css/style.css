@@ -73,6 +73,7 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: translate3d(0, 10rem, 0);
     transform: translate3d(0, 10rem, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -86,6 +87,7 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: translate3d(0, 10rem, 0);
     transform: translate3d(0, 10rem, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -103,10 +105,12 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
   }
+
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -117,10 +121,12 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
   }
+
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -138,6 +144,7 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -150,6 +157,7 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
@@ -168,6 +176,7 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: translate3d(-10rem, 0, 0);
     transform: translate3d(-10rem, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -180,6 +189,7 @@ Copyright (c) 2014 Daniel Eden
     -webkit-transform: translate3d(-10rem, 0, 0);
     transform: translate3d(-10rem, 0, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -571,12 +581,12 @@ img {
 
 .button--primary {
   background: #da2028;
-  color: #FFF;
+  color: white;
 }
 .button--primary:hover, .button--primary:focus {
   background: #004970;
   border-color: #004970;
-  color: #FFF;
+  color: white;
 }
 .button--primary:after {
   content: "";
@@ -602,7 +612,7 @@ img {
 .button--secondary:hover, .button--secondary:focus {
   background: #004970;
   border-color: #004970;
-  color: #FFF;
+  color: white;
 }
 
 input.button {
@@ -619,7 +629,7 @@ input.button:hover {
 .button--tertiary:hover, .button--tertiary:focus {
   background: #004970;
   border-color: #004970;
-  color: #FFF;
+  color: white;
 }
 
 .button--outline,
@@ -627,7 +637,7 @@ input.button:hover {
   color: #fff;
   cursor: pointer;
   background-color: transparent;
-  border: 0.2rem solid #fff;
+  border: 0.2rem solid white;
   transition: background-color 0.3s ease;
 }
 .button--outline:hover,
@@ -942,6 +952,7 @@ p + table {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -950,6 +961,7 @@ p + table {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -1819,7 +1831,7 @@ body,
 .page-footer {
   width: 100%;
   background-color: #004970;
-  color: #FFF;
+  color: white;
   padding: 6rem 0;
   position: relative;
 }
@@ -2332,7 +2344,7 @@ p + .resource {
   font-weight: 400;
   line-height: 140%;
   text-indent: 0;
-  color: #000;
+  color: black;
   background: url(../../assets/img/icon_quote_red1.png) left top no-repeat;
 }
 .cover {
@@ -2982,8 +2994,54 @@ p + .resource {
   color: #fff;
   background-color: #004970;
 }
+/* ===========================================================
+//
+//	$direct mail infographic
+//
+// ======================================================== */
+.fig {
+  padding: 2rem 0;
+}
+.fig .fig__val,
+.fig h2 {
+  font-family: "Chaparral Pro";
+  text-transform: inherit;
+}
+.fig .fig__small {
+  font-size: .85em;
+}
+.fig h2 {
+  color: #004970;
+}
+.fig .col__val {
+  line-height: 1;
+}
 
-/*# sourceMappingURL=style.css.map */
+.fig--1 .fig__val {
+  font-size: 8rem;
+}
+.fig--1 .fig__small {
+  display: block;
+}
+
+.fig--3 .fig__val {
+  font-size: 6rem;
+}
+.fig--3 .fig__val {
+  width: 14rem;
+  float: left;
+}
+.fig--3 .fig__small {
+  width: calc(100% - 14rem);
+  float: left;
+  line-height: 1.4;
+}
+.fig--3 .col--content p {
+  line-height: 4rem;
+}
+.fig--3 .col--content p + p {
+  padding: 0;
+}
 @media only screen and (min-width: 50em) {
   .js.cssanimations .qualities__item.pre-animate,
   .js.cssanimations .work__img.pre-animate {
@@ -3421,6 +3479,35 @@ p + .resource {
   .SpecialistFinishes .page__title {
     font-size: 5.4rem;
     max-width: 60rem;
+  }
+  .fig--1 .col--graphic,
+  .fig--1 .col--content {
+    display: inline;
+    float: left;
+    width: 48.21429%;
+    margin: 0 0.89286%;
+  }
+
+  .fig--2 .col--graphic {
+    display: inline;
+    float: left;
+    width: 55.35714%;
+    margin: 0 0.89286%;
+  }
+  .fig--2 .col--content {
+    display: inline;
+    float: left;
+    width: 41.07143%;
+    margin: 0 0.89286%;
+    float: right;
+  }
+
+  .fig--3 .col--graphic,
+  .fig--3 .col--content {
+    display: inline;
+    float: left;
+    width: 48.21429%;
+    margin: 0 0.89286%;
   }
   .foo {
     color: #f00;
@@ -4013,6 +4100,9 @@ p + .resource {
   }
   .listing__image-wrap {
     padding-top: 30%;
+  }
+  .fig .fig__copy {
+    text-align: center;
   }
 }
 @media only screen and (min-width: 50em) and (max-width: 62.49em) {

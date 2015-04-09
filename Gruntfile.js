@@ -7,14 +7,14 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['assets/sass/*/*.scss', 'assets/sass/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'cssmin', 'ftpush'],
+                tasks: ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'cssmin'],
                 options: {
                     spawn: false,
                 }
             },
             scripts: {
                 files: ['assets/js/*.js'],
-                tasks: ['concat', 'uglify', 'ftpush'],
+                tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,
                 }
