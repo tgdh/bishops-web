@@ -584,6 +584,11 @@ body:after {
   max-width: 120rem;
 }
 
+.wrap--small {
+  max-width: 540px;
+  max-width: 54rem;
+}
+
 .wrap--medium,
 .wrap__inner {
   max-width: 670px;
@@ -3103,8 +3108,8 @@ p+.resource {
 }
 
 .fig {
-  padding: 20px 0;
-  padding: 2rem 0;
+  padding: 40px 0;
+  padding: 4rem 0;
 }
 
 .fig .fig__val,
@@ -3155,6 +3160,35 @@ p+.resource {
 
 .fig--3 .col--content p+p {
   padding: 0;
+}
+
+.fig--4 .col {
+  display: inline;
+  float: left;
+  width: 48.21429%;
+  margin: 0 .89286%;
+}
+
+.fig--4 .fig__val {
+  font-size: 60px;
+  font-size: 6rem;
+}
+
+.fig--4 .fig__small {
+  display: block;
+  max-width: 170px;
+  max-width: 17rem;
+}
+
+.fig--4 .col--graphic {
+  width: 100px;
+  width: 10rem;
+  float: left;
+}
+
+.fig--4 .col--content {
+  width: calc(100% - 10rem);
+  float: left;
 }
 
 .js.cssanimations .qualities__item.pre-animate,

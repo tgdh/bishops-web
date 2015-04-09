@@ -5,7 +5,7 @@
 // ======================================================== */
 
 .fig {
-	padding: 2rem 0;
+	padding: 4rem 0;
 
 	.fig__val,
 	h2 {
@@ -13,16 +13,15 @@
 		text-transform: inherit;
 	}
 
-	.fig__small {
-		font-size: .85em;
+	.fig__val {
+		font-size: 6rem;
+		display: block;
+		line-height: 1;
 	}
 
 	h2 {
 		color: $blue-1;
-	}
-
-	.col__val {
-		line-height: 1;
+		font-size: 2.6rem;
 	}
 
 }
@@ -33,17 +32,19 @@
 		font-size: 8rem;
 	}
 
+	.fig__chart,
+	.fig__val {
+		float: left;
+	}
+
 	.fig__small {
 		display: block;
+		clear: both;
 	}
 
 }
 
 .fig--3 {
-
-	.fig__val {
-		font-size: 6rem;
-	}
 
 	.fig__val {
 		width: 14rem;
@@ -66,6 +67,58 @@
 
 }
 
+.fig--4 {
+
+	.col {
+		@include column(7);
+	}
+
+	.fig__val {
+		margin-top: 2rem;
+	}
+
+	.fig__small {
+		display: block;
+		max-width: 17rem;
+	}
+
+	.col--graphic {
+		width: 10rem;
+		float: left;
+	}
+
+	.col--content {
+		width: calc(100% - 10rem);
+		float: left;
+	}
+
+}
+
+.fig--5 {
+
+	.fig__item {
+		display: table;
+
+		> div {
+			display: table-cell;
+			vertical-align: top;
+		}
+	}
+
+}
+
+.fig--7 {
+
+	.fig__item {
+		display: table;
+
+		> div {
+			display: table-cell;
+			vertical-align: top;
+		}
+	}
+
+}
 
 @include respond-max( $mq-medium ) {
 
@@ -80,6 +133,14 @@
 }
 
 @include respond-min( $mq-medium ) {
+
+	.fig {
+
+		h2 {
+			font-size: 4rem;
+		}
+
+	}
 
 	.fig--1 {
 

@@ -537,6 +537,10 @@ body:after {
   max-width: 120rem;
 }
 
+.wrap--small {
+  max-width: 54rem;
+}
+
 .wrap__inner,
 .wrap--medium {
   max-width: 67rem;
@@ -3003,33 +3007,35 @@ p + .resource {
 //
 // ======================================================== */
 .fig {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 .fig .fig__val,
 .fig h2 {
   font-family: "Chaparral Pro";
   text-transform: inherit;
 }
-.fig .fig__small {
-  font-size: .85em;
+.fig .fig__val {
+  font-size: 6rem;
+  display: block;
+  line-height: 1;
 }
 .fig h2 {
   color: #004970;
-}
-.fig .col__val {
-  line-height: 1;
+  font-size: 2.6rem;
 }
 
 .fig--1 .fig__val {
   font-size: 8rem;
 }
+.fig--1 .fig__chart,
+.fig--1 .fig__val {
+  float: left;
+}
 .fig--1 .fig__small {
   display: block;
+  clear: both;
 }
 
-.fig--3 .fig__val {
-  font-size: 6rem;
-}
 .fig--3 .fig__val {
   width: 14rem;
   float: left;
@@ -3044,6 +3050,44 @@ p + .resource {
 }
 .fig--3 .col--content p + p {
   padding: 0;
+}
+
+.fig--4 .col {
+  display: inline;
+  float: left;
+  width: 48.21429%;
+  margin: 0 0.89286%;
+}
+.fig--4 .fig__val {
+  margin-top: 2rem;
+}
+.fig--4 .fig__small {
+  display: block;
+  max-width: 17rem;
+}
+.fig--4 .col--graphic {
+  width: 10rem;
+  float: left;
+}
+.fig--4 .col--content {
+  width: calc(100% - 10rem);
+  float: left;
+}
+
+.fig--5 .fig__item {
+  display: table;
+}
+.fig--5 .fig__item > div {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.fig--7 .fig__item {
+  display: table;
+}
+.fig--7 .fig__item > div {
+  display: table-cell;
+  vertical-align: top;
 }
 @media only screen and (min-width: 50em) {
   .js.cssanimations .qualities__item.pre-animate,
@@ -3483,6 +3527,10 @@ p + .resource {
     font-size: 5.4rem;
     max-width: 60rem;
   }
+  .fig h2 {
+    font-size: 4rem;
+  }
+
   .fig--1 .col--graphic,
   .fig--1 .col--content {
     display: inline;
