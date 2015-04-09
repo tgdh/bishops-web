@@ -2534,6 +2534,9 @@ p + .resource {
 .listing--image-article .listing__content {
   padding: 2rem;
 }
+.listing--image-article .listing__image-wrap {
+  position: relative;
+}
 /*
  * Default jvFloat theme.
  * modify it as you wish!

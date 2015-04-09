@@ -2633,6 +2633,10 @@ p+.resource {
   bottom: 0;
 }
 
+.listing--image-article .listing__image-wrap {
+  position: relative;
+}
+
 .jvFloat {
   position: relative;
   display: block;
@@ -3141,11 +3145,16 @@ p+.resource {
 .fig--3 .fig__small {
   width: calc(100% - 14rem);
   float: left;
+  line-height: 1.4;
+}
+
+.fig--3 .col--content p {
+  line-height: 40px;
+  line-height: 4rem;
 }
 
 .fig--3 .col--content p+p {
-  margin-top: 20px;
-  margin-top: 2rem;
+  padding: 0;
 }
 
 .js.cssanimations .qualities__item.pre-animate,

@@ -20,6 +20,10 @@
 		padding: 2rem;
 	}
 
+	.listing__image-wrap {
+		position: relative;
+	}
+
 }
 @include respond-max( $mq-medium ) {
 	.listing__image-wrap {
