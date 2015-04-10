@@ -1910,6 +1910,7 @@ html {
   background-color: #004970;
   color: #fff;
   position: relative;
+  display: block;
 }
 
 .page-footer:before {
@@ -3107,27 +3108,40 @@ p+.resource {
   background-color: #004970;
 }
 
+.Infographic .main-content {
+  overflow-x: hidden;
+  clear: both;
+}
+
+.wrap--infographic {
+  max-width: 760px;
+  max-width: 76rem;
+  margin: auto;
+}
+
 .fig {
-  padding: 40px 0;
-  padding: 4rem 0;
+  position: relative;
+  z-index: 2;
 }
 
 .fig .fig__val,
 .fig h2 {
-  font-family: "Chaparral Pro";
   text-transform: inherit;
 }
 
-.fig .fig__small {
-  font-size: .85em;
+.fig .fig__val {
+  font-size: 60px;
+  font-size: 6rem;
+  display: block;
+  line-height: 1;
 }
 
 .fig h2 {
   color: #004970;
 }
 
-.fig .col__val {
-  line-height: 1;
+.fig h2 img {
+  vertical-align: bottom;
 }
 
 .fig--1 .fig__val {
@@ -3135,22 +3149,61 @@ p+.resource {
   font-size: 8rem;
 }
 
-.fig--1 .fig__small {
-  display: block;
+.fig--1 .fig__chart,
+.fig--1 .fig__val {
+  display: inline-block;
 }
 
-.fig--3 .fig__val {
-  font-size: 60px;
-  font-size: 6rem;
-  width: 140px;
-  width: 14rem;
-  float: left;
+.fig--1 .fig__small {
+  display: block;
+  clear: both;
+}
+
+.fig--2 .col--graphic .graphic--envelopes {
+  max-width: 360px;
+  max-width: 36rem;
+}
+
+.fig--2 strong {
+  color: #da2028;
+}
+
+.no-svg .graphic--envelopes {
+  padding-top: 30%;
+  background: url(/assets/img/infographic/img-2.png) no-repeat;
+}
+
+.no-svg #envelopes {
+  display: none;
+}
+
+.no-svg .fig__chart span {
+  background-color: transparent!important;
+}
+
+.no-svg #pie1 {
+  background: url(/assets/img/infographic/graph-23.gif) no-repeat;
+}
+
+.no-svg #perception1 {
+  background: url(/assets/img/infographic/graph-38.gif) no-repeat;
+}
+
+.no-svg #perception2 {
+  background: url(/assets/img/infographic/graph-63.gif) no-repeat;
+}
+
+.no-svg #perception3 {
+  background: url(/assets/img/infographic/graph-18.gif) no-repeat;
+}
+
+.no-svg #remembered {
+  background: url(/assets/img/infographic/graph-60.gif) no-repeat;
 }
 
 .fig--3 .fig__small {
-  width: calc(100% - 14rem);
-  float: left;
   line-height: 1.4;
+  display: block;
 }
 
 .fig--3 .col--content p {
@@ -3162,22 +3215,8 @@ p+.resource {
   padding: 0;
 }
 
-.fig--4 .col {
-  display: inline;
-  float: left;
-  width: 48.21429%;
-  margin: 0 .89286%;
-}
-
-.fig--4 .fig__val {
-  font-size: 60px;
-  font-size: 6rem;
-}
-
 .fig--4 .fig__small {
   display: block;
-  max-width: 170px;
-  max-width: 17rem;
 }
 
 .fig--4 .col--graphic {
@@ -3187,8 +3226,67 @@ p+.resource {
 }
 
 .fig--4 .col--content {
-  width: calc(100% - 10rem);
+  width: calc(100% - 12rem);
   float: left;
+  margin-left: 20px;
+  margin-left: 2rem;
+}
+
+.fig--5 .fig__graphic {
+  min-width: 80px;
+  min-width: 8rem;
+}
+
+.fig--5 .fig__graphic img {
+  max-height: 42px;
+  max-height: 4.2rem;
+  width: auto;
+}
+
+.fig--5 .fig__graph {
+  min-width: 62px;
+  min-width: 6.2rem;
+}
+
+.fig--6 .tag {
+  display: inline-block;
+  text-indent: -100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 46px;
+  height: 46px;
+  margin-right: 0 5px;
+  margin-right: 0 .5rem;
+  vertical-align: middle;
+  background: 0 0/contain no-repeat;
+}
+
+.fig--6 .tag--24 {
+  background-image: url(/assets/img/infographic/tag-24.png);
+}
+
+.fig--6 .tag--55 {
+  background-image: url(/assets/img/infographic/tag-55.png);
+}
+
+.fig--6 p+p {
+  margin-top: 0;
+}
+
+.fig--7 .fig__item .fig__graphic {
+  display: block;
+  margin-bottom: 2.8em;
+}
+
+.fig--7 .fig__item .fig__content,
+.fig--7 .fig__item .fig__graph {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fig--7 .fig__item .fig__graph {
+  margin-top: 7px;
+  margin-top: .7rem;
 }
 
 .js.cssanimations .qualities__item.pre-animate,
@@ -3661,6 +3759,197 @@ p+.wrap--leaflet-fold {
   font-size: 5.4rem;
   max-width: 600px;
   max-width: 60rem;
+}
+
+.wrap--infographic {
+  margin-top: 40px;
+  margin-top: 4rem;
+}
+
+.fig:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.fig--1:before {
+  background-image: url(/assets/img/infographic/arrow-1.png);
+  width: 480px;
+  height: 360px;
+  left: -100px;
+  left: -10rem;
+  top: 20px;
+  top: 2rem;
+}
+
+.fig--2:before {
+  background-image: url(/assets/img/infographic/arrow-2.png);
+  width: 940px;
+  height: 340px;
+  right: -60px;
+  right: -6rem;
+  top: 15px;
+  top: 1.5rem;
+}
+
+.pre-animate #envelopes .envelope {
+  opacity: 0;
+}
+
+.animate #envelopes .envelope {
+  opacity: 1;
+  transition: opacity .1s ease;
+}
+
+.animate #envelopes .envelope--1 {
+  transition-delay: .3s;
+}
+
+.animate #envelopes .envelope--5 {
+  transition-delay: .6s;
+}
+
+.animate #envelopes .envelope--2 {
+  transition-delay: .9s;
+}
+
+.animate #envelopes .envelope--4 {
+  transition-delay: .12s;
+}
+
+.fig--3 {
+  margin-top: 190px;
+  margin-top: 19rem!important;
+}
+
+.fig--3>p {
+  margin-bottom: 1.4em;
+}
+
+.fig--3 .fig__val {
+  width: 140px;
+  width: 14rem;
+  float: left;
+}
+
+.fig--3 .fig__small {
+  width: calc(100% - 14rem);
+  float: left;
+}
+
+.fig--3:before {
+  background-image: url(/assets/img/infographic/arrow-3.png);
+  width: 355px;
+  height: 400px;
+  right: -60px;
+  right: -6rem;
+  top: 5px;
+  top: .5rem;
+}
+
+.fig--3 .col--content p {
+  max-width: 300px;
+  max-width: 30rem;
+}
+
+.fig--4 .col {
+  display: inline;
+  float: left;
+  width: 48.21429%;
+  margin: 1.4em .89286% 0;
+}
+
+.fig--4 .fig__small {
+  max-width: 170px;
+  max-width: 17rem;
+}
+
+.fig--4:before {
+  background-image: url(/assets/img/infographic/arrow-4.png);
+  width: 280px;
+  height: 340px;
+  left: -100px;
+  left: -10rem;
+  top: 15px;
+  top: 1.5rem;
+}
+
+.fig--5 {
+  max-width: 68%;
+  margin-left: auto;
+  margin-top: 120px;
+  margin-top: 12rem!important;
+}
+
+.fig--5 .fig__item {
+  display: table;
+}
+
+.fig--5 .fig__item>div {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px;
+  padding: 1rem;
+}
+
+.fig--5 .fig__item .fig__val {
+  padding-top: 0;
+}
+
+.fig--5:before {
+  background-image: url(/assets/img/infographic/arrow-5.png);
+  width: 930px;
+  height: 500px;
+  right: -60px;
+  right: -6rem;
+  top: 15px;
+  top: 1.5rem;
+}
+
+.fig--6 {
+  margin-top: 210px;
+  margin-top: 21rem!important;
+}
+
+.fig--6:before {
+  background-image: url(/assets/img/infographic/arrow-6.png);
+  width: 830px;
+  height: 360px;
+  right: 0;
+  top: 0;
+}
+
+.fig--7 {
+  margin-top: 180px;
+  margin-top: 18rem!important;
+}
+
+.fig--7 .col--graphic {
+  width: 25%;
+  float: left;
+}
+
+.fig--7 .col--content {
+  width: 70%;
+  float: right;
+}
+
+.fig--7 .fig__val {
+  font-size: 100px;
+  font-size: 10rem;
+}
+
+.fig+.fig {
+  margin-top: 140px;
+  margin-top: 14rem;
+}
+
+.fig h2 {
+  font-size: 40px;
+  font-size: 4rem;
 }
 
 .fig--1 .col--content,

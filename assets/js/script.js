@@ -2,11 +2,11 @@ $(function(){
 	var html = $('html');
 
 	var toggleClass = function(el, className) {
-	    if(el.hasClass(className + '--open')) {
-	      el.removeClass(className + '--open');
-	    } else {
-	      el.addClass(className + '--open');
-	    }
+		if(el.hasClass(className + '--open')) {
+		  el.removeClass(className + '--open');
+		} else {
+		  el.addClass(className + '--open');
+		}
 	}
 
 	$('[data-toggle]').on( "click", function() {
@@ -16,13 +16,13 @@ $(function(){
 
 	//scroll to
 	$('a[href^="#"]').on('click', function(event) {
-	    var target = $( $(this).attr('href') );
-	    if( target.length ) {
-	        event.preventDefault();
-	        $('html, body').animate({
-	            scrollTop: target.offset().top
-	        }, 800);
-	    }
+		var target = $( $(this).attr('href') );
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 800);
+		}
 	});
 
 	//toggle search
@@ -46,7 +46,7 @@ $(function(){
 
 	//svg fallback
 	if(!Modernizr.svg) {
-	    $('img[src*="svg"]').attr('src', function() {
+		$('img[src*="svg"]').attr('src', function() {
 			var fallbackSrv = $(this).attr('data-fallback-src')
 			$(this).attr("src", fallbackSrv);
 		});
@@ -87,10 +87,10 @@ $(function(){
 					return function (event) {
 						$this = $(this);
 						if (true === $this.parsley().isValid()) {
-						    $this.addClass('input--valid');
+							$this.addClass('input--valid');
 							$this.removeClass('input--invalid');
 						} else {
-						    $this.addClass('input--invalid');
+							$this.addClass('input--invalid');
 							$this.removeClass('input--valid');
 						}
 						validateFront();
@@ -111,36 +111,36 @@ $(function(){
 
 // Helper: animate helper
 	function animateEl(el, animation) {
-	    el.bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-	    	var $this = $( this );
-	        if (isInView) {
-	            if (visiblePartY == 'top') {
+		el.bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+			var $this = $( this );
+			if (isInView) {
+				if (visiblePartY == 'top') {
 	
-	            } else if (visiblePartX == 'bottom') {
+				} else if (visiblePartX == 'bottom') {
 	
-	            } else {
-	            	$this.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+				} else {
+					$this.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 						$(this).removeClass('pre-animate');
 					});
-	                $this.addClass(animation);
-	            }
-	        }
-	    });
+					$this.addClass(animation);
+				}
+			}
+		});
 	};
 
 	//Animations
 	if (Modernizr.mq('only screen and (min-width: 37.5em)')) {
 
-	    $('.qualities__item').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-	        if (isInView) {
-	            if(visiblePartY != 'top' && visiblePartX != 'bottom') {
-	            	$( this ).addClass('animated fadeInUp');
-	            }
-	        } 
-	    });
+		$('.qualities__item').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+			if (isInView) {
+				if(visiblePartY != 'top' && visiblePartX != 'bottom') {
+					$( this ).addClass('animated fadeInUp');
+				}
+			} 
+		});
 
 
-	    animateEl( $('.qualities__item'), 'animated fadeInUp');
+		animateEl( $('.qualities__item'), 'animated fadeInUp');
 		animateEl( $('.work__img'), 'animated fadeInUp');
 
 		animateEl( $('.leaflet-fold'), 'animated zoomIn');
@@ -151,15 +151,15 @@ $(function(){
 
 
 		$('.cover__copy').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
-	    	var $this = $( this );
-	    	var animation = 'animated fadeInLeft';
-	        if (isInView) {
+			var $this = $( this );
+			var animation = 'animated fadeInLeft';
+			if (isInView) {
 				$this.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 					$(this).removeClass('pre-animate');
 				});
-                $this.addClass(animation);
-            }
-	    });
+				$this.addClass(animation);
+			}
+		});
 
 	}
 
@@ -174,19 +174,19 @@ $(function(){
 			loop: false,
 			margin: 20,
 			responsive:{
-		        0:{
-		            items:1,
-		            stagePadding: 60
-		        },
-		        600:{
-		           items: 2,
-		           stagePadding: 80
-		        },
-		        1000:{
-		            items: 3,
-		            stagePadding: 80
-		        }
-		    }
+				0:{
+					items:1,
+					stagePadding: 60
+				},
+				600:{
+				   items: 2,
+				   stagePadding: 80
+				},
+				1000:{
+					items: 3,
+					stagePadding: 80
+				}
+			}
 		});
 
 	}
@@ -203,17 +203,17 @@ $(function(){
 				closeBtnInside: false,
 				mainClass: 'mfp-no-margins mfp-with-fade', // class to remove default margin from left and right side
 				callbacks: {
-				    open: function() {
-						    var self = this;
-						    self.wrap.on('click.pinhandler', 'img', function() {
-						  	  self.wrap.toggleClass('mfp-force-scrollbars');
-						    });
-					    },
-					    beforeClose: function() {
-						    this.wrap.off('click.pinhandler');
-						    this.wrap.removeClass('mfp-force-scrollbars');
-					    }
-			    },
+					open: function() {
+							var self = this;
+							self.wrap.on('click.pinhandler', 'img', function() {
+							  self.wrap.toggleClass('mfp-force-scrollbars');
+							});
+						},
+						beforeClose: function() {
+							this.wrap.off('click.pinhandler');
+							this.wrap.removeClass('mfp-force-scrollbars');
+						}
+				},
 				image: {
 					verticalFit: true
 				}
@@ -234,6 +234,84 @@ $(function(){
 
 	}
 
+
+	var infographic = function() {
+
+		/* count to plugin */
+		$.fn.countTo = function(options) {
+			// merge the default plugin settings with the custom options
+			options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(options.speed / options.refreshInterval),
+				increment = (options.to - options.from) / loops;
+
+			return $(this).each(function() {
+				var _this = this,
+					loopCount = 0,
+					value = options.from,
+					interval = setInterval(updateTimer, options.refreshInterval);
+
+				function updateTimer() {
+					value += increment;
+					loopCount++;
+					$(_this).html(value.toFixed(options.decimals));
+
+					if (typeof(options.onUpdate) == 'function') {
+						options.onUpdate.call(_this, value);
+					}
+
+					if (loopCount >= loops) {
+						clearInterval(interval);
+						value = options.to;
+
+						if (typeof(options.onComplete) == 'function') {
+							options.onComplete.call(_this, value);
+						}
+					}
+				}
+			});
+		};
+
+		$.fn.countTo.defaults = {
+			from: 0,  // the number the element should start at
+			to: 100,  // the number the element should end at
+			speed: 1000,  // how long it should take to count between the target numbers
+			refreshInterval: 100,  // how often the element should be updated
+			decimals: 0,  // the number of decimal places to show
+			onUpdate: null,  // callback method for every time the element is updated,
+			onComplete: null,  // callback method for when the element finishes updating
+		};
+
+		if( html.hasClass('Infographic') ) {
+
+			$('.js-fig__val').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+				if (isInView) {
+					if(visiblePartY != 'top' && visiblePartX != 'bottom') {
+						
+						var this = $(this),
+							targetNum = $(this).data('to');
+
+						$(this).countTo({
+							from: 0,
+							to: targetNum,
+							speed: 500,
+							refreshInterval: 50,
+							onComplete: function(value) {
+			//						console.debug(this);
+							}
+						});
+
+					}
+				} 
+
+				animateEl( $('.graphic--envelopes'), 'animate');
+			});
+
+		}
+
+	}
+
 // ===========================================================
 //
 //	$INIT
@@ -248,9 +326,11 @@ $(function(){
 	$(document).ready(function() {
 
 		fullViewModal();
+		infographic();
 
 	});
 	
+
 
 
 // ===========================================================
