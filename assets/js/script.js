@@ -295,7 +295,7 @@ $(function(){
 						$(this).countTo({
 							from: 0,
 							to: targetNum,
-							speed: 500,
+							speed: 1000,
 							refreshInterval: 50,
 							onComplete: function(value) {
 			//						console.debug(this);
@@ -309,6 +309,43 @@ $(function(){
 			});
 
 		}
+
+	}
+
+	// specialist finishes carousel
+	var specCover = function() {
+		var carousel = $('.js-fixed-cover');
+
+		carousel.owlCarousel({
+			nav : true,
+			items: 1,
+			center: true,
+			dots:false,
+			loop: true,
+			nav: false,
+			autoplay: true,
+			smartSpeed: 800,
+			responsive : {
+			    0 : {
+			        stagePadding: 60
+			    },
+			    600 : {
+			    	stagePadding: 120
+			    },
+			    1200 : {
+			    	stagePadding: 200
+			    },
+			    1400 : {
+			    	stagePadding: 300
+			    },
+			    1600 : {
+			    	stagePadding: 400
+			    },
+			    1900 : {
+			    	stagePadding: 450
+			    }
+			}
+		});
 
 	}
 
@@ -327,6 +364,7 @@ $(function(){
 
 		fullViewModal();
 		infographic();
+		specCover();
 
 	});
 	

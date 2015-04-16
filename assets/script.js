@@ -66,7 +66,22 @@ $(function(){
 
 
 
+	// specialist finishes carousel
+	var specCover = function() {
+		var carousel = $('.js-fixed-cover');
 
+		carousel.owlCarousel({
+			nav : true,
+			items: 1,
+			center: true,
+			stagePadding: 100,
+			dots:false,
+			loop: true
+		});
+
+	}
+
+	specCover();
 
 
 // ===========================================================

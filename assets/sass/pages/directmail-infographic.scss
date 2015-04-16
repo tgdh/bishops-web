@@ -14,6 +14,40 @@
 	margin: auto;
 }
 
+.Infographic {
+
+	.infographic-caption {
+		text-align: center;
+		margin-top: $line-height * 2;
+		font-size: 0.9em;
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.infographic__content {
+		position: relative;
+		margin-bottom: 8rem;
+		margin-top: $line-height / 2;
+		font-size: 130%;
+	}
+
+	.infographic__content:before {
+		content: "";
+		display: block;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url(/assets/img/infographic/arrow.png);
+		width: 68px;
+		height: 130px;
+		right: 0;
+		bottom: -12rem;
+	}
+
+}
+
 @include respond-max( $mq-medium ) {
 
 	.fig--1,
@@ -540,6 +574,57 @@
 			font-size: 10rem;
 		}
 
+		&:before {
+			background-image: url(/assets/img/infographic/arrow-7.png);
+			width: 930px;
+			height: 360px;
+			right: -6rem;
+			top: 2rem;
+		}
+
+
+	}
+
+}
+
+.fig--8 {
+
+	.fig__content {
+		max-width: 70rem;
+	}
+
+	p {
+		font-size: 130%;
+		line-height: 1.4;
+	}
+
+
+}
+
+@include respond-max( $mq-medium ) {
+
+	.fig--8 {
+
+		.graphic--mailman {
+			display: block;
+			margin: 1.4em auto;
+		}
+
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.fig--8 {
+
+		.graphic--mailman {
+			float: right;
+		}
+
+		.graphic--mailman--link + p {
+			margin-top: 1.4em;
+		}
 
 	}
 
