@@ -333,16 +333,28 @@ $(function(){
 			    	stagePadding: 120
 			    },
 			    1200 : {
-			    	stagePadding: 200
+			    	stagePadding: 250
 			    },
-			    1400 : {
+			    1300 : {
 			    	stagePadding: 300
 			    },
-			    1600 : {
+			    1400 : {
+			    	stagePadding: 340
+			    },
+			    1500 : {
+			    	stagePadding: 360
+			    },
+			    1620 : {
 			    	stagePadding: 400
 			    },
-			    1900 : {
+			    1700 : {
+			    	stagePadding: 420
+			    },
+			    1800 : {
 			    	stagePadding: 450
+			    },
+			    1900 : {
+			    	stagePadding: 470
 			    }
 			}
 		});
