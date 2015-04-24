@@ -456,6 +456,22 @@ li:last-child {
   left: -2rem;
 }
 
+.main-content .list--grid li {
+  display: inline-block;
+  float: left;
+  margin: 5px 0;
+  margin: .5rem 0;
+}
+
+.main-content .list--grid li>a {
+  color: inherit;
+  display: block;
+}
+
+.main-content .list--grid li>a:hover {
+  color: #da2028;
+}
+
 code {
   font-family: monospace;
   line-height: 1.4em;
@@ -2321,7 +2337,7 @@ p+.resource {
   min-height: 4rem;
 }
 
-.page--work body {
+.WorkFolder body {
   background-image: none;
 }
 
@@ -3292,10 +3308,6 @@ p+.resource {
   line-height: 1.4;
 }
 
-.no-rgba.SpecialistFinishResource .cover__text {
-  background: #464748;
-}
-
 .SpecialistFinishResource .owl-carousel .owl-stage-outer {
   clear: both;
 }
@@ -3308,18 +3320,16 @@ p+.resource {
   max-width: 620px;
   max-width: 62rem;
   float: right;
-  background-color: rgba(0,0,0,.75);
+  background-color: #06171c;
 }
 
 .SpecialistFinishResource .cover__text {
-  font-size: 42px;
-  font-size: 4.2rem;
-  font-style: italic;
-  font-family: chaparral-pro;
+  font-size: 38px;
+  font-size: 3.8rem;
   position: absolute;
   bottom: 10%;
   right: 0;
-  background-color: rgba(0,0,0,.75);
+  background-color: #06171c;
   opacity: 0;
   -webkit-transform: translateY(1rem);
   -ms-transform: translateY(1rem);
@@ -3468,6 +3478,10 @@ h5 {
 .intro {
   font-size: 18.7px;
   font-size: 1.8662rem;
+}
+
+.main-content .list--grid li {
+  width: 25%;
 }
 
 .Faqs .main-content,
@@ -4088,6 +4102,11 @@ p+.wrap--leaflet-fold {
   padding-top: 6rem;
   padding-bottom: 60px;
   padding-bottom: 6rem;
+}
+
+.SpecialistFinishResource .list--grid {
+  margin-top: 60px;
+  margin-top: 6rem;
 }
 
 .wrap--section {

@@ -416,6 +416,19 @@ li:last-child {
   left: -2rem;
 }
 
+.main-content .list--grid li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin: .5rem 0;
+}
+.main-content .list--grid li > a {
+  color: inherit;
+  display: block;
+}
+.main-content .list--grid li > a:hover {
+  color: #da2028;
+}
 code {
   font-family: monospace;
   line-height: 1.4em;
@@ -2222,7 +2235,7 @@ p + .resource {
 .leaflet-fold__title {
   min-height: 4rem;
 }
-.page--work body {
+.WorkFolder body {
   background-image: none;
 }
 
@@ -3275,10 +3288,9 @@ p + .resource {
 //	$SPECIALIST FINISHES RESOURCE
 //
 // ======================================================== */
-.no-rgba.SpecialistFinishResource .cover__text {
-  background: #464748;
+.SpecialistFinishResource .list--grid {
+  margin-top: 2rem;
 }
-
 .SpecialistFinishResource .owl-carousel .owl-stage-outer {
   clear: both;
 }
@@ -3288,16 +3300,14 @@ p + .resource {
 .SpecialistFinishResource .cover__copy {
   max-width: 62rem;
   float: right;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #06171c;
 }
 .SpecialistFinishResource .cover__text {
-  font-size: 4.2rem;
-  font-style: italic;
-  font-family: "chaparral-pro";
+  font-size: 3.8rem;
   position: absolute;
   bottom: 10%;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #06171c;
   opacity: 0;
   -webkit-transform: translateY(1rem);
   -ms-transform: translateY(1rem);
@@ -3419,6 +3429,9 @@ p + .resource {
 
   .intro {
     font-size: 1.8662rem;
+  }
+  .main-content .list--grid li {
+    width: 25%;
   }
   .TextPage .main-content,
   .ResourceFolder .main-content,
@@ -3947,6 +3960,9 @@ p + .resource {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+  .SpecialistFinishResource .list--grid {
+    margin-top: 6rem;
+  }
   .foo {
     color: #f00;
   }
@@ -4028,25 +4044,6 @@ p + .resource {
   }
   .JanPromo .cover__img {
     border-bottom: 2px solid #06171c;
-  }
-  .foo {
-    color: #f00;
-  }
-}
-@media only screen and (min-width: 80em) {
-  .wrap--section {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
-  .wrap--header {
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-  }
-  .leaflet-fold {
-    display: inline;
-    float: left;
-    width: 14.64286%;
-    margin: 0 0.89286%;
   }
   .foo {
     color: #f00;
@@ -4137,6 +4134,21 @@ p + .resource {
 
   .search-form input {
     margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 80em) {
+  .wrap--header {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+  }
+  .leaflet-fold {
+    display: inline;
+    float: left;
+    width: 14.64286%;
+    margin: 0 0.89286%;
+  }
+  .foo {
+    color: #f00;
   }
 }
 
@@ -4393,6 +4405,16 @@ p + .resource {
     float: left;
     width: 48.21429%;
     margin: 0 0.89286%;
+  }
+  .WorkFolder .work__img {
+    max-width: 32rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work__img-wrap + .work__content {
+    margin-top: 1.4em;
   }
   .case-study--slider .case-study__viewport {
     clear: both;

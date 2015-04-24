@@ -378,6 +378,10 @@ $(function(){
 		infographic();
 		specCover();
 
+		if (Modernizr.mq('only screen and (min-width: 37.5em)')) {
+			$('#header').scrollToFixed();
+		}
+
 	});
 	
 

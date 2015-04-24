@@ -4,16 +4,12 @@
 //
 // ======================================================== */
 
-.no-rgba.SpecialistFinishResource {
-
-	.cover__text {
-		background: $dark-1;
-	}
-
-}
-
 .SpecialistFinishResource {
 	
+	.list--grid {
+		margin-top: 2rem;
+	}
+
 	.owl-carousel .owl-stage-outer {
 		clear: both;
 	}
@@ -25,19 +21,18 @@
 	.cover__copy {
 		max-width: 62rem;
 		float: right;
-//		background-color: rgba(0,73,112,.75);
-		background-color: rgba(0,0,0,.75);
+		background-color: $dark-0;
 	}
 
 	.cover__text {
-		font-size: 4.2rem;
-		font-style: italic;
-		font-family: "chaparral-pro";
+		font-size: 3.8rem;
+//		font-style: italic;
+//		font-family: "chaparral-pro";
 
 		position: absolute;
 		bottom: 10%;
 		right: 0;
-		background-color: rgba(0,0,0,.75);
+		background-color: $dark-0;
 		opacity: 0;
 		transform: translateY(1rem);
 		transition: opacity $speed ease-out, transform $speed ease-out;
@@ -124,6 +119,10 @@
 		.intro--copy {
 			padding-top: 6rem;
 			padding-bottom: 6rem;
+		}
+			
+		.list--grid {
+			margin-top: 6rem;
 		}
 
 	}
