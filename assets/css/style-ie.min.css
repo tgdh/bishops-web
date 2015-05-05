@@ -2008,6 +2008,10 @@ html {
   text-transform: uppercase;
 }
 
+.placeholdersjs {
+  color: #464748;
+}
+
 .contourMessageOnSubmit {
   position: fixed;
   top: 0;

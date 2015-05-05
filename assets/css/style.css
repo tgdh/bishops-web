@@ -1924,6 +1924,10 @@ body,
 .footer__content h4 {
   text-transform: uppercase;
 }
+.placeholdersjs {
+  color: #464748;
+}
+
 .contourMessageOnSubmit {
   position: fixed;
   top: 0rem;
