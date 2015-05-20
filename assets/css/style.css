@@ -1934,7 +1934,7 @@ body,
   left: 0;
   width: 100%;
   background-color: #53a93f;
-  z-index: 100;
+  z-index: 1002;
   padding: 2rem;
   text-align: center;
 }
