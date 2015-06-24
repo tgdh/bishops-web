@@ -4,6 +4,15 @@
 //
 // ===========================================================
 
+.gallery--space-around {
+	display: flex;
+	justify-content: space-around;
+
+	.gallery__img-link {
+		display: inline-block;
+		margin: 0 1rem;
+	}
+}
 
 @include respond-max( $mq-medium ) {
 

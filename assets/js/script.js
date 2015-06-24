@@ -394,34 +394,39 @@ $(function(){
 // ===========================================================
 	$('.floatlabel').jvFloat();
 
+	$( window ).load(function() {
+		
+		$('.js-case-study').owlCarousel({
+			nav : true,
+			navText : ['<i class="ico-arrow-left"></i>', '<i class="ico-arrow-right"></i>'],
+			items: 1,
+			autoplay: false,
+			autoHeight: false,
+			dots:true,
+			loop: true,
+			animateOut: 'fadeOut'
+		});
 
-	$('.owl-carousel.case-study').owlCarousel({
-		nav : true,
-		navText : ['<i class="ico-arrow-left"></i>', '<i class="ico-arrow-right"></i>'],
-		items: 1,
-		autoplay: false,
-		dots:true,
-		loop: true,
-		animateOut: 'fadeOut'
 	});
 
-
-	$('.gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title');
+	$('.gallery, .js-gallery').each(function() {
+		$(this).magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				titleSrc: function(item) {
+					return item.el.attr('title');
+				}
 			}
-		}
+		});
 	});
 
 });
