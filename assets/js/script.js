@@ -361,6 +361,23 @@ $(function(){
 
 	}
 
+	// 
+	var caseStudyScripts = function() {
+		var carousel = $('.js-case-study');
+
+		carousel.owlCarousel({
+			nav : true,
+			navText : ['<i class="ico-arrow-left"></i>', '<i class="ico-arrow-right"></i>'],
+			items: 1,
+			autoplay: false,
+			autoHeight: true,
+			dots:true,
+			loop: true,
+			animateOut: 'fadeOut'
+		});
+
+	}
+
 // ===========================================================
 //
 //	$INIT
@@ -377,13 +394,19 @@ $(function(){
 		fullViewModal();
 		infographic();
 		specCover();
+		
 
 		if (Modernizr.mq('only screen and (min-width: 37.5em)')) {
 			$('#header').scrollToFixed();
 		}
 
 	});
-	
+
+	$( window ).load(function() {
+
+		caseStudyScripts();
+		
+	});
 
 
 
@@ -393,21 +416,6 @@ $(function(){
 //
 // ===========================================================
 	$('.floatlabel').jvFloat();
-
-	$( window ).load(function() {
-		
-		$('.js-case-study').owlCarousel({
-			nav : true,
-			navText : ['<i class="ico-arrow-left"></i>', '<i class="ico-arrow-right"></i>'],
-			items: 1,
-			autoplay: false,
-			autoHeight: false,
-			dots:true,
-			loop: true,
-			animateOut: 'fadeOut'
-		});
-
-	});
 
 	$('.gallery, .js-gallery').each(function() {
 		$(this).magnificPopup({
