@@ -274,6 +274,10 @@ h2,
   text-transform: uppercase;
 }
 
+p + .button {
+  margin-top: 1.4em;
+}
+
 ::-moz-selection,
 ::-moz-selection {
   color: #fff;
@@ -2326,6 +2330,9 @@ p + .resource {
 .case-study--macro .case-study__content {
   padding: 2rem;
 }
+.case-study--macro .case-study__img {
+  width: 100%;
+}
 
 .ie .owl-stage-outer {
   width: 100%;
@@ -2430,7 +2437,7 @@ p + .resource {
   padding: 0 2rem 2rem;
 }
 .case-study .owl-controls .owl-dots {
-  margin-top: -8rem;
+  margin-top: -4rem;
 }
 .cover {
   position: relative;
@@ -3644,22 +3651,6 @@ p + .resource {
     padding: 0 6rem 8rem;
   }
 
-  .no-rgba .case-study--macro .case-study__content {
-    background: url(../img/FFFFFF-0.95.png) repeat;
-  }
-
-  .case-study--macro .case-study__img {
-    width: 100%;
-    display: block;
-  }
-  .case-study--macro .case-study__content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 5%;
-  }
-
   /* ==== CASE STUDY SLIDER ==== */
   .case-study--slider {
     height: 64rem;
@@ -4074,6 +4065,10 @@ p + .resource {
   .wrap--block.wrap--first {
     margin-right: 4%;
   }
+  .no-rgba .case-study--macro .case-study__content {
+    background: url(../img/FFFFFF-0.95.png) repeat;
+  }
+
   .case-study--macro .case-study__wrap {
     position: absolute;
     top: 0;
@@ -4241,6 +4236,9 @@ p + .resource {
     float: left;
     width: 14.64286%;
     margin: 0 0.89286%;
+  }
+  .case-study--macro p + .button {
+    margin-top: 4.2em;
   }
   .case-study--macro .case-study__content {
     padding: 8rem 6rem;
@@ -4718,11 +4716,19 @@ p + .resource {
   .case-study--macro .case-study__section--second .case-study__content {
     padding: 12rem 20%;
   }
+  .case-study .owl-controls .owl-dots {
+    margin-top: -8rem;
+  }
   .cover__copy {
     margin-top: 7.5%;
   }
   .foo {
     color: #f00;
+  }
+}
+@media only screen and (min-width: 50em) and (max-width: 79.99em) {
+  .case-study__title--wrap h2 {
+    font-size: 2.2rem;
   }
 }
 @media only screen and (min-width: 50em) and (max-width: 62.49em) {

@@ -85,6 +85,10 @@
 		padding: 2rem;
 	}
 
+	.case-study__img {
+		width: 100%;
+	}
+
 }
 
 .ie {
@@ -96,6 +100,14 @@
 }
 
 @include respond-min( $mq-large ) {
+
+	.no-rgba .case-study--macro {
+
+		.case-study__content {
+			background: url(../img/FFFFFF-0.95.png) repeat;
+		}
+
+	}
 
 	.case-study--macro {
 
@@ -152,6 +164,10 @@
 @include respond-min( $mq-x-large ) {
 
 	.case-study--macro {
+
+		p + .button {
+			margin-top: $line-height * 3;
+		}
 
 		.case-study__content {
 			padding: 8rem 6rem;
@@ -406,30 +422,6 @@
 			padding: 0 6rem 8rem;
 		}
 	}
-
-	.no-rgba .case-study--macro {
-
-		.case-study__content {
-			background: url(../img/FFFFFF-0.95.png) repeat;
-		}
-
-	}
-
-	.case-study--macro {
-
-		.case-study__img {
-			width: 100%;
-			display: block;
-		}
-
-		.case-study__content {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			background-color: rgba(255,255,255,.95);
-			padding: 5%;
-		}
-	}
 	
 /* ==== CASE STUDY SLIDER ==== */
 	.case-study--slider	{
@@ -472,7 +464,15 @@
 }
 
 .case-study .owl-controls .owl-dots {
-	margin-top: -8rem;
+	margin-top: -4rem;
+}
+
+@include respond-min( $mq-xx-large ) {
+
+	.case-study .owl-controls .owl-dots {
+		margin-top: -8rem;
+	}
+
 }
 
 @include respond-min( $mq-large ) {
@@ -494,6 +494,14 @@
 
 }
 
+@include respond-min-max( $mq-medium, $mq-x-large ) {
+
+	.case-study__title--wrap h2 {
+		font-size: 2.2rem;
+	}
+
+}
+
 
 @include respond-min-max( $mq-medium, $mq-large ) {
 
@@ -502,6 +510,7 @@
 		.case-study__content {
 			padding:6rem;
 		}
+
 	}
 
 }

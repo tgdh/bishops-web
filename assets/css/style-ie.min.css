@@ -351,6 +351,10 @@ h2 {
   text-transform: uppercase;
 }
 
+p+.button {
+  margin-top: 1.4em;
+}
+
 ::-moz-selection {
   color: #fff;
   background: #da2028;
@@ -2434,6 +2438,7 @@ p+.resource {
   z-index: 1;
 }
 
+.case-study--macro .case-study__img,
 .ie .owl-stage-outer {
   width: 100%;
 }
@@ -2538,8 +2543,8 @@ p+.resource {
 }
 
 .case-study .owl-controls .owl-dots {
-  margin-top: -80px;
-  margin-top: -8rem;
+  margin-top: -40px;
+  margin-top: -4rem;
 }
 
 .cover {
@@ -3727,21 +3732,6 @@ p+.wrap--leaflet-fold {
   padding: 0 6rem 8rem;
 }
 
-.no-rgba .case-study--macro .case-study__content {
-  background: url(../img/FFFFFF-0.95.png);
-}
-
-.case-study--macro .case-study__img {
-  width: 100%;
-  display: block;
-}
-
-.case-study--macro .case-study__content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
 .case-study--slider {
   height: 640px;
   height: 64rem;
@@ -4236,6 +4226,10 @@ p+.wrap--leaflet-fold {
   margin-right: 4%;
 }
 
+.no-rgba .case-study--macro .case-study__content {
+  background: url(../img/FFFFFF-0.95.png);
+}
+
 .case-study--macro .case-study__wrap {
   position: absolute;
   top: 0;
@@ -4501,6 +4495,11 @@ p+.wrap--leaflet-fold {
 
 .foo {
   color: red;
+}
+
+.case-study__title--wrap h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .cover__copy {

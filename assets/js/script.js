@@ -377,6 +377,15 @@ $(function(){
 
 	}
 
+	var positionPage = function() {
+		var target = $( window.location.hash );
+
+		if( target.length > 0 ) {
+			$('html, body').scrollTop( target.offset().top - $('#header').height() );
+		}
+
+	}
+
 // ===========================================================
 //
 //	$INIT
@@ -399,12 +408,15 @@ $(function(){
 			$('#header').scrollToFixed();
 		}
 
+		positionPage();
+
 	});
 
 	$( window ).load(function() {
 
 		caseStudyScripts();
-		
+		positionPage();
+
 	});
 
 
