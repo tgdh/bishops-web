@@ -372,8 +372,7 @@ $(function(){
 			autoplay: false,
 			autoHeight: true,
 			dots:true,
-			loop: true,
-			animateOut: 'fadeOut'
+			loop: true
 		});
 
 	}

@@ -2140,6 +2140,11 @@ p + .resource {
   display: inline-block;
   margin: 0 1rem;
 }
+
+.gallery {
+  position: relative;
+  z-index: 1;
+}
 .nav--main .ezsearch-no-results {
   display: none;
 }
@@ -3580,7 +3585,7 @@ p + .resource {
 
   .gallery__img-thumb {
     display: block;
-    margin-bottom: 1.4em;
+    margin-bottom: 1.4rem;
   }
   p + .wrap--leaflet-fold,
   .wrap--leaflet-fold + p {
