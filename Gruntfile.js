@@ -13,7 +13,7 @@ module.exports = function (grunt) {
                 }
             },
             scripts: {
-                files: ['assets/js/*.js'],
+                files: ['assets/js/**/*.js'],
                 tasks: ['concat', 'uglify','ftpush'],
                 options: {
                     spawn: false,
@@ -96,7 +96,12 @@ module.exports = function (grunt) {
         //COMBINE JS & MINIFY
         concat: {
             dist: {
-                src: ['assets/js/plugin/*.js','assets/js/module/*.js','assets/js/*.js'],
+                src: [
+                    'assets/js/plugin/*.js',
+                    'assets/js/module/*.js',
+                    'assets/js/component/*.js',
+                    'assets/js/*.js'
+                ],
                 dest: 'assets/build/js/script.min.js'
             }
         },

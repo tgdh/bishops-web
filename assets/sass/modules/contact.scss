@@ -9,6 +9,13 @@
 }
 
 .contourMessageOnSubmit {
+	display: none;
+}
+
+/*
+	// contact message submit alert
+
+.contourMessageOnSubmit {
 	position: fixed;
 	top: 0rem;
 	left: 0;
@@ -18,6 +25,7 @@
 	padding: 2rem;
 	text-align: center;
 }
+*/
 
 .contourFieldSet legend {
 	display: none;
@@ -44,6 +52,9 @@
 	border-left-color: $pri !important;
 }
 
+/*
+	// contact message submit alert
+
 @include respond-min( $mq-medium ) {
 
 	.csstransforms {
@@ -58,6 +69,7 @@
 	}
 
 }
+*/
 
 .js {
 

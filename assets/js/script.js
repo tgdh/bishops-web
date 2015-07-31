@@ -386,6 +386,33 @@ $(function(){
 
 	}
 
+
+	var simpleForm = function() {
+
+		var $stepsForm = document.querySelector('.js-simple-form');
+
+		new stepsForm( $stepsForm, {
+			onSubmit : function( form ) {
+				// hide form
+				classie.addClass( $stepsForm.querySelector( '.contourPage' ), 'hide' );
+
+				/*
+				form.submit()
+				or
+				AJAX request (maybe show loading indicator while we don't have an answer..)
+				*/
+
+				// let's just simulate something...
+				var messageEl = $stepsForm.querySelector( '.s-simple-form__final-message' );
+				messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+				classie.addClass( messageEl, 'show' );
+			}
+		});
+
+	};
+
+	simpleForm();
+
 // ===========================================================
 //
 //	$INIT

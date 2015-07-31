@@ -1,0 +1,372 @@
+/* ===========================================================
+//
+//	SIMPLE FORM
+//
+// ======================================================== */
+
+.section--highlight {
+	background-color: $grey-2 !important;
+	padding: 4rem 2rem;
+
+	input[type="text"] {
+		background-color: #fff;
+	}
+}
+
+@include respond-min( $mq-medium ) {
+
+	.section--highlight {
+		padding: 6rem 4rem;
+		margin-top: 8rem;
+		margin-bottom: 8rem;
+	}
+
+}
+
+/**/
+
+.s-simple-form--review {
+	animation: animateIn 0.4s both;
+}
+
+@-webkit-keyframes animateIn {
+	from { 
+		opacity: 0;
+		-webkit-transform: translateY(8rem); 
+	}
+	to { 
+		opacity: 1;
+		-webkit-transform: translateY(0); 
+	}
+}
+
+@keyframes animateIn {
+	from { 
+		opacity: 0;
+		-webkit-transform: translateY(8rem); 
+		transform: translateY(8rem); 
+	}
+	to { 
+		opacity: 1;
+		-webkit-transform: translateY(0); 
+		transform: translateY(0); 
+	}
+}
+
+.s-simple-form--review {
+
+
+	.contourField + .contourField {
+		margin-top: $line-height * 2;
+	}
+
+	input[type="text"] {
+		background-color: #fff !important;
+		margin-bottom: 0;
+	}
+
+	.s-simple-form__next,
+	.s-simple-form__numbers,
+	.s-simple-form__progress,
+	.s-simple-form__final-message {
+		display: none;
+	}
+
+	.field-validation-error {
+		overflow: hidden;
+		margin: .4em 0;
+		font-weight: 700;
+		font-family: "chaparral-pro";
+
+		position: absolute;
+		color: $red-1;
+	}
+
+}
+
+.s-simple-form {
+
+	.s-simple-form__numbers {
+		float: right;;
+		position: relative;
+	}
+
+}
+
+.s-simple-form {
+	position: relative;
+	margin: 0 auto;
+	padding: 2em 0;
+	max-width: 860px;
+	width: 100%;
+	text-align: left;
+
+
+	.contourNavigation {
+		display: none;
+	}
+
+
+	/* question list style */
+	.col-md-12 {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		transition: height 0.4s;
+	}
+
+	.contourField {
+		z-index: 100;
+		position: relative;
+		visibility: hidden;
+		height: 0;
+		margin: 0 !important;
+		transition: visibility 0s 0.4s, height 0s 0.4s;
+
+		/* Question list style */
+
+		&.current {
+			visibility: visible;
+			height: auto;
+			transition: none;
+		}
+
+	}
+
+	/* Labels */
+	.fieldLabel {
+		display: block;
+		overflow: hidden;
+		transition: transform 0.4s;
+		transform: translateY(-100%);
+		font-family: "chaparral-pro";
+		font-size: 1.8rem;
+	}
+
+	.current .fieldLabel {
+		transition: none;
+		transform: translateY(0);
+	}
+
+}
+
+.s-simple-form {
+
+	&.show-next .current .fieldLabel {
+		animation: fadeIn 0.4s both;
+		animation-delay: .1s;
+	}
+
+}
+
+@-webkit-keyframes moveUpFromDown {
+	from { -webkit-transform: translateY(100%); }
+	to { -webkit-transform: translateY(0); }
+}
+
+@keyframes moveUpFromDown {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+	to { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@-webkit-keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/* Input field */
+
+.s-simple-form {
+
+	.contourField input {
+		display: block;
+	    opacity: 0;
+	    background-color: #fff;
+	    transition: opacity 0.3s;
+
+	    &:focus {
+	    	border-color: transparent;
+	    }
+	}
+
+	.current input {
+		opacity: 1;
+	}
+
+	input {
+		margin-bottom: 0;
+	}
+
+}
+
+.s-simple-form {
+
+	/* Next question button */
+	.s-simple-form__next {
+		color: $pri;
+		position: absolute;
+		right: 0;
+		top: 6rem;
+		display: block;
+		padding: 1.8rem;
+		border: none;
+		background: none;
+		text-align: center;
+		opacity: 0;
+		z-index: 100;
+		cursor: pointer;
+		transition: transform $speed, opacity $speed, color $speed;
+		transform: translateX(-20%);
+		pointer-events: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	.s-simple-form__next:hover {
+		color: rgba(0,0,0,0.5);
+	}
+
+	.s-simple-form__next.show {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		pointer-events: auto;
+	}
+
+}
+
+.s-simple-form {
+
+	/* Progress bar */
+	.s-simple-form__progress {
+		width: 0%;
+		height: .2rem;
+		background-color: $blue-3;
+		transition: width 0.4s ease-in-out;
+	}
+
+	.s-simple-form__progress::before {
+		content: '';
+		position: absolute;
+		top: auto;
+		width: 100%;
+		height: inherit;
+		background: rgba(0,0,0,0.05);
+	}
+
+}
+
+.s-simple-form {
+
+	/* Number indicator */
+	.s-simple-form__numbers {
+		position: absolute;
+		right: 0;
+		overflow: hidden;
+		margin: 0.4em 0;
+		width: 3em;
+		font-weight: 700;
+		font-family: "chaparral-pro";
+	}
+
+	.s-simple-form__numbers:after {
+		position: absolute;
+		left: 50%;
+		content: '/';
+		opacity: 0.4;
+		transform: translateX(-50%);
+	}
+
+	.s-simple-form__numbers span {
+		float: right;
+		width: 40%;
+		text-align: center;
+	}
+
+	.s-simple-form__numbers .s-simple-form__numbers-current {
+		float: left;
+	}
+
+	.number-next {
+		position: absolute;
+		left: 0;
+	}
+
+	&.show-next .s-simple-form__numbers-current {
+		transition: transform 0.4s;
+		transform: translateY(-100%);
+	}
+
+	&.show-next .number-next {
+		animation: moveUpFromDown 0.4s both;
+	}
+
+}
+
+.s-simple-form {
+
+	/* Error and final message */
+	.s-simple-form__error-message,
+	.s-simple-form__final-message,
+	.field-validation-error,
+	.field-validation-valid {
+		overflow: hidden;
+		margin: .4em 0;
+		font-weight: 700;
+		font-family: "chaparral-pro";
+
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 0.4s;
+	}
+
+	.s-simple-form__error-message,
+	.field-validation-error,
+	.field-validation-valid {
+		color: $red-1;
+	}
+
+	.s-simple-form__final-message {
+		top: 50%;
+		left: 0;
+		padding: 0.5em;
+		width: 100%;
+		text-align: center;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.s-simple-form__error-message.show,
+	.field-validation-error.show,
+	.s-simple-form__final-message.show,
+	.field-validation-valid.show {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.s-simple-form__final-message.show {
+		-webkit-transition-delay: 0.5s;
+		transition-delay: 0.5s;
+	}
+
+	/* Final hiding of form / showing message */
+	.contourPage.hide {
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+		transition: opacity 0.3s, visibility 0s 0.3s;
+	}
+
+}
+
+
+/* Remove IE clear cross */
+input[type=text]::-ms-clear {
+    display: none;
+}
