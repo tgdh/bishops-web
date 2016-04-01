@@ -5,6 +5,15 @@
 // ======================================================== */
 
 .SpecialistFinishResource {
+
+	.intro-image {
+		width: 100%;
+		display: block;
+	}
+
+	.intro--copy {
+		padding-bottom: 0 !important;
+	}
 	
 	.list--grid {
 		margin-top: 2rem;
@@ -75,21 +84,47 @@
 	}
 
 	.intro--copy {
-		max-width: 108rem;
-		border-bottom: 1px solid #ccc;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
-		text-align: center;
-		font-family: "chaparral-pro";
-
-		p {
-			font-weight: 100;
-			line-height: 1.3;
-		}
+		line-height: 1.3;
 
 		p:last-of-type {
 			padding-bottom: 0;
 		}
+	}
+
+
+	.contourMessageOnSubmit {
+		position: fixed;
+		display: block;
+		top: 0rem;
+		left: 0;
+		width: 100%;
+		color: #fff;
+		background-color: $green-1;
+		z-index: 1002;
+		padding: 2rem;
+		font-weight: 700;
+		text-align: center;
+
+		animation-delay: 10s;
+		animation-duration: 1s;
+  		animation-fill-mode: both;
+  		animation-name: fadeOut;
+	}
+
+}
+
+@include respond-min( $mq-medium ) {
+
+	.csstransforms.SpecialistFinishResource {
+
+		.contourMessageOnSubmit {
+			top: 10rem;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
 	}
 
 }
@@ -101,10 +136,6 @@
 		.cover__text {
 			font-size: 2.2rem;
 			display: block !important;
-		}
-
-		.intro--copy p {
-			font-size: 2.4rem;
 		}
 
 	}

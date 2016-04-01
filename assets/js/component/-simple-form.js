@@ -35,7 +35,19 @@
 		this.el = el;
 		this.options = extend( {}, this.options );
 		extend( this.options, options );
-		this._init();
+
+		if( el != null ) {
+			this._init();
+		}
+/*
+		if( document.querySelector('.contourMessageOnSubmit') != null ) {
+
+			$('html, body').animate({
+				scrollTop: $('#sampleOrderForm').offset().top - 200
+			}, 00);
+
+		}
+*/		
 	}
 
 	// generates a unique id
@@ -285,7 +297,17 @@
 
 	// submits the form
 	stepsForm.prototype._submit = function() {
-		this.el.querySelector('input[type="submit"]').click();
+//		this.el.querySelector('input[type="submit"]').click();
+
+		classie.removeClass( this.el, 's-simple-form' );
+		classie.addClass( this.el, 's-simple-form--review' );
+
+		setTimeout(function(){
+			$('html, body').animate({
+				scrollTop: $('#sampleOrderForm').offset().top - 100
+			}, 300);
+		}, 300);
+		
 
 		this.options.onSubmit( this.el );
 	}

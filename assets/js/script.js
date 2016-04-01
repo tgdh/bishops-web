@@ -401,17 +401,16 @@ $(function(){
 				or
 				AJAX request (maybe show loading indicator while we don't have an answer..)
 				*/
-
+/*
 				// let's just simulate something...
 				var messageEl = $stepsForm.querySelector( '.s-simple-form__final-message' );
 				messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
 				classie.addClass( messageEl, 'show' );
+*/				
 			}
 		});
 
 	};
-
-	simpleForm();
 
 // ===========================================================
 //
@@ -437,6 +436,10 @@ $(function(){
 
 		positionPage();
 
+		if( html.hasClass('SpecialistFinishResource') ) {
+			simpleForm();
+		}
+
 	});
 
 	$( window ).load(function() {
@@ -445,7 +448,6 @@ $(function(){
 		positionPage();
 
 	});
-
 
 
 // ===========================================================

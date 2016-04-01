@@ -203,7 +203,7 @@ module.exports = function (grunt) {
         'ftpush': {
             build: {
                 auth: {
-                    host: '217.147.85.119',
+                    host: '176.74.18.115',
                     port: 21,
                     authKey: 'key1'
                 },
