@@ -1,0 +1,41 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+	<article class="wrap__medium wrap--section clearfix">
+		@CurrentPage.Content
+		<div class="clearfix">
+			<div class="col">
+				@CurrentPage.Intro
+			</div>
+			<div class="col col--image col--last">
+				@if(CurrentPage.HasValue("featureImage")) {
+					<img src="@Umbraco.Media(CurrentPage.featureImage).Url" >
+				}
+			</div>
+		</div>
+		<div class="row">
+			@CurrentPage.fullWidthContent
+		</div>
+		<div class="clearfix">
+			<div class="col">
+				@CurrentPage.leftContent
+			</div>
+			<div class="col col--last col--no-heading">
+				@CurrentPage.RightContent
+			</div>
+		</div>
+	@if( CurrentPage.Id == 1535 ) {
+		<hr>
+		<div class="row row--winners clearfix">
+			<div class="col col--winners">
+				<h3 class="alpha">Congratulations to our winners so far</h3>
+				@CurrentPage.previousWinners
+			</div>
+			<div class="col col--todays-winner col--last">
+				<h3 class="col__title alpha">This week's winner is...</h3>
+				<h4 class="col__winner tera text--red">@CurrentPage.TodaysWinner</h4>
+			</div>
+		</div>
+	}
+	</article>

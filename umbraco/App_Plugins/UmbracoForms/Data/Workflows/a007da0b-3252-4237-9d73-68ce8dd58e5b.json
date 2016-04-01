@@ -1,0 +1,14 @@
+{
+  "id": "a007da0b-3252-4237-9d73-68ce8dd58e5b",
+  "name": "Send email to enquiries@bishops.co.uk when submitted",
+  "form": "cb60559e-a1ba-4f58-be0d-22afc8d4b992",
+  "active": true,
+  "workflowTypeId": "e96badd7-05be-4978-b8d9-b3d733de70a5",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "enquiries@bishops.co.uk",
+    "Subject": "Print Finishes Sample Pack request",
+    "Message": "Someone has requested a Print Finishes Sample Pack. Here's their details:"
+  },
+  "sortOrder": 0
+}

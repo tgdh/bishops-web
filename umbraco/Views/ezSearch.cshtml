@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Master.cshtml";
+}
+<div class="wrap wrap--section">
+	<article class="article wrap__medium clearfix">
+		<h1 class="title--page">@CurrentPage.Name</h1>
+			@Umbraco.RenderMacro("ezSearch", new {rootContentNodeId="1067", rootMediaNodeId="null", indexType="CONTENT", searchFields="nodeName, Name, pageTitle, content, seo, faqs, GlossaryEntry, WorkEntry, WorkFolder", previewFields="content", previewLength="160", pageSize="5", hideFromSearchField="umbracoNaviHide, folderTemplate", searchFormLocation="TOP"})
+	</article>
+</div>

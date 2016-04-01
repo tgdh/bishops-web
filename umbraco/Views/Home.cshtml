@@ -1,0 +1,62 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+	var selection = CurrentPage.featuredResources.Split(',');
+	var relatedCount = -1;
+	foreach (var dummy in selection) { relatedCount = relatedCount + 1; };
+	
+}
+
+@{ Html.RenderPartial("qualities"); }
+
+
+@Html.Partial("Home/caseStudies")
+
+
+@* resources 
+<aside class="related wrap wrap--section clearfix">
+	<h2 class="title--section giga">Resources</h2>
+	<div class="related__wrap clearfix">
+
+		@foreach(var id in resources){
+			var content = Umbraco.Content(id);
+			<article class='related__item '>
+				<a href="@content.Url" class="related__link">
+					@if(content.HasValue("resourceImage")) {
+						<img src="@Umbraco.Media(content.resourceImage).Url" alt="@content.Name" class="related__img" />
+					}
+					<h4 class="related__title">@content.Name</h4>
+					<div class="related__copy small">
+						@Umbraco.Truncate(content.content, 80)
+					</div>
+				</a>
+			</article>
+		}
+	</div>
+</aside>
+*@
+		
+<aside class="related wrap wrap--section clearfix">
+	<h2 class="title--section giga">Resources</h2>
+	<div class="related__wrap clearfix">
+		@foreach(var id in selection){
+			var content = Umbraco.Content(id);
+			<article class='related__item pre-animate @(id != selection[relatedCount] ? "related__item--spacer" : "")'>
+				<a href="@content.Url" class="related__link">
+					
+			
+					@if(content.HasValue("resourceImage")) {
+						<img src="@Umbraco.Media(content.resourceImage).Url" alt="@content.Name" class="related__img" data-fallback-src='@(content.HasValue("resourceImageFallback") ? Umbraco.Media(content.resourceImageFallback).Url : "")' />
+					} else if(content.HasValue("resourceImageFallback")) {
+						<img src="@Umbraco.Media(content.resourceImageFallback).Url" alt="@content.Name" class="related__img" />
+					}
+			
+					<h4 class="related__title">@content.Name</h4>
+					<div class="related__copy small">
+						@Umbraco.Truncate(content.excerpt, 90)
+					</div>
+				</a>
+			</article>	
+		}
+	</div>
+</aside>

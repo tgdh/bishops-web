@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+<g id="magazine" display="none">
+	<circle display="inline" fill="#F2F6F8" cx="90" cy="90.2" r="90"/>
+	<g display="inline">
+		<g>
+			<polygon fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="110.7,138.2 63.3,126.4 63.3,65.7 
+				110.7,71.1 			"/>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="63.3,65.7 117.2,59.7 117.2,123.5 
+				114.2,123.8 			"/>
+		</g>
+		<g>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="63.3,65.8 114.4,65.1 114.4,132.2 
+				111.4,131.9 			"/>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="62.8,65.7 115.3,55 115.3,59.7 			"/>
+		</g>
+		<g>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="63.5,65.1 112.5,51.2 112.5,55.5 			"/>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="63.5,65.1 105.5,44.1 105.5,48.7 			"/>
+		</g>
+		<g>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="63.5,65.1 109,47.7 109,52.2 			"/>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="62.9,65.1 100,42.3 100,46.9 			"/>
+		</g>
+	</g>
+</g>
+<g id="booklet" display="none">
+	<circle display="inline" fill="#F2F6F8" cx="90" cy="90" r="90"/>
+	<g display="inline">
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="45" y1="62" x2="136" y2="62"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="135" y1="61" x2="135" y2="121"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="89" y1="61" x2="89" y2="121"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="136" y1="121" x2="44" y2="121"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="45" y1="121" x2="45" y2="61"/>
+	</g>
+</g>
+<g id="brochure" display="none">
+	<circle display="inline" fill="#F2F6F8" cx="90" cy="90" r="90"/>
+	<g display="inline">
+		<g>
+			<polygon fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="110.7,131.6 63.3,119.7 63.3,59.1 
+				110.7,64.5 			"/>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="63.3,59.1 117.2,53.1 117.2,116.9 
+				114.2,117.2 			"/>
+		</g>
+		<g>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="63.3,59.2 114.4,58.5 114.4,125.6 
+				111.4,125.3 			"/>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" points="62.8,59.1 115.3,48.4 115.3,53.1 			"/>
+		</g>
+	</g>
+</g>
+<g id="folder">
+	<circle fill="#F2F6F8" cx="90" cy="90" r="90"/>
+	<g>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="41" y1="59" x2="138" y2="59"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="137" y1="58" x2="137" y2="122"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="87" y1="58" x2="87" y2="122"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="138" y1="122" x2="40" y2="122"/>
+		<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="41" y1="122" x2="41" y2="58"/>
+		<path fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" d="M137,91h-2.6c0,0-5.4-0.1-10.1,6.1
+			c-3.6,4.9-5.3,6.5-7.4,7.5c-2.1,1-5.7,3.1-14.7,4.2c-12.1,1.5-12.2,8.4-12.2,8.4v4.7"/>
+	</g>
+</g>
+<g id="dm" display="none">
+	<circle display="inline" fill="#F2F6F8" cx="90" cy="90" r="90"/>
+	<g display="inline">
+		<g>
+			<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="48.1" y1="62.7" x2="132.7" y2="62.7"/>
+			<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="131.9" y1="61.9" x2="131.9" y2="118.1"/>
+			<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="132.7" y1="118.1" x2="47.3" y2="118.1"/>
+			<line fill="none" stroke="#004970" stroke-width="2" stroke-miterlimit="10" x1="48.1" y1="118.1" x2="48.1" y2="61.9"/>
+		</g>
+		<g>
+			<polygon fill="none" stroke="#004970" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" points="131.9,62.7 
+				48.1,62.7 90,96.6 			"/>
+		</g>
+		<g>
+			<polyline fill="none" stroke="#004970" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" points="82.4,90.5 
+				48.1,118.1 131.9,118.1 97.8,90.3 			"/>
+		</g>
+	</g>
+</g>
+</svg>

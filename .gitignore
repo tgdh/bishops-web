@@ -41,3 +41,5 @@ $RECYCLE.BIN/
 .grunt/ftpush/build.json
 
 .grunt/ftpush/build.json
+
+umbraco/Config/connectionStrings.config

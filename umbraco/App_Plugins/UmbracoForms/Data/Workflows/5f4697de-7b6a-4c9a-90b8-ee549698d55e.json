@@ -1,0 +1,14 @@
+{
+  "id": "5f4697de-7b6a-4c9a-90b8-ee549698d55e",
+  "name": "Send email to kev@tgdh.co.uk when submitted",
+  "form": "2c2ea2da-59ac-4f7c-8590-db6b65646dbe",
+  "active": true,
+  "workflowTypeId": "e96badd7-05be-4978-b8d9-b3d733de70a5",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "enquiries@bishops.co.uk",
+    "Subject": "the form Summer suggestion form was submitted",
+    "Message": "the form Summer suggestion form was submitted, this is the list of values it contained, you can turn this email off under workflows in Umbraco Contour"
+  },
+  "sortOrder": 0
+}

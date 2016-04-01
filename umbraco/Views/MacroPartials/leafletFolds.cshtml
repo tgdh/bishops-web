@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{
+	var selection = Umbraco.Content(1426);
+}
+<div class="wrap--leaflet-fold">
+	<h3 class="title--section">Popular types of paper fold for leaflets</h3>
+	<div class="clearfix">
+		@foreach(var node in Umbraco.TypedContent(1426).Children) {
+			var content = Umbraco.Content(node.Id);
+			
+			<article class='leaflet-fold pre-animate @(node.IsLast() ? "leaflet-fold--last" : "")'>				
+				@if(content.HasValue("image")) {
+					<img src="@Umbraco.Media(content.image).Url" alt="@content.Name"data-fallback-src='@(content.HasValue("fallbackImage") ? Umbraco.Media(content.fallbackImage).Url : "")' />
+				} else if(content.HasValue("fallbackImage")) {
+					<img src="@Umbraco.Media(content.fallbackImage).Url" alt="@content.Name" />
+				}
+				<h4 class="leaflet-fold__title">@node.Name</h4>
+			</article>
+		}
+	</div>
+</div>

@@ -1,0 +1,62 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Archetype.Models;
+@using Archetype.Extensions;
+@{
+    Layout = "Master.cshtml";
+	var selection = CurrentPage.Children();
+}
+@if(CurrentPage.HasValue("content")) {
+	<section class="wrap wrap--section wrap clearfix">
+		@CurrentPage.content
+	</section>
+}
+	
+@foreach(var item in selection) {
+	var bgImg = "";
+	var sectionId = item.Name.Replace(" ", "-").ToLower();
+	
+	if(item.HasValue("backgroundImage")) {
+		bgImg = @Umbraco.Media(item.backgroundImage).Url;
+	}
+	<article id="@sectionId" class="work clearfix" @*style="background-image:url(@bgImg);" *@>
+		<div class='wrap wrap--section wrap--overlay clearfix @(item.HasValue("image") ? "has--img" : "")'>
+			<h2 class="work__title title--section giga">@item.Name</h2>
+			<div class="work__wrap">
+				<div class="work__img-wrap">
+					@if(item.HasValue("iconLink")) {
+						<a href="@Umbraco.Content(item.iconLink).Url">
+						
+							@if(item.HasValue("image")) {
+								<img src="@Umbraco.Media(item.image).Url" alt="@CurrentPage.Name" class="work__img pre-animate" data-fallback-src='@(item.HasValue("fallbackImage") ? Umbraco.Media(item.fallbackImage).Url : "")' />
+							} else if(item.HasValue("fallbackImage")) {
+								<img src="@Umbraco.Media(item.fallbackImage).Url" alt="@item.Name" class="work__img" />
+							}
+							
+						</a>
+					} else {
+					
+						if(item.HasValue("image")) {
+							<img src="@Umbraco.Media(item.image).Url" alt="@CurrentPage.Name" class="work__img pre-animate" data-fallback-src='@(item.HasValue("fallbackImage") ? Umbraco.Media(item.fallbackImage).Url : "")' />
+						} else if(item.HasValue("fallbackImage")) {
+							<img src="@Umbraco.Media(item.fallbackImage).Url" alt="@item.Name" class="work__img" />
+						}
+							
+					}
+					
+					
+				</div>
+				<div class="work__content">
+					@item.content					
+					@foreach(var entry in item.children.Where("documentTypeAlias == \"WorkQuote\"")) {
+						<blockquote class="quote quote--work">
+							<div class="quote__copy">
+								@entry.quote
+							</div>
+							<footer class="quote__author">@entry.quoteAuthor</footer>
+						</blockquote>
+					}
+				</div>
+			</div>
+		</div>
+	</article>
+}

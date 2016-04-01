@@ -1,0 +1,14 @@
+{
+  "id": "d774bf4e-a061-4540-8121-ad52e1b686bb",
+  "name": "Send email to enquiries@bishops.co.uk when submitted",
+  "form": "69d4442a-fb52-4543-9827-c0057c41b939",
+  "active": true,
+  "workflowTypeId": "e96badd7-05be-4978-b8d9-b3d733de70a5",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "enquiries@bishops.co.uk",
+    "Subject": "Customer enquiry",
+    "Message": "This {formtype} form was submitted by the Bishops website."
+  },
+  "sortOrder": 0
+}

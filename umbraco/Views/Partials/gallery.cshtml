@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@if (Model.Content.HasValue("gallery")) {
+	var imagesList = Model.Content.GetPropertyValue<string>("gallery").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+	var imagesCollection = Umbraco.TypedMedia(imagesList).Where(x => x != null);
+	<aside class="gallery clearfix">
+		@foreach (var img in imagesCollection) {
+			<a href="@img.Url?width=1200&upscale=false" title="@img.Name" class="gallery__img-link">
+				<img src="@img.Url?width=200" class="gallery__img-thumb" alt="@img.Name" />
+			</a>
+		}
+	</aside>
+}

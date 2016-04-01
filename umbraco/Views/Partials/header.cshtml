@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var homePage = CurrentPage.AncestorsOrSelf(1).First();	
+}	
+<header id="header" class="page-header clearfix" role="banner">
+	<div class="wrap clearfix">
+		<a href="/" class="logo"><img src="/assets/img/logo.svg"/></a>
+		<button class="toggle--nav--main" data-toggle="nav--main"><i class="ico-list"></i></button>
+	</div>
+	@Html.Partial("siteNav")
+</header>

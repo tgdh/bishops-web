@@ -1,0 +1,40 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{ 
+	var folderTemplates = CurrentPage.Children();
+}
+
+@foreach(var item in folderTemplates) {
+	<article class="resource resource--download clearfix">
+		<div class="resource__img-wrap">
+			@if(item.HasValue("resourceImage")) {
+				<img src="@Umbraco.Media(item.resourceImage).Url" alt="@item.Name" class="resource__img pre-animate" data-fallback-src='@(item.HasValue("resourceImageFallback") ? Umbraco.Media(item.resourceImageFallback).Url : "")' />
+			} else if(item.HasValue("resourceImageFallback")) {
+				<img src="@Umbraco.Media(item.resourceImageFallback).Url" alt="@item.Name" class="resource__img" />
+			}
+	
+		</div>
+		<div div class="resource__copy-wrap">
+			<h3 class="resource__title mega">@item.Name</h3>
+				@if(item.fitsC4 == true) {
+					<small class="resource__subtitle alpha">(fits in C4 envelope)</small>
+				} else {
+					<small class="resource__subtitle alpha">(does <strong>NOT</strong> fit in C4 envelope)</small>
+				}
+
+			@item.Content
+			<div class="resource-downloads">
+				@if(item.HasValue("epsFile")) {
+					<a href="@Umbraco.Media(item.epsFile).Url" class="resource-downloads__link">EPS</a>
+					<span class="resource-downloads__break"> &#124; </span>
+				}
+				@if(item.HasValue("pdfFile")) {
+					<a href="@Umbraco.Media(item.pdfFile).Url" class="resource-downloads__link">PDF</a>
+					<span class="resource-downloads__break"> &#124; </span>
+				}
+				@if(item.HasValue("aiFile")) {
+					<a href="@Umbraco.Media(item.aiFile).Url" class="resource-downloads__link">AI</a>
+				}
+			</div>
+		</div>
+	</article>
+}

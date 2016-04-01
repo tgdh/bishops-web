@@ -1,0 +1,12 @@
+﻿@model Umbraco.Forms.Mvc.Models.FieldViewModel
+@{
+	var placeholder = ( !string.IsNullOrEmpty(Model.ToolTip) ? Model.ToolTip : "" ) + (Model.Mandatory ? " *" : "");
+	
+}
+<input type="text" name="@Model.Name" id="@Model.Id" class="text floatlabel input--@Model.Caption.ToLower() @{if (Model.Mandatory) {<text>input--validate</text>}}" value="@Model.Value" maxlength="500"
+placeholder="@placeholder"
+@{if(Model.Mandatory || Model.Validate){<text>data-val="true"</text>}}
+@{if (Model.Mandatory) {<text> data-val-required="@Model.RequiredErrorMessage" required</text>}}
+@{if (Model.Validate) {<text> data-val-regex="@Model.InvalidErrorMessage" data-regex="@Html.Raw(Model.Regex)"</text>}}
+@{if (Model.Caption == "Email") {<text>data-parsley-type="email"</text>}}
+/>

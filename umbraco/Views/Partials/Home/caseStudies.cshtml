@@ -1,0 +1,38 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var selection = CurrentPage.FeaturedCaseStudies.Split(',');
+}
+
+<article class="owl-carousels case-study case-study--macro js-case-study clearfix">
+@foreach( var id in selection ) {
+	var item = Umbraco.Content(id);
+	
+	<section class="case-study__section case-study__section--third">
+		<div class="case-study__wrap">
+			<div class="case-study__content">
+				<div class="case-study__header clearfix">
+					@if(item.HasValue("logo")) {
+						<img src="@Umbraco.Media(item.logo).Url?height=65" alt="@item.Name" class="case-study__img--logo" />
+					}
+					<div class="case-study__title--wrap">
+						<h2 class="case-study__title">@item.Name</h2>
+						@if( item.HasValue("Subtitle1") ) {
+							<small class="alpha title--sub">@item.Subtitle1</small>
+						}
+					</div>
+				</div>
+				@if( item.HasValue("relatedContent") ) {
+					@Umbraco.Truncate(item.relatedContent, 360)
+				} else {
+					@Umbraco.Truncate(item.intro, 350)
+				}
+				<a href="@item.Parent().Url#@item.Name.ToLower().Replace(' ','-')" class="button button--tertiary">View full case study</a>
+			</div>
+		</div>
+							
+		@if(item.HasValue("relatedCover")) {
+			<img src="@Umbraco.Media(item.relatedCover).Url?width=1400&height=565&mode=crop" alt="@item.Name" class="case-study__img" />
+		}
+	</section>
+}
+</article>

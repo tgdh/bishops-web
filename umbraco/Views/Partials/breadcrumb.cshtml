@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@if (CurrentPage.Ancestors().Any()) {
+	<nav class="breadcrumb">
+		<ul class="breadcrumb__list">
+			@foreach (var page in CurrentPage.Ancestors().OrderBy("Level")) {
+				<li class="breadcrumb__item"><a href="@page.Url" class="breadcrumb__link">@page.Name</a> <span class="breadcrumb__divider">&gt;</span></li>
+			}
+			<li class="breadcrumb__item active">@CurrentPage.Name</li>
+		</ul>
+	</nav>
+}
