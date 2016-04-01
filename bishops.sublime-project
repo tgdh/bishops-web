@@ -1,0 +1,39 @@
+{
+    "folders":
+    [
+        {
+            "file_exclude_patterns":
+            [
+                "._*",
+                "*.bak",
+                "*.ico",
+                "*.sample",
+                "*.swf",
+                "*.tar",
+                "*.tgz",
+                "wp-*.php",
+                // "*.md"
+            ],
+            "folder_exclude_patterns":
+            [
+                ".grunt",
+                ".sass-cache",
+                ".idea",
+                "packages",
+                "node_modules",
+                "umbraco/App_Browsers",
+                // "umbraco/App_Data",
+                "umbraco/bin",
+                "umbraco/obj",
+                "umbraco/Css",
+                "umbraco/Masterpages",
+                "umbraco/media",
+                "umbraco/Properties",
+                "umbraco/Umbraco_Client",
+                "umbraco/UserControls",
+                "umbraco/Xslt"
+            ],
+            "path": "."
+        }
+    ]
+}
