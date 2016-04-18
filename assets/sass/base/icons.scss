@@ -15,7 +15,7 @@
 	font-style: normal;
 }
 
-[class^="ico-"], 
+[class^="ico-"],
 [class*=" ico-"],
 .dropdownlist > div {
 	font-family: 'Bishops-iconfont';
@@ -30,6 +30,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 1.6rem;
+}
+.ico-lightbulb:before {
+    content: "\e900";
 }
 .ico-bullet-point:before {
 	content: "\e60c";

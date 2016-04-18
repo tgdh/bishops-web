@@ -1,0 +1,50 @@
+@using Umbraco.Web
+@inherits UmbracoViewPage<IPublishedContent>
+@{
+    var components = Model.GetPropertyValue<IEnumerable<IPublishedContent>>("pageContent");
+    int index = 0;
+
+    if( components != null )
+    {
+
+        foreach(IPublishedContent item in components.ToContentSet())
+        {
+            switch( item.DocumentTypeAlias )
+            {
+                case "embed":
+                    @Html.Partial("~/Views/Partials/PageComponents/Embed.cshtml", item)
+                    break;
+                case "Gallery":
+                    @Html.Partial("~/Views/Partials/PageComponents/Gallery.cshtml", item)
+                    break;
+                case "Image":
+                    @Html.Partial("~/Views/Partials/PageComponents/Image.cshtml", item)
+                    break;
+                case "Quotes":
+                    @Html.Partial("~/Views/Partials/PageComponents/Quotes.cshtml", item)
+                    break;
+                case "Split":
+                    @Html.Partial("~/Views/Partials/PageComponents/6535SPlit.cshtml", item)
+                    break;
+                case "Tips":
+                    @Html.Partial("~/Views/Partials/PageComponents/Tips.cshtml", item)
+                    break;
+                case "Text":
+                case "sectionText":
+                    @Html.Partial("~/Views/Partials/PageComponents/Textarea.cshtml", item)
+                    break;
+                case "video":
+                    @Html.Partial("~/Views/Partials/PageComponents/Video.cshtml", item)
+                    break;
+                case "tabs":
+                    @Html.Partial("~/Views/Partials/PageComponents/Tabs.cshtml", item)
+                break;
+                default:
+                    <p>Elements with DocumentTypeAlias <strong>@item.DocumentTypeAlias</strong> has no @@helper</p>
+                    break;
+            }
+
+            index++;
+        }
+    }
+}

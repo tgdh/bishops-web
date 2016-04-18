@@ -1,0 +1,1744 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bsh",
+				"bxsh	box-shadow: ${1:inset }${2:hoff} ${3:voff} ${4:blur} ${5:color};"
+			],
+			[
+				"carousel",
+				"carousel1"
+			],
+			[
+				"po",
+				"pos-a	position: absolute;"
+			],
+			[
+				"pos",
+				"pos-a	position: absolute;"
+			],
+			[
+				"for",
+				"for	Razor: @for"
+			],
+			[
+				"lo",
+				"lorem	Lorem ipsum"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"line",
+				"lineupHeight"
+			],
+			[
+				"lore",
+				"lorem	HTML: Lorem Ipsum"
+			],
+			[
+				"pa",
+				"padding	CSS: padding: properties"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"select",
+				"selectOrDie"
+			],
+			[
+				"ErrorLo",
+				"ErrorLogController"
+			],
+			[
+				"file",
+				"fileManager"
+			],
+			[
+				"page",
+				"pageSections"
+			],
+			[
+				"sear",
+				"searchByTags"
+			],
+			[
+				"search",
+				"searchYear"
+			],
+			[
+				"foeac",
+				"foreach	Razor: @foreach"
+			],
+			[
+				"mon",
+				"monthNumber"
+			],
+			[
+				"dt",
+				"dummyshortul, dsul	Dummy: short ul"
+			],
+			[
+				"border-radius",
+				"border-top-left-radius"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"border-",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-top",
+				"border-top-right-radius"
+			],
+			[
+				"border-bot",
+				"border-bottom-left-radius"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"event",
+				"eventAnchors"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"scro",
+				"scrollTop"
+			],
+			[
+				"pb",
+				"padding-bottom"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"back",
+				"background-attachment"
+			],
+			[
+				"backgro",
+				"background-position"
+			],
+			[
+				"border-top-",
+				"border-top-left-radius"
+			],
+			[
+				"border-radi",
+				"border-top-right-radius"
+			],
+			[
+				"ul",
+				"ul	Tag"
+			],
+			[
+				"foe",
+				"foreach	Razor: @foreach"
+			],
+			[
+				"bo",
+				"box-sizing"
+			],
+			[
+				"stcik",
+				"stickyHeader"
+			],
+			[
+				"ifel",
+				"ifelse	Razor: @if else"
+			],
+			[
+				"in",
+				"inp:submit	HTML: Input:submit"
+			],
+			[
+				"inp",
+				"inp:radio	HTML: Input:radio"
+			],
+			[
+				"prod",
+				"productPage"
+			],
+			[
+				"procu",
+				"productPage"
+			],
+			[
+				"product",
+				"productPage"
+			],
+			[
+				"produ",
+				"productObject"
+			],
+			[
+				"prodcut",
+				"productPage"
+			],
+			[
+				"Mechello",
+				"merchelloProduct"
+			],
+			[
+				"Related",
+				"RelatedCollection"
+			],
+			[
+				"value",
+				"valueValue"
+			],
+			[
+				"related",
+				"relatedEvent"
+			],
+			[
+				"selec",
+				"selectedRelated"
+			],
+			[
+				"rela",
+				"relatedEvent"
+			],
+			[
+				"medi",
+				"mediaIndex"
+			],
+			[
+				"p",
+				"padding	CSS: padding: properties"
+			],
+			[
+				"style",
+				"style	Tag"
+			],
+			[
+				"thum",
+				"thumbnailId"
+			],
+			[
+				"foreach",
+				"foreach	Razor: @foreach"
+			],
+			[
+				"if",
+				"if	Razor: @if"
+			],
+			[
+				"co",
+				"ct-oq	content: open-quote;"
+			],
+			[
+				"tran",
+				"transform: "
+			],
+			[
+				"te",
+				"text-align: "
+			],
+			[
+				"m",
+				"margin-bottom: "
+			],
+			[
+				"border-bt",
+				"border-bottom-right-radius: "
+			],
+			[
+				"border-rad",
+				"border-bottom-left-radius: "
+			],
+			[
+				"bor",
+				"border-radius: "
+			],
+			[
+				"uper",
+				"uppercase"
+			],
+			[
+				"max",
+				"max-width: "
+			],
+			[
+				"font",
+				"font-weight: "
+			],
+			[
+				"inel",
+				"inline-block"
+			],
+			[
+				"font-s",
+				"font-size: "
+			],
+			[
+				"border",
+				"border-radius: "
+			],
+			[
+				"ov",
+				"overflow: "
+			],
+			[
+				"active",
+				"activePage"
+			],
+			[
+				"min",
+				"min-width: "
+			],
+			[
+				"margin",
+				"margin-left: "
+			],
+			[
+				"respond-",
+				"respond-min"
+			],
+			[
+				"tab",
+				"table-header-group"
+			],
+			[
+				"mq-",
+				"mq-large"
+			],
+			[
+				"over",
+				"overflow-y: "
+			],
+			[
+				"li",
+				"line-height: "
+			],
+			[
+				"trans",
+				"transition: "
+			],
+			[
+				"tex",
+				"text-transform: "
+			],
+			[
+				"oov",
+				"overflow-y: "
+			],
+			[
+				"bod",
+				"border-radius: "
+			],
+			[
+				"mi",
+				"min-height: "
+			],
+			[
+				"bord",
+				"border-bottom: "
+			],
+			[
+				"ine",
+				"inline-block"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"ax",
+				"max-width: "
+			],
+			[
+				"font-",
+				"font-family: "
+			],
+			[
+				"ta",
+				"target	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 124.0,
+		"last_filter": "syntax razo",
+		"selected_items":
+		[
+			[
+				"syntax razo",
+				"Set Syntax: Razor"
+			],
+			[
+				"syntax xml",
+				"Set Syntax: XML"
+			],
+			[
+				"synta html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax ht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"removep",
+				"Package Control: Remove Package"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"grunt ",
+				"Grunt"
+			],
+			[
+				"installp",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax razor",
+				"Set Syntax: Razor"
+			],
+			[
+				"syntax js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"synta raz",
+				"Set Syntax: Razor"
+			],
+			[
+				"gist in",
+				"Gist: Insert Gist"
+			],
+			[
+				"syntax jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"gist ",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"install pacakge",
+				"Package Control: Install Package"
+			],
+			[
+				"y razor",
+				"Set Syntax: Razor"
+			],
+			[
+				"instal pckage",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax raz",
+				"Set Syntax: Razor"
+			],
+			[
+				"wap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"syntax",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sy",
+				"Set Syntax: Razor"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax go",
+				"Set Syntax: GoRazor"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 664.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/User1/Sites/Projects/bishops-web",
+		"/Users/User1/Sites/Projects/bishops-web/assets",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents"
+	],
+	"file_history":
+	[
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/tiles.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography/headings.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/GatewayPage.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/GatewayLinks.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/helpers/variables.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/style.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Image.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/TextPage.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/Home/workPages.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/modules/case-study.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/image.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Home.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/Home/caseStudies.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/CaseStudyFolder.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/js/script.js",
+		"/Users/User1/Sites/Projects/bishops-web/assets/script.js",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Resource.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/AdvancedTextPage.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/relatedContent.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/promo-banner.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Master.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/split.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/6535SPlit.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/objects/page-components.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography/base.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/tables.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Tips.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/tips.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/icons.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/PageComponents.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/assets/iconfont/style.css",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/MacroPartials/Contact details.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/contacts.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Quotes.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/libs/owl.carousel.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/quotes.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/footer.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/cover.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Gallery.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/App_Plugins/NestedContent/Css/nestedcontent.css",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Config/ClientDependency.config",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/App_Data/Logs/UmbracoTraceLog.txt",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/web.config",
+		"/Users/User1/Sites/Projects/bishops-web/bishops-printers.sublime-project",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Config/connectionStrings.config",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Textarea.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/Gruntfile.js",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents",
+		"/Users/User1/Downloads/embed.udt",
+		"/Users/User1/Downloads/photoCaseStudy.udt",
+		"/Users/User1/Desktop/bishops-web/bishops.sublime-project",
+		"/Users/User1/Desktop/bishops-web/Gruntfile.js",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Config/umbracoSettings.config",
+		"/Users/User1/Desktop/Development stuff/smtp notifications.txt",
+		"/Users/User1/Sites/Projects/bishops-web/bishops.sublime-project",
+		"/Users/User1/Sites/Projects/bishops-web/.gitignore",
+		"/Users/User1/Sites/Projects/henley/umbraco/connectionString.config",
+		"/Users/User1/Sites/Projects/henley/assets/js/main.js",
+		"/Users/User1/Sites/Projects/henley/umbraco/Views/ApplicationForm.cshtml",
+		"/Users/User1/Sites/Projects/henley/umbraco/App_Code/ApplicationFormController.cs",
+		"/Users/User1/Sites/Projects/henley/umbraco/Views/Partials/Forms/ApplicationFormView.cshtml",
+		"/Users/User1/Sites/Projects/henley/assets/_components/garlicjs/dist/garlic.min.js",
+		"/Users/User1/Sites/Projects/henley/umbraco/Views/Apply.cshtml",
+		"/Users/User1/Sites/Projects/henley/assets/sass/base/forms.scss",
+		"/Users/User1/Sites/Projects/henley/assets/sass/objects/forms.scss",
+		"/Users/User1/Sites/Projects/henley/umbraco/Views/Partials/Forms/ApplicationForm.cshtml",
+		"/Users/User1/Sites/Projects/henley/henley.sublime-project",
+		"/Users/User1/Sites/Projects/henley/umbraco/Web.config",
+		"/Users/User1/Desktop/SEOCheckerVSErrors.txt",
+		"/Users/User1/Sites/Projects/henley/bower.json",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/cover.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/lib/owl.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/js/main.js",
+		"/Users/User1/Sites/Projects/mayerbrown/tasks/concat.js",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Home.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/.bowerrc",
+		"/Users/User1/Sites/Projects/mayerbrown/bower.json",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/style.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/bower_components/jquery/src/var/concat.js",
+		"/Users/User1/Sites/Projects/mayerbrown/mayerbrown.sublime-project",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Page/Cover.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/base/text.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/buttons.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/settings/global.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Styleguide.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/App_Plugins/GibeLinkPicker/dialogs/linkpicker.html",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/App_Plugins/GibeLinkPicker/picker.html",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/App_Plugins/GibeLinkPicker/picker.css",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/nav.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/Cards/DynamicCard.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/Cards/WideTextCard.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/cards/dynamiccard.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/Cards/Card.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/cards/card.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/cards/widetextcard.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/cards/wideimagecard.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/Cards/WideImageCard.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/cards.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/PageComponents/Quote.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/App_Plugins/HtmlPreview/controllers/HtmlPreview.controller.js",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/InfoSection.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/tools/mixins.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Page/FooterNavigation.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/ratio.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/Card.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Page/MainNavigation.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Page/Footer.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/base/forms.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/section.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Master.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/PageComponents/Image.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/Newsletter.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/base/headings.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/frame.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Page/Header.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/header.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/GatewayPage.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/GatewayLinks.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/page.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Contact.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/trumps/overrides.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/footer.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/base/anchor.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/forms.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/wrap.scss",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Forms/ContactForm.cshtml",
+		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Web.config"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 167.0,
+		"where_history":
+		[
+			"/Users/User1/Sites/Projects/bishops-web/assets/sass",
+			"/Users/User1/Sites/Projects/mayerbrown/assets",
+			"/Users/User1/Sites/Projects/portsmouth-festivities/assets/sass",
+			"/Users/User1/Sites/Projects/portsmouth-festivities/assets",
+			"/Users/User1/Sites/Projects/portsmouth-festivities/PortsmouthFestivities/Views",
+			"/Users/User1/Sites/Projects/portsmouth-festivities/assets/sass",
+			"/Users/User1/Sites/Internal/umbraco-starterkit/UmbracoStarterKit",
+			"/Users/User1/Sites/Internal/umbraco-starterkit/UmbracoStarterKit/Views",
+			"/Users/User1/Sites/Internal/umbraco-starterkit/UmbracoStarterKit",
+			"/Users/kevsimpson/Sites/Projects/armyflying/assets/sass",
+			"/Users/kevsimpson/Sites/Projects/armyflying/umbraco/views",
+			"/Users/kevsimpson/Sites/Projects/armyflying/assets/sass",
+			"/Users/kevsimpson/Sites/Projects/armyflying/umbraco/views",
+			"/Users/kevsimpson/Sites/Projects/armyflying/assets/sass",
+			"/Users/kevsimpson/Sites/Projects/armyflying/umbraco/Views",
+			"/Users/kevsimpson/Sites/Projects/armyflying/assets/sass",
+			"/Users/kevsimpson/Sites/Projects/armyflying/umbraco/Views",
+			"/Users/kevsimpson/Sites/Projects/armyflying/assets/sass",
+			"/Users/User1/Sites/Projects/wessex-swim/assets/sass",
+			"/Users/User1/Sites/Projects/wessex-swim/umbraco/App_Plugins/AngularGoogleMaps",
+			"/Users/User1/Sites/Projects/wessex-swim/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar/Themes/Sandstone-3/Views",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar/Themes/Sandstone-3/Views",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar/Themes/Sandstone-3/Views",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar/Themes/Sandstone-3/Views",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar/Themes/Sandstone-3/Views",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar/Themes",
+			"/Users/User1/Sites/Projects/aspex/umbraco",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Code",
+			"/Users/User1/Sites/Projects/aspex/umbraco/App_Plugins/Merchello.Bazaar/Themes/Sandstone-3",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/assets/",
+			"/Users/User1/Sites/Projects/aspex/umbraco",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/assets/sass/base",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco/Views",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex",
+			"/Users/User1/Sites/Projects/aspex/assets/sass",
+			"/Users/User1/Sites/Projects/aspex/umbraco/Views",
+			"/Users/User1/Sites/Projects/aspex/tasks",
+			"/Users/User1/Sites/Projects/clearlead/assets/sass",
+			"/Users/User1/Sites/Projects/thespring/assets/sass",
+			"/Users/User1/Sites/Projects/thespring/umbraco/Views",
+			"/Users/User1/Sites/Projects/thespring/assets/sass",
+			"/Users/User1/Sites/Projects/thespring/umbraco/Views",
+			"/Users/User1/Sites/Projects/thespring/assets/sass",
+			"/Users/User1/Sites/Projects/thespring/umbraco/Views",
+			"/Users/User1/Sites/Projects/thespring/assets/sass",
+			"/Users/User1/Sites/Projects/thespring/umbraco/Views",
+			"/Users/User1/Sites/Projects/thespring/assets/sass",
+			"/Users/User1/Sites/Projects/thespring/umbraco/Views",
+			"/Users/User1/Sites/Projects/thespring/assets/sass",
+			"/Users/User1/Sites/Projects/thespring/umbraco",
+			"/Users/User1/Sites/Projects/thespring/umbraco/Views/Partials",
+			"/Users/User1/Sites/Projects/clearlead/assets",
+			"/Users/User1/Sites/Projects/clearlead/umbraco/Views",
+			"/Users/User1/Sites/Projects/clearlead",
+			"/Users/User1/Sites/Projects/thespring/assets/sass",
+			"/Users/User1/Sites/Projects/clearlead/assets/sass"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"right: 0",
+			"case-study--macro",
+			".scss",
+			".case-study",
+			"owlcarousel",
+			"disableal",
+			"UmbracoStarterKit",
+			"rewrite",
+			"destroy",
+			"&nbsp;",
+			"<option",
+			"Prev",
+			"dots",
+			"autoplayHoverPause",
+			"'<%= assetsFolder %>/_component",
+			"right",
+			"forms",
+			"placeholder",
+			"check",
+			"alttext",
+			"article",
+			".scss",
+			".scc",
+			"in/",
+			"error",
+			" <system.webServer>",
+			"httpErrors",
+			"system.web",
+			"The Museum Of Army Flying",
+			"left",
+			"quote",
+			"pods",
+			"c-partners__link",
+			"c-member__name",
+			"armyflying",
+			"img/1",
+			"Navigation",
+			"c-subheader",
+			"c-card__icon",
+			"split-screen",
+			"number",
+			"twitter",
+			"booking",
+			"bookinglik",
+			"tickets",
+			"check",
+			"•",
+			"3.5,",
+			"4.5,",
+			"right",
+			"map",
+			"pri-dark",
+			"partners",
+			"aspectRatio",
+			"whats-on",
+			"select",
+			"selectStyle",
+			"ContactDetails",
+			".c-block__content",
+			".c-block__image-wrap",
+			".c-block ",
+			".176-74-18-115.tgdh-web.co.uk",
+			"176",
+			".176-74-18-115.tgdh-web.co.uk",
+			"black",
+			"c-list__artist",
+			"selection",
+			"opacity",
+			"GeneralNews",
+			"translateY",
+			"o-bottom-frame",
+			"\\",
+			"o-form",
+			" true : false",
+			"fonts/",
+			"input",
+			"clearfix",
+			" clearfix",
+			"\"clearfix\"",
+			" clearfix",
+			"clearfix",
+			"is-valid",
+			"o-button",
+			"placeholder",
+			".scss",
+			"o-b",
+			"rgx",
+			"error",
+			"LONDON CONTEMPORARY ORCHESTRA\nCOMEDIAN SEANN WALSHELECTRIC CITY\nTHE CHOIR OF MERTON COLLEGE, OXFORDINDIA ELECTRIC CO.\nANDY ROBERTSHAW\nELECTRICALLY ECCENTRIC ALBERT ROAD\nTESTAMENT\nJIM AL-KHALILI\nSOUTH COAST COMEDIAN OF THE YEAR 2016\nLUNCHTIME LIVE: DANIEL COOK\nDR JOHN COOPER CLARKE\n‘NOSFERATU’\nTAIKO DRUMMERS",
+			"•",
+			"color:",
+			"3rem",
+			"placeholder",
+			"c-",
+			".scss",
+			"Name",
+			"UmbracoStarterKit",
+			"<file>",
+			"Glass",
+			"1186",
+			"DELETE",
+			"@Id",
+			"nodeId=",
+			"WHERR",
+			"client_starter_kit_u.",
+			"1186",
+			"glass",
+			"Custom",
+			"lastError",
+			"http",
+			"landingPage",
+			"mvc",
+			"TemplatePage",
+			"upload",
+			"setfiles",
+			"fileup",
+			"uploadfi",
+			"x => x",
+			"renderPageContent",
+			"gallery",
+			"getDataTypeDetails",
+			"function init(contentType)",
+			"convertFromLegacyIcon",
+			"isLegacyIcon",
+			"init",
+			"ContentTypeController",
+			"Umbraco.Web.Editors.ContentTypeController",
+			"collection"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"u-clearfix",
+			"\"u-clearfix\"",
+			"clearfix",
+			"<span class=\"o-page__subtitle epsilon\">@Page.subtitle</span>",
+			"<h1 class=\"o-page__title giga\">@(Page.HasValue(\"pageTitle\") ? Page.pageTitle : Page.Name)</h1>",
+			"<span class=\"o-page__subtitle giga\">@Page.subtitle</span>",
+			"@if( Page.subtitle != \"\" )\n{\n	<span class=\"o-page__subtitle epsilon\">@Page.subtitle</span>\n}\n",
+			"<span class=\"o-page__subtitle epsilon\">@Page.subtitle</span>",
+			"o-page__subtitle delta",
+			"o-page__separator",
+			"o-page__separator delta",
+			"$thirdblue",
+			"figcaption",
+			"o-wrap--x-large",
+			"film",
+			"Helvetica, Arial, Geneva, sans-serif;",
+			"sans-serif",
+			"",
+			"@include respond-min( $mq-medium + 150px )"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 64.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 242.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bishops-printers.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"headi",
+				"assets/sass/base/typography/headings.scss"
+			],
+			[
+				"tiles",
+				"assets/sass/component/tiles.scss"
+			],
+			[
+				"varia",
+				"assets/sass/helpers/variables.scss"
+			],
+			[
+				"image",
+				"umbraco/Views/Partials/PageComponents/Image.cshtml"
+			],
+			[
+				"textp",
+				"umbraco/Views/TextPage.cshtml"
+			],
+			[
+				"gatea",
+				"umbraco/Views/GatewayPage.cshtml"
+			],
+			[
+				"work",
+				"umbraco/Views/Partials/Home/workPages.cshtml"
+			],
+			[
+				"workp",
+				"umbraco/Views/Partials/Home/workPages.cshtml"
+			],
+			[
+				"workpa",
+				"umbraco/Views/Partials/Home/workPages.cshtml"
+			],
+			[
+				"home",
+				"umbraco/Views/Home.cshtml"
+			],
+			[
+				"homep",
+				"umbraco/Views/Partials/Home/workPages.cshtml"
+			],
+			[
+				"caestudies",
+				"umbraco/Views/Partials/Home/caseStudies.cshtml"
+			],
+			[
+				"casestu",
+				"umbraco/Views/CaseStudyFolder.cshtml"
+			],
+			[
+				"workpag",
+				"umbraco/Views/Partials/Home/workPages.cshtml"
+			],
+			[
+				"case",
+				"umbraco/Views/Partials/Home/caseStudies.cshtml"
+			],
+			[
+				"relate",
+				"umbraco/Views/Partials/relatedContent.cshtml"
+			],
+			[
+				"adnv",
+				"umbraco/Views/AdvancedTextPage.cshtml"
+			],
+			[
+				"resour",
+				"umbraco/Views/Resource.cshtml"
+			],
+			[
+				"promo",
+				"umbraco/Views/Partials/promo-banner.cshtml"
+			],
+			[
+				"promo-b",
+				"umbraco/Views/Partials/promo-banner.cshtml"
+			],
+			[
+				"mast",
+				"umbraco/Views/Master.cshtml"
+			],
+			[
+				"advan",
+				"umbraco/Views/AdvancedTextPage.cshtml"
+			],
+			[
+				"textpa",
+				"umbraco/Views/TextPage.cshtml"
+			],
+			[
+				"split",
+				"umbraco/Views/Partials/PageComponents/6535SPlit.cshtml"
+			],
+			[
+				"splits",
+				"assets/sass/component/split.scss"
+			],
+			[
+				"icons",
+				"assets/sass/base/icons.scss"
+			],
+			[
+				"contactde",
+				"umbraco/Views/MacroPartials/Contact details.cshtml"
+			],
+			[
+				"master",
+				"umbraco/Views/Master.cshtml"
+			],
+			[
+				"footer",
+				"umbraco/Views/Partials/footer.cshtml"
+			],
+			[
+				"cover",
+				"umbraco/Views/Partials/cover.cshtml"
+			],
+			[
+				"main",
+				"umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js"
+			],
+			[
+				"web",
+				"umbraco/web.config"
+			],
+			[
+				"webco",
+				"umbraco/web.config"
+			],
+			[
+				"we.con",
+				"umbraco/web.config"
+			],
+			[
+				"we",
+				"umbraco/web.config"
+			],
+			[
+				"gruntf",
+				"Gruntfile.js"
+			],
+			[
+				"nnecto",
+				"umbraco/connectionString.config"
+			],
+			[
+				"aplicationview",
+				"umbraco/Views/Partials/Forms/ApplicationFormView.cshtml"
+			],
+			[
+				"appplica",
+				"umbraco/App_Code/ApplicationFormController.cs"
+			],
+			[
+				"applicationf",
+				"umbraco/Views/ApplicationForm.cshtml"
+			],
+			[
+				"appl",
+				"umbraco/Views/Apply.cshtml"
+			],
+			[
+				"forms",
+				"assets/sass/objects/forms.scss"
+			],
+			[
+				"apply",
+				"umbraco/Views/Apply.cshtml"
+			],
+			[
+				"applicaforvie",
+				"umbraco/Views/Partials/Forms/ApplicationFormView.cshtml"
+			],
+			[
+				"applicafor",
+				"umbraco/Views/Partials/Forms/ApplicationForm.cshtml"
+			],
+			[
+				"applicati",
+				"umbraco/Views/Partials/Forms/ApplicationFormView.cshtml"
+			],
+			[
+				"applica",
+				"umbraco/Views/Partials/Forms/ApplicationForm.cshtml"
+			],
+			[
+				"applicationformvi",
+				"umbraco/Views/Partials/Forms/ApplicationFormView.cshtml"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"webc",
+				"umbraco/Web.config"
+			],
+			[
+				"concat",
+				"tasks/concat.js"
+			],
+			[
+				"buttons",
+				"assets/sass/components/buttons.scss"
+			],
+			[
+				"text",
+				"assets/sass/base/text.scss"
+			],
+			[
+				"global",
+				"assets/sass/settings/global.scss"
+			],
+			[
+				"styelgui",
+				"MayerBrown/Views/Styleguide.cshtml"
+			],
+			[
+				"nav",
+				"assets/sass/components/nav.scss"
+			],
+			[
+				"widecar",
+				"MayerBrown/Views/Partials/Components/Cards/WideTextCard.cshtml"
+			],
+			[
+				"card",
+				"assets/sass/components/cards.scss"
+			],
+			[
+				"widete",
+				"MayerBrown/Views/Partials/Components/Cards/WideTextCard.cshtml"
+			],
+			[
+				"wideim",
+				"MayerBrown/Views/Partials/Components/Cards/WideImageCard.cshtml"
+			],
+			[
+				"quote",
+				"MayerBrown/Views/Partials/PageComponents/Quote.cshtml"
+			],
+			[
+				"style",
+				"assets/sass/style.scss"
+			],
+			[
+				"mixin",
+				"assets/sass/tools/mixins.scss"
+			],
+			[
+				"infose",
+				"MayerBrown/Views/Partials/Components/InfoSection.cshtml"
+			],
+			[
+				"ca",
+				"assets/sass/components/cards.scss"
+			],
+			[
+				"naviga",
+				"MayerBrown/Views/Partials/Page/MainNavigation.cshtml"
+			],
+			[
+				"footerna",
+				"MayerBrown/Views/Partials/Page/FooterNavigation.cshtml"
+			],
+			[
+				"globa",
+				"assets/sass/settings/global.scss"
+			],
+			[
+				"sect",
+				"assets/sass/objects/section.scss"
+			],
+			[
+				"infoc",
+				"MayerBrown/Views/Partials/Components/InfoSection.cshtml"
+			],
+			[
+				"stylegui",
+				"MayerBrown/Views/Styleguide.cshtml"
+			],
+			[
+				"button",
+				"assets/sass/components/buttons.scss"
+			],
+			[
+				"butt",
+				"assets/sass/components/buttons.scss"
+			],
+			[
+				"news",
+				"MayerBrown/Views/Partials/Components/Newsletter.cshtml"
+			],
+			[
+				"heading",
+				"assets/sass/base/headings.scss"
+			],
+			[
+				"frame",
+				"assets/sass/components/frame.scss"
+			],
+			[
+				"header",
+				"assets/sass/components/header.scss"
+			],
+			[
+				"gate",
+				"MayerBrown/Views/Partials/Components/GatewayLinks.cshtml"
+			],
+			[
+				"gaetwa",
+				"MayerBrown/Views/GatewayPage.cshtml"
+			],
+			[
+				"gatewa",
+				"MayerBrown/Views/GatewayPage.cshtml"
+			],
+			[
+				"co",
+				"MayerBrown/Views/Contact.cshtml"
+			],
+			[
+				"page",
+				"assets/sass/objects/page.scss"
+			],
+			[
+				"over",
+				"assets/sass/trumps/overrides.scss"
+			],
+			[
+				"newsle",
+				"MayerBrown/Views/Partials/Components/Newsletter.cshtml"
+			],
+			[
+				"section",
+				"assets/sass/objects/section.scss"
+			],
+			[
+				"anchor",
+				"assets/sass/base/anchor.scss"
+			],
+			[
+				"secti",
+				"assets/sass/objects/section.scss"
+			],
+			[
+				"butto",
+				"assets/sass/components/buttons.scss"
+			],
+			[
+				"form",
+				"assets/sass/base/forms.scss"
+			],
+			[
+				"warps",
+				"assets/sass/objects/wrap.scss"
+			],
+			[
+				"but",
+				"assets/sass/components/buttons.scss"
+			],
+			[
+				"stylegu",
+				"MayerBrown/Views/Styleguide.cshtml"
+			],
+			[
+				"contactfor",
+				"MayerBrown/Views/Partials/Forms/ContactForm.cshtml"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"contatf",
+				"MayerBrown/Views/Partials/Forms/ContactForm.cshtml"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"fonts",
+				"MayerBrown/Views/Partials/Components/Fonts.cshtml"
+			],
+			[
+				"conca",
+				"tasks/concat.js"
+			],
+			[
+				"contc",
+				"PortsmouthFestivities/Views/Partials/Forms/ContactForm.cshtml"
+			],
+			[
+				"contact",
+				"PortsmouthFestivities/Views/Contact.cshtml"
+			],
+			[
+				"teal",
+				"PortsmouthFestivities/Views/Partials/PageComponents/TeamMembers.cshtml"
+			],
+			[
+				"error",
+				"PortsmouthFestivities/Views/ErrorPage.cshtml"
+			],
+			[
+				"sitea",
+				"PortsmouthFestivities/Views/Sitemap.cshtml"
+			],
+			[
+				"layout",
+				"PortsmouthFestivities/Views/Layout.cshtml"
+			],
+			[
+				"notfo",
+				"PortsmouthFestivities/Views/NotFound.cshtml"
+			],
+			[
+				"sitemap",
+				"PortsmouthFestivities/Views/Partials/Components/Sitemap.cshtml"
+			],
+			[
+				"layou",
+				"PortsmouthFestivities/Views/Layout.cshtml"
+			],
+			[
+				"eventblo",
+				"PortsmouthFestivities/Views/Partials/Events/EventBlock.cshtml"
+			],
+			[
+				"event",
+				"PortsmouthFestivities/Views/Event.cshtml"
+			],
+			[
+				"eventb",
+				"PortsmouthFestivities/Views/Partials/Events/EventBlock.cshtml"
+			],
+			[
+				"seo",
+				"PortsmouthFestivities/Views/Partials/Components/SEO.cshtml"
+			],
+			[
+				"block",
+				"PortsmouthFestivities/Views/Partials/PageComponents/TextBlock.cshtml"
+			],
+			[
+				"iamebloc",
+				"PortsmouthFestivities/Views/Partials/PageComponents/ImageBlock.cshtml"
+			],
+			[
+				"ie",
+				"assets/sass/ie.scss"
+			],
+			[
+				"ma",
+				"PortsmouthFestivities/Views/Master.cshtml"
+			],
+			[
+				"maste",
+				"PortsmouthFestivities/Views/Master.tpl.html"
+			],
+			[
+				"eventsu",
+				"PortsmouthFestivities/Views/EventSummary.cshtml"
+			],
+			[
+				"whatso",
+				"PortsmouthFestivities/Views/WhatsOn.cshtml"
+			],
+			[
+				"feed",
+				"PortsmouthFestivities/Views/Partials/Page/Feed.cshtml"
+			],
+			[
+				"ome",
+				"PortsmouthFestivities/Views/Home.cshtml"
+			],
+			[
+				"hader",
+				"assets/sass/components/header.scss"
+			],
+			[
+				"head",
+				"assets/sass/components/header.scss"
+			],
+			[
+				"tex",
+				"PortsmouthFestivities/Views/TextPage.cshtml"
+			],
+			[
+				"mas",
+				"PortsmouthFestivities/Views/Master.cshtml"
+			],
+			[
+				"gallery",
+				"PortsmouthFestivities/Views/Partials/PageComponents/Gallery.cshtml"
+			],
+			[
+				"glalery",
+				"assets/sass/components/gallery.scss"
+			],
+			[
+				"gale",
+				"assets/sass/components/gallery.scss"
+			],
+			[
+				"galler",
+				"PortsmouthFestivities/Views/Partials/PageComponents/Gallery.cshtml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"umbra",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"bisho",
+				"~/Sites/Projects/bishops-web/bishops-printers.sublime-project"
+			],
+			[
+				"bis",
+				"~/Sites/Projects/bishops-web/bishops.sublime-workspace"
+			],
+			[
+				"start",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"tar",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"army",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"stare",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"henl",
+				"~/Sites/Projects/henley/henley.sublime-project"
+			],
+			[
+				"sarter",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"star",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"",
+				"~/Sites/Projects/henley/henley.sublime-workspace"
+			],
+			[
+				"starter",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"mayer",
+				"~/Sites/Projects/mayerbrown/mayerbrown.sublime-project"
+			],
+			[
+				"amr",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"sta",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
+				"asp",
+				"~/Sites/Projects/aspex/aspex.sublime-project"
+			],
+			[
+				"ports",
+				"~/Sites/Projects/portsmouth-festivities/portsmouth-festivities.sublime-project"
+			],
+			[
+				"m",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"thes",
+				"~/Sites/Projects/thespring/thepsring.sublime-project"
+			],
+			[
+				"arm",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"the",
+				"~/Sites/Projects/thespring/thepsring.sublime-project"
+			],
+			[
+				"tge",
+				"~/Sites/Projects/thespring/thepsring.sublime-project"
+			],
+			[
+				"amry",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"maf",
+				"~/Sites/Projects/maf/maf.sublime-workspace"
+			],
+			[
+				"wess",
+				"~/Sites/Projects/wessex-swim/wessex.sublime-project"
+			],
+			[
+				"west",
+				"~/Sites/Projects/wessex-swim/wessex.sublime-project"
+			],
+			[
+				"ar",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"armty",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"ape",
+				"~/Sites/Projects/aspex/aspex.sublime-project"
+			],
+			[
+				"ary",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"armt",
+				"~/Sites/Projects/armyflying/armyflying.sublime-project"
+			],
+			[
+				"aspe",
+				"~/Sites/Projects/aspex/aspex.sublime-project"
+			],
+			[
+				"as",
+				"~/Sites/Projects/aspex/aspex.sublime-project"
+			],
+			[
+				"aspex",
+				"~/Sites/Projects/aspex/aspex.sublime-project"
+			],
+			[
+				"pro",
+				"~/Sites/Internal/project-dir/projects.sublime-project"
+			],
+			[
+				"wat",
+				"~/Sites/Projects/watford-palace/watford.sublime-project"
+			],
+			[
+				"subl",
+				"~/Dropbox/Sublime/Sublime-settings.sublime-project"
+			],
+			[
+				"sub",
+				"~/Dropbox/Sublime/Sublime-settings.sublime-project"
+			],
+			[
+				"subli",
+				"~/Dropbox/Sublime/Sublime-settings.sublime-project"
+			],
+			[
+				"the sp",
+				"~/Sites/Projects/thespring/thepsring.sublime-project"
+			],
+			[
+				"theps",
+				"~/Sites/Projects/thespring/thepsring.sublime-project"
+			],
+			[
+				"the s",
+				"~/Sites/Projects/thespring/thepsring.sublime-project"
+			],
+			[
+				"wa",
+				"~/Sites/Projects/watford-palace/watford.sublime-project"
+			],
+			[
+				"w",
+				"~/Sites/Projects/watford-palace/watford.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

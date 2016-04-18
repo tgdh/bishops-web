@@ -232,10 +232,8 @@ button {
   font-family: 'Open Sans', Arial, Helvetica, Geneva, sans-serif;
   font-size: 1.4rem;
   -webkit-font-feature-settings: 'liga', 'kern';
-  -moz-font-feature-settings: 'liga', 'kern';
   font-feature-settings: 'liga', 'kern';
   -webkit-font-kerning: normal;
-  -moz-font-kerning: normal;
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -269,6 +267,12 @@ ol + h4,
 ol + h5,
 ol + h6 {
   padding-top: 1.4em;
+}
+
+p + .o-page-component,
+ol + .o-page-component,
+ul + .o-page-component {
+  padding-top: 2.8em;
 }
 
 em {
@@ -893,6 +897,10 @@ p + table {
   font-size: 1.6rem;
 }
 
+.ico-lightbulb:before {
+  content: "\e900";
+}
+
 .ico-bullet-point:before {
   content: "\e60c";
 }
@@ -964,7 +972,7 @@ p + table {
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
@@ -1003,22 +1011,22 @@ p + table {
     opacity: 0;
   }
 }
-/* 
- * 	Owl Carousel - Auto Height Plugin
+/*
+ *  Owl Carousel - Auto Height Plugin
  */
 .owl-height {
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
   display: none;
-  width: 100%;
-  -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
   z-index: 1;
 }
 
@@ -1028,17 +1036,17 @@ p + table {
 }
 
 .owl-carousel .owl-stage:after {
-  content: ".";
-  display: block;
   clear: both;
-  visibility: hidden;
-  line-height: 0;
+  content: '.';
+  display: block;
   height: 0;
+  line-height: 0;
+  visibility: hidden;
 }
 
 .owl-carousel .owl-stage-outer {
-  position: relative;
   overflow: hidden;
+  position: relative;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
@@ -1046,10 +1054,10 @@ p + table {
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel .owl-controls .owl-dot {
-  cursor: pointer;
-  cursor: hand;
-  -webkit-user-select: none;
   -khtml-user-select: none;
+  cursor: hand;
+  cursor: pointer;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -1060,8 +1068,8 @@ p + table {
 }
 
 .owl-carousel.owl-loading {
-  opacity: 0;
   display: block;
+  opacity: 0;
 }
 
 .owl-carousel.owl-hidden {
@@ -1073,10 +1081,10 @@ p + table {
 }
 
 .owl-carousel .owl-item {
-  position: relative;
-  min-height: 1px;
-  float: left;
   -webkit-backface-visibility: hidden;
+  float: left;
+  min-height: 1px;
+  position: relative;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1098,11 +1106,11 @@ p + table {
 }
 
 .owl-carousel .owl-grab {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
   cursor: grab;
+  cursor: -ms-grab;
+  cursor: -o-grab;
+  cursor: -webkit-grab;
+  cursor: move;
 }
 
 .owl-carousel.owl-rtl {
@@ -1118,8 +1126,8 @@ p + table {
   display: block;
 }
 
-/* 
- * 	Owl Carousel - Lazy Load Plugin
+/*
+ *  Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
@@ -1131,28 +1139,28 @@ p + table {
   transform-style: preserve-3d;
 }
 
-/* 
- * 	Owl Carousel - Video Plugin
+/*
+ *  Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
-  position: relative;
-  height: 100%;
   background: #000;
+  height: 100%;
+  position: relative;
 }
 
 .owl-carousel .owl-video-play-icon {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 50%;
-  top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
+  -webkit-backface-visibility: hidden;
   background: url("owl.video.play.png") no-repeat;
   cursor: pointer;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
+  height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  position: absolute;
+  top: 50%;
   transition: scale 100ms ease;
+  width: 80px;
+  z-index: 1;
 }
 
 .owl-carousel .owl-video-play-icon:hover {
@@ -1165,11 +1173,11 @@ p + table {
 }
 
 .owl-carousel .owl-video-tn {
-  opacity: 0;
-  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100%;
+  opacity: 0;
   transition: opacity 400ms ease;
 }
 
@@ -1179,38 +1187,35 @@ p + table {
 }
 
 /* dots */
+.c-gallery .owl-carousel .owl-controls .owl-dots {
+  margin-top: -50px;
+}
+.c-gallery .owl-carousel .owl-controls .owl-dot {
+  box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.25);
+  height: 1.8rem;
+  width: 1.8rem;
+}
 .owl-carousel .owl-controls .owl-dots {
-  position: absolute;
-  text-align: center;
   left: 0;
-  right: 0;
   margin-top: -200px;
+  position: absolute;
+  right: 0;
+  text-align: center;
 }
 
 .owl-carousel .owl-controls .owl-dot {
-  width: 24px;
-  height: 24px;
   background: transparent;
   border: 3px solid #fff;
   border-radius: 50%;
+  box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.25);
   display: inline-block;
+  height: 24px;
   margin: 1rem;
-  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.25);
+  width: 24px;
 }
 
 .owl-carousel .owl-controls .owl-dot.active {
   background-color: #fff;
-}
-
-.owl-carousel .owl-controls .owl-dot span {
-  width: 20px;
-  height: 20px;
-  background: 0 0;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: inset 1px 2px 0px 0px rgba(0, 0, 0, 0.25);
-  position: relative;
-  z-index: 3;
 }
 
 .owl-carousel .owl-controls .owl-dot.active span {
@@ -1220,12 +1225,12 @@ p + table {
 
 /* */
 .owl-nav {
-  width: 100%;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  width: 100%;
 }
 
 .owl-nav .owl-prev,
@@ -1246,11 +1251,11 @@ p + table {
 }
 
 .owl-nav .owl-prev i {
-  text-shadow: -1px 1px 0px rgba(0, 73, 112, 0.21);
+  text-shadow: -1px 1px 0 rgba(0, 73, 112, 0.21);
 }
 
 .owl-nav .owl-next i {
-  text-shadow: 1px 1px 0px rgba(0, 73, 112, 0.21);
+  text-shadow: 1px 1px 0 rgba(0, 73, 112, 0.21);
 }
 
 .owl-nav .owl-prev {
@@ -2174,7 +2179,6 @@ p + .resource {
 }
 
 .gallery--space-around {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3103,6 +3107,155 @@ input[type=text]::-ms-clear {
   display: none;
 }
 
+.c-quotes {
+  max-width: 77rem;
+  margin: 0 auto;
+}
+.c-quotes .c-quote__copy {
+  color: #004970;
+  margin-bottom: 3.5rem;
+}
+.c-quotes .c-quote__src {
+  color: #004970;
+  float: right;
+  font-weight: normal;
+}
+
+.s-quotes .owl-controls .owl-dots {
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.s-quotes .owl-controls .owl-dot {
+  border: 0.2rem solid #da2028;
+  box-shadow: none;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+.s-quotes .owl-controls .owl-dot.active {
+  background: #da2028;
+}
+
+.c-split {
+  display: block;
+  position: relative;
+}
+.c-split .c-split__column + .c-split__column {
+  margin-top: 3rem;
+}
+.c-contacts .c-contacts__line {
+  display: block;
+  font-weight: bold;
+  margin-top: 1.4em;
+}
+.c-contacts .c-contacts__line i {
+  color: #da2028;
+  margin-right: .5rem;
+}
+.c-contacts .c-contacts__line * {
+  vertical-align: top;
+}
+.c-contacts .c-contacts__line + .c-contacts__line {
+  margin-top: 1rem;
+}
+.no-touch .c-tips {
+  background: rgba(242, 246, 248, 0.5);
+}
+.no-touch .c-tips__item {
+  opacity: .5;
+}
+.no-touch .c-tips__item:hover,
+.no-touch .c-tips__item:focus {
+  opacity: 1;
+  background: #f2f6f8;
+}
+
+.c-tips {
+  background: #f2f6f8;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.c-tips .c-tips__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.c-tips .ico-lightbulb {
+  position: relative;
+  vertical-align: top;
+}
+.c-tips .ico-lightbulb:before {
+  color: white;
+  background: #da2028;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  vertical-align: top;
+}
+.c-tips .c-tips__item {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+.c-tips .c-tips__item + .c-tips__item {
+  margin-top: 1rem;
+}
+.c-tips .c-tips__item:before {
+  display: none;
+}
+.o-media__image {
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===========================================================
+
+    # Tile
+
+=========================================================== */
+.c-tile {
+  display: block;
+  position: relative;
+}
+.c-tile + .c-tile {
+  margin-top: 3rem;
+}
+.c-tile .c-tile__link {
+  display: block;
+}
+.c-tile .c-tile__link:before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+.c-tile .c-tile__image-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-color: #f2f6f8;
+}
+.c-tile .c-tile__content {
+  position: relative;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.c-tile .c-tile__name {
+  font-size: 2rem;
+}
+.o-page-component + .o-page-component {
+  margin-top: 1.4em;
+}
 /*
  * Default jvFloat theme.
  * modify it as you wish!
@@ -4055,6 +4208,64 @@ input[type=text]::-ms-clear {
     margin-top: 8rem;
     margin-bottom: 8rem;
   }
+  .c-split .c-split__column + .c-split__column {
+    margin-top: 0rem;
+  }
+
+  .c-split__column--65 {
+    width: 60%;
+    float: left;
+    padding-right: 3rem;
+    position: relative;
+  }
+  .c-split__column--65:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background: #004970;
+  }
+
+  .c-split__column--35 {
+    width: 40%;
+    float: right;
+    padding-left: 3rem;
+    position: relative;
+  }
+  .c-split__column--35:before {
+    background: #004970;
+  }
+  .c-contacts .c-contacts__line + .c-contacts__line {
+    margin-top: 2rem;
+  }
+  .c-tips {
+    padding-top: 5rem !important;
+    padding-bottom: 7rem !important;
+  }
+  .c-tips .ico-lightbulb:before {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    top: -.5rem;
+  }
+  .c-tips .c-tips__item {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem;
+    padding-left: 8.7rem !important;
+    padding-right: 8.7rem !important;
+  }
+  .c-tips .c-tips__item:before {
+    left: 6rem !important;
+  }
+  .c-tips .c-tips__item + .c-tips__item {
+    margin-top: 3rem;
+  }
+  .o-page-component + .o-page-component {
+    margin-top: 2.8em;
+  }
   .cover--white .cover__copy {
     max-width: 56rem;
   }
@@ -4321,6 +4532,14 @@ input[type=text]::-ms-clear {
     padding-top: 8rem;
     padding-bottom: 4rem;
   }
+  .c-gallery .owl-nav .owl-prev i,
+  .c-gallery .owl-nav .owl-next i {
+    font-size: 4.8rem;
+  }
+  .c-gallery .owl-nav .owl-prev i,
+  .c-gallery .owl-nav .owl-next i {
+    text-shadow: 4px 2px 0 rgba(0, 73, 112, 0.21);
+  }
   .nav--glossary .nav__wrap {
     display: block;
   }
@@ -4392,6 +4611,13 @@ input[type=text]::-ms-clear {
   }
   .case-study--macro .case-study__section--second .case-study__title--wrap {
     text-align: center;
+  }
+
+  .work-page--macro .case-study__section--third .case-study__content {
+    right: auto;
+    margin-right: auto;
+    left: 0;
+    margin-left: 0;
   }
   .case-study .owl-nav .owl-prev i,
   .case-study .owl-nav .owl-next i {
@@ -4767,6 +4993,41 @@ input[type=text]::-ms-clear {
 
   .ezsearch-form input[type="submit"] {
     width: 20%;
+  }
+  .c-tips {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+  .c-tips .c-tips__item {
+    padding: 1.2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .c-tips .c-tips__item:before {
+    display: block;
+    height: .8rem;
+    width: .8rem;
+    left: 1rem;
+    top: 3rem;
+    border-radius: 100%;
+  }
+  .c-tips .c-tips__item + .c-tips__item {
+    margin-top: 2rem;
+  }
+  .c-tile {
+    width: 45%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 3rem;
+  }
+  .c-tile + .c-tile {
+    margin-top: 0;
+  }
+  .c-tile:nth-child(even) {
+    margin-left: 10%;
+  }
+  .c-tile:nth-child(2n+1) {
+    clear: both;
   }
   .foo {
     color: #f00;

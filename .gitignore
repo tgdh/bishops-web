@@ -43,3 +43,6 @@ $RECYCLE.BIN/
 .grunt/ftpush/build.json
 
 umbraco/Config/connectionStrings.config
+
+
+**/umbraco/App_Data/cache/

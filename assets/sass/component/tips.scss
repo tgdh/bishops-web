@@ -1,0 +1,131 @@
+//    __  _
+//   / /_(_)___  _____
+//  / __/ / __ \/ ___/
+// / /_/ / /_/ (__  )
+// \__/_/ .___/____/
+//     /_/
+
+.no-touch {
+    .c-tips {
+        background: rgba($light-grey--1, .5);
+    }
+
+    .c-tips__item {
+        opacity: .5;
+    }
+
+    .c-tips__item:hover,
+    .c-tips__item:focus {
+        opacity: 1;
+        background: $light-grey--1;
+    }
+
+}
+
+.c-tips {
+    background: $light-grey--1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .c-tips__title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .ico-lightbulb {
+        position: relative;
+        vertical-align: top;
+    }
+
+    .ico-lightbulb:before {
+        color: white;
+        background: $pri;
+        border-radius: 100%;
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        vertical-align: top;
+    }
+
+    .c-tips__item {
+        margin: 0;
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        list-style: none;
+        transition: all $speed ease;
+
+        + .c-tips__item {
+            margin-top: 1rem;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+}
+
+@include respond-min($mq-small) {
+
+    .c-tips {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+
+        .c-tips__item {
+            padding: 1.2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+
+            &:before {
+                display: block;
+                height: .8rem;
+                width: .8rem;
+                left: 1rem;
+                top: 3rem;
+                border-radius: 100%;
+            }
+
+            + .c-tips__item {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+}
+
+@include respond-min($mq-medium) {
+
+    .c-tips {
+        padding-top: 5rem !important;
+        padding-bottom: 7rem !important;
+
+        .ico-lightbulb:before {
+            height: 3.5rem;
+            width: 3.5rem;
+            font-size: 3rem;
+            line-height: 3.5rem;
+            top: -.5rem;
+        }
+
+        .c-tips__item {
+            padding-top: 1.5rem !important;;
+            padding-bottom: 1.5rem;
+            padding-left: 8.7rem !important;
+            padding-right: 8.7rem !important;
+
+            &:before {
+                left: 6rem !important;
+            }
+
+            + .c-tips__item {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+}

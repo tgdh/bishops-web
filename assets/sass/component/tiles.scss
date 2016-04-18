@@ -1,0 +1,72 @@
+/* ===========================================================
+
+    # Tile
+
+=========================================================== */
+
+.c-tile {
+    display: block;
+    position: relative;
+
+    + .c-tile {
+        margin-top: 3rem;
+    }
+
+    .c-tile__link {
+        display: block;
+
+        &:before {
+            display: block;
+            content: "";
+            padding-top: 50%;
+        }
+    }
+
+    .c-tile__image-wrap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-color: $light-grey--1;
+    }
+
+    .c-tile__content {
+        position: relative;
+        padding: 1rem;
+        background: rgba(white, .7);
+        text-align: center;
+
+    }
+
+    .c-tile__name {
+        font-size: 2rem;
+    }
+
+}
+
+@include respond-min($mq-small) {
+
+    .c-tile {
+        width: 45%;
+        display: inline-block;
+        float: left;
+        margin-bottom: 3rem;
+
+        + .c-tile {
+            margin-top: 0;
+        }
+
+        &:nth-child(even) {
+            margin-left: 10%;
+
+        }
+
+        &:nth-child(2n+1) {
+            clear: both;
+
+        }
+    }
+
+}
