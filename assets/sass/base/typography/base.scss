@@ -51,14 +51,19 @@ ol + h2,
 ol + h3,
 ol + h4,
 ol + h5,
-ol + h6{
+ol + h6 {
 	padding-top: $base-line-height;
 }
 
 p + .o-page-component,
 ol + .o-page-component,
-ul + .o-page-component {
-	padding-top: $base-line-height * 2;
+ul + .o-page-component,
+.o-page-component + p,
+.o-page-component + ol,
+.o-page-component + ul,
+.o-page-component + form,
+.o-page-component + table {
+	padding-top: $base-line-height;
 }
 
 em {

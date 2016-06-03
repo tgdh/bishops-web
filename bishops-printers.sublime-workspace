@@ -391,10 +391,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 124.0,
-		"last_filter": "syntax razo",
+		"height": 354.0,
+		"last_filter": "grunt",
 		"selected_items":
 		[
+			[
+				"grunt",
+				"Grunt"
+			],
 			[
 				"syntax razo",
 				"Set Syntax: Razor"
@@ -438,10 +442,6 @@
 			[
 				"removep",
 				"Package Control: Remove Package"
-			],
-			[
-				"grunt",
-				"Grunt"
 			],
 			[
 				"instal",
@@ -559,41 +559,47 @@
 	[
 		"/Users/User1/Sites/Projects/bishops-web",
 		"/Users/User1/Sites/Projects/bishops-web/assets",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents"
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/assets",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/assets/css"
 	],
 	"file_history":
 	[
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/tiles.scss",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography/headings.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography/base.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/quotes.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/objects/page-components.scss",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/GatewayPage.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/GatewayLinks.cshtml",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/helpers/variables.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/AdvancedTextPage.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/breadcrumb.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/Page/Breadcrumb.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/web.config",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/breadcrumb.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Master.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Quotes.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/App_Plugins/NestedContent/Views/nestedcontent.html",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Umbraco/PartialViewMacros/Templates/Breadcrumb.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/style.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Home.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/tiles.scss",
+		"/Users/User1/Sites/Projects/bishops-web/.gitignore",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography/headings.scss",
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/helpers/variables.scss",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Image.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/TextPage.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/Home/workPages.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/modules/case-study.scss",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/image.scss",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Home.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/Home/caseStudies.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/CaseStudyFolder.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/js/script.js",
 		"/Users/User1/Sites/Projects/bishops-web/assets/script.js",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Resource.cshtml",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/AdvancedTextPage.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/relatedContent.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/promo-banner.cshtml",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Master.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/split.scss",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/6535SPlit.cshtml",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/objects/page-components.scss",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography/base.scss",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/tables.scss",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Tips.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/tips.scss",
@@ -602,17 +608,13 @@
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/assets/iconfont/style.css",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/MacroPartials/Contact details.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/contacts.scss",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Quotes.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/libs/owl.carousel.scss",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/quotes.scss",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/footer.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/cover.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Gallery.cshtml",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/App_Plugins/NestedContent/Css/nestedcontent.css",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Config/ClientDependency.config",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/App_Data/Logs/UmbracoTraceLog.txt",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/web.config",
 		"/Users/User1/Sites/Projects/bishops-web/bishops-printers.sublime-project",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Config/connectionStrings.config",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Textarea.cshtml",
@@ -625,7 +627,6 @@
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Config/umbracoSettings.config",
 		"/Users/User1/Desktop/Development stuff/smtp notifications.txt",
 		"/Users/User1/Sites/Projects/bishops-web/bishops.sublime-project",
-		"/Users/User1/Sites/Projects/bishops-web/.gitignore",
 		"/Users/User1/Sites/Projects/henley/umbraco/connectionString.config",
 		"/Users/User1/Sites/Projects/henley/assets/js/main.js",
 		"/Users/User1/Sites/Projects/henley/umbraco/Views/ApplicationForm.cshtml",
@@ -691,12 +692,7 @@
 		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/page.scss",
 		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Contact.cshtml",
 		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/trumps/overrides.scss",
-		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/footer.scss",
-		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/base/anchor.scss",
-		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/forms.scss",
-		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/wrap.scss",
-		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Forms/ContactForm.cshtml",
-		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Web.config"
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/footer.scss"
 	],
 	"find":
 	{
@@ -794,6 +790,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"o-page-component",
+			"o-page-com",
 			"right: 0",
 			"case-study--macro",
 			".scss",
@@ -919,9 +917,7 @@
 			"convertFromLegacyIcon",
 			"isLegacyIcon",
 			"init",
-			"ContentTypeController",
-			"Umbraco.Web.Editors.ContentTypeController",
-			"collection"
+			"ContentTypeController"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1020,12 +1016,72 @@
 		"selected_items":
 		[
 			[
-				"headi",
-				"assets/sass/base/typography/headings.scss"
+				"quote",
+				"assets/sass/component/quotes.scss"
+			],
+			[
+				"base",
+				"assets/sass/base/typography/base.scss"
+			],
+			[
+				"web",
+				"umbraco/web.config"
+			],
+			[
+				"bread",
+				"umbraco/Views/Partials/Page/Breadcrumb.cshtml"
+			],
+			[
+				"advan",
+				"umbraco/Views/AdvancedTextPage.cshtml"
+			],
+			[
+				"gatewl",
+				"umbraco/Views/Partials/PageComponents/GatewayLinks.cshtml"
+			],
+			[
+				"gatew",
+				"umbraco/Views/GatewayPage.cshtml"
+			],
+			[
+				"amster",
+				"umbraco/Views/Master.cshtml"
+			],
+			[
+				"main",
+				"umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js"
+			],
+			[
+				"quotes",
+				"assets/sass/component/quotes.scss"
+			],
+			[
+				"quot",
+				"umbraco/Views/Partials/PageComponents/Quotes.cshtml"
+			],
+			[
+				"breadcru",
+				"umbraco/Umbraco/PartialViewMacros/Templates/Breadcrumb.cshtml"
+			],
+			[
+				"advance",
+				"umbraco/Views/AdvancedTextPage.cshtml"
+			],
+			[
+				"home",
+				"umbraco/Views/Home.cshtml"
 			],
 			[
 				"tiles",
 				"assets/sass/component/tiles.scss"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"headi",
+				"assets/sass/base/typography/headings.scss"
 			],
 			[
 				"varia",
@@ -1054,10 +1110,6 @@
 			[
 				"workpa",
 				"umbraco/Views/Partials/Home/workPages.cshtml"
-			],
-			[
-				"home",
-				"umbraco/Views/Home.cshtml"
 			],
 			[
 				"homep",
@@ -1104,10 +1156,6 @@
 				"umbraco/Views/Master.cshtml"
 			],
 			[
-				"advan",
-				"umbraco/Views/AdvancedTextPage.cshtml"
-			],
-			[
 				"textpa",
 				"umbraco/Views/TextPage.cshtml"
 			],
@@ -1138,14 +1186,6 @@
 			[
 				"cover",
 				"umbraco/Views/Partials/cover.cshtml"
-			],
-			[
-				"main",
-				"umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js"
-			],
-			[
-				"web",
-				"umbraco/web.config"
 			],
 			[
 				"webco",
@@ -1258,10 +1298,6 @@
 			[
 				"wideim",
 				"MayerBrown/Views/Partials/Components/Cards/WideImageCard.cshtml"
-			],
-			[
-				"quote",
-				"MayerBrown/Views/Partials/PageComponents/Quote.cshtml"
 			],
 			[
 				"style",
@@ -1490,46 +1526,6 @@
 			[
 				"whatso",
 				"PortsmouthFestivities/Views/WhatsOn.cshtml"
-			],
-			[
-				"feed",
-				"PortsmouthFestivities/Views/Partials/Page/Feed.cshtml"
-			],
-			[
-				"ome",
-				"PortsmouthFestivities/Views/Home.cshtml"
-			],
-			[
-				"hader",
-				"assets/sass/components/header.scss"
-			],
-			[
-				"head",
-				"assets/sass/components/header.scss"
-			],
-			[
-				"tex",
-				"PortsmouthFestivities/Views/TextPage.cshtml"
-			],
-			[
-				"mas",
-				"PortsmouthFestivities/Views/Master.cshtml"
-			],
-			[
-				"gallery",
-				"PortsmouthFestivities/Views/Partials/PageComponents/Gallery.cshtml"
-			],
-			[
-				"glalery",
-				"assets/sass/components/gallery.scss"
-			],
-			[
-				"gale",
-				"assets/sass/components/gallery.scss"
-			],
-			[
-				"galler",
-				"PortsmouthFestivities/Views/Partials/PageComponents/Gallery.cshtml"
 			]
 		],
 		"width": 0.0
@@ -1541,6 +1537,18 @@
 		"selected_items":
 		[
 			[
+				"mayer",
+				"~/Sites/Projects/mayerbrown/mayerbrown.sublime-project"
+			],
+			[
+				"mauer",
+				"~/Sites/Projects/mayerbrown/mayerbrown.sublime-project"
+			],
+			[
+				"start",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
+			[
 				"umbra",
 				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
 			],
@@ -1551,10 +1559,6 @@
 			[
 				"bis",
 				"~/Sites/Projects/bishops-web/bishops.sublime-workspace"
-			],
-			[
-				"start",
-				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
 			],
 			[
 				"tar",
@@ -1587,10 +1591,6 @@
 			[
 				"starter",
 				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
-			],
-			[
-				"mayer",
-				"~/Sites/Projects/mayerbrown/mayerbrown.sublime-project"
 			],
 			[
 				"amr",

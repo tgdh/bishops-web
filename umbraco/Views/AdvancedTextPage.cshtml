@@ -12,6 +12,9 @@
 
 <div class="wrap wrap--section">
     <article class="article wrap__medium clearfix">
+        @{
+            Html.RenderPartial("page/breadcrumb");
+        }
         <h1 class="title--page">@pageTitle</h1>
         @Html.Partial("~/Views/Partials/PageComponents/PageComponents.cshtml")
     </article>

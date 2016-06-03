@@ -34,7 +34,7 @@
 
     .c-tile__content {
         position: relative;
-        padding: 1rem;
+        padding: 2rem;
         background: rgba(white, .7);
         text-align: center;
 
@@ -42,6 +42,11 @@
 
     .c-tile__name {
         font-size: 2rem;
+        padding: 0;
+
+        &:before {
+            display: none;
+        }
     }
 
 }

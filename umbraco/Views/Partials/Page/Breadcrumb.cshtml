@@ -1,0 +1,23 @@
+@using Umbraco.Web
+@inherits UmbracoViewPage<IPublishedContent>
+@{
+    var selection = Model.Ancestors().OrderBy("Level").Where("TemplateId > 0");
+}
+
+@if( selection.Any() )
+{
+    <nav role="navigation" class="c-breadcrumb">
+        @* <p id="breadcrumb-label" class="c-breadcrumb__label">You are here:</p> *@
+        <ul id="breadcrumb" class="c-breadcrumb__list" aria-labelledby="breadcrumb-label">
+            @foreach (var listItem in selection )
+            {
+                <li class="c-breadcrumb__item">
+                    <a href="@listItem.Url" class="c-breadcrumb__link" title="@listItem.Name">@listItem.Name</a> /
+                </li>
+            }
+            <li class="c-breadcrumb__item">
+                <span class="c-breadcrumb__link is-active" title="@Model.Name">@Model.Name</span>
+            </li>
+        </ul>
+    </nav>
+}
