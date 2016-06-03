@@ -1,5 +1,5 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-@{ 
+@{
 	var homePage = CurrentPage.AncestorsOrSelf(1).First();
 }
 <footer id="contact" class="page-footer">
@@ -10,18 +10,18 @@
 			<div id="formSelector" class="form__radio-group">
 				<input type="radio" name="formType" value="Request quote" class="radio--form-selector" id="requestQuote" data-form-name="quote" checked/>
 				<label for="requestQuote">Request quote</label>
-				
+
 				<input type="radio" name="formType" value="General Enquiry" id="generalEnquiry" class="radio--form-selector" data-form-name="general" />
 				<label for="generalEnquiry">General enquiry</label>
 			</div>
-			*@				
+			*@
 
 			@Umbraco.RenderMacro("FormsRenderForm", new {FormGuid="69d4442a-fb52-4543-9827-c0057c41b939"})
-			
-@*			
+
+@*
 			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="d30e4276-5edb-4425-89c3-781c50e0cf64"})
-*@			
-@*					
+*@
+@*
 			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="ddf7f98c-a5af-43a6-a04b-8c8c91b464fe"})
 			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="1e2c0dc8-3792-47c6-b80e-a0e9c9220182"})
 			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="a084d28a-bfaf-4995-8c2d-ac85dc39d71f"})
@@ -39,6 +39,9 @@
 			}
 			@if(homePage.HasValue("facebookUrl")) {
 				<a href="@homePage.facebookUrl" target="_blank" class="page-footer__link"><i class="ico-facebook" class="page-footer__link"></i> Like us</a>
+			}
+			@if(homePage.HasValue("linkedinUrl")) {
+				<a href="@homePage.linkedinUrl" target="_blank" class="page-footer__link"><i class="ico-linkedIn" class="page-footer__link"></i> Follow us</a>
 			}
 			<div class="footer__content">
 				@homePage.footerContent

@@ -322,8 +322,10 @@ textarea {
   color: #464748;
   font-family: 'Open Sans',Arial,Helvetica,Geneva,sans-serif;
   -webkit-font-feature-settings: 'liga','kern';
+  -moz-font-feature-settings: 'liga','kern';
   font-feature-settings: 'liga','kern';
   -webkit-font-kerning: normal;
+  -moz-font-kerning: normal;
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -979,8 +981,8 @@ p+table {
 
 @font-face {
   font-family: Bishops-iconfont;
-  src: url(../iconfont/fonts/Bishops-iconfont.eot?-6muxc4);
-  src: url(../iconfont/fonts/Bishops-iconfont.eot?#iefix-6muxc4) format("embedded-opentype"),url(../iconfont/fonts/Bishops-iconfont.woff?-6muxc4) format("woff"),url(../iconfont/fonts/Bishops-iconfont.ttf?-6muxc4) format("truetype"),url(../iconfont/fonts/Bishops-iconfont.svg?-6muxc4#Bishops-iconfont) format("svg");
+  src: url(../iconfont/fonts/Bishops-iconfont.eot?dewjqa);
+  src: url(../iconfont/fonts/Bishops-iconfont.eot?dewjqa#iefix) format("embedded-opentype"),url(../iconfont/fonts/Bishops-iconfont.ttf?dewjqa) format("truetype"),url(../iconfont/fonts/Bishops-iconfont.woff?dewjqa) format("woff"),url(../iconfont/fonts/Bishops-iconfont.svg?dewjqa#Bishops-iconfont) format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -999,6 +1001,34 @@ p+table {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   font-size: 1.6rem;
+}
+
+.ico-flickr:before {
+  content: "\e900";
+}
+
+.ico-googleplus:before {
+  content: "\e901";
+}
+
+.ico-instagram:before {
+  content: "\e902";
+}
+
+.ico-linkedIn:before {
+  content: "\e903";
+}
+
+.ico-pinterest:before {
+  content: "\e904";
+}
+
+.ico-vimeo:before {
+  content: "\e905";
+}
+
+.ico-youtube:before {
+  content: "\e906";
 }
 
 .ico-lightbulb:before {
@@ -2253,6 +2283,7 @@ p+.resource {
 }
 
 .gallery--space-around {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;

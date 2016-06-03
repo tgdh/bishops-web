@@ -1,77 +1,87 @@
 @font-face {
-	font-family: 'Bishops-iconfont';
-	src:url('fonts/Bishops-iconfont.eot?nuzq9j');
-	src:url('fonts/Bishops-iconfont.eot?#iefixnuzq9j') format('embedded-opentype'),
-		url('fonts/Bishops-iconfont.woff?nuzq9j') format('woff'),
-		url('fonts/Bishops-iconfont.ttf?nuzq9j') format('truetype'),
-		url('fonts/Bishops-iconfont.svg?nuzq9j#Bishops-iconfont') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Bishops-iconfont';
+    src:    url('fonts/Bishops-iconfont.eot?dewjqa');
+    src:    url('fonts/Bishops-iconfont.eot?dewjqa#iefix') format('embedded-opentype'),
+        url('fonts/Bishops-iconfont.ttf?dewjqa') format('truetype'),
+        url('fonts/Bishops-iconfont.woff?dewjqa') format('woff'),
+        url('fonts/Bishops-iconfont.svg?dewjqa#Bishops-iconfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="ico-"], [class*=" ico-"] {
-	font-family: 'Bishops-iconfont';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Bishops-iconfont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.ico-bullet-point:before {
-	content: "\e60c";
+.ico-flickr:before {
+    content: "\e900";
 }
-
+.ico-googleplus:before {
+    content: "\e901";
+}
+.ico-instagram:before {
+    content: "\e902";
+}
+.ico-linkedIn:before {
+    content: "\e903";
+}
+.ico-pinterest:before {
+    content: "\e904";
+}
+.ico-vimeo:before {
+    content: "\e905";
+}
+.ico-youtube:before {
+    content: "\e906";
+}
 .ico-arrow-down:before {
-	content: "\e608";
+    content: "\e608";
 }
-
 .ico-arrow-left:before {
-	content: "\e609";
+    content: "\e609";
 }
-
 .ico-arrow-right:before {
-	content: "\e60a";
+    content: "\e60a";
 }
-
 .ico-arrow-up:before {
-	content: "\e60b";
+    content: "\e60b";
 }
-
 .ico-facebook:before {
-	content: "\e600";
+    content: "\e600";
 }
-
 .ico-twitter:before {
-	content: "\e601";
+    content: "\e601";
 }
-
 .ico-cross:before {
-	content: "\e602";
+    content: "\e602";
 }
-
 .ico-list:before {
-	content: "\e603";
+    content: "\e603";
 }
-
 .ico-mail:before {
-	content: "\e604";
+    content: "\e604";
 }
-
 .ico-phone:before {
-	content: "\e605";
+    content: "\e605";
 }
-
 .ico-place:before {
-	content: "\e606";
+    content: "\e606";
 }
-
 .ico-search:before {
-	content: "\e607";
+    content: "\e607";
+}
+.ico-bullet-point:before {
+    content: "\e60c";
 }
 
