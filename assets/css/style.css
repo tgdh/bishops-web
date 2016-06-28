@@ -232,10 +232,8 @@ button {
   font-family: 'Open Sans', Arial, Helvetica, Geneva, sans-serif;
   font-size: 1.4rem;
   -webkit-font-feature-settings: 'liga', 'kern';
-  -moz-font-feature-settings: 'liga', 'kern';
   font-feature-settings: 'liga', 'kern';
   -webkit-font-kerning: normal;
-  -moz-font-kerning: normal;
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -904,24 +902,28 @@ p + table {
   font-size: 1.6rem;
 }
 
-.ico-flickr:before {
+.ico-lightbulb:before {
   content: "\e900";
 }
 
-.ico-googleplus:before {
+.ico-flickr:before {
   content: "\e901";
 }
 
-.ico-instagram:before {
+.ico-googleplus:before {
   content: "\e902";
 }
 
-.ico-linkedIn:before {
+.ico-instagram:before {
   content: "\e903";
 }
 
-.ico-pinterest:before {
+.ico-linkedIn:before {
   content: "\e904";
+}
+
+.ico-pinterest:before {
+  content: "\e906";
 }
 
 .ico-vimeo:before {
@@ -929,15 +931,7 @@ p + table {
 }
 
 .ico-youtube:before {
-  content: "\e906";
-}
-
-.ico-lightbulb:before {
-  content: "\e900";
-}
-
-.ico-bullet-point:before {
-  content: "\e60c";
+  content: "\e907";
 }
 
 .ico-arrow-down:before {
@@ -987,6 +981,10 @@ p + table {
 
 .ico-search:before {
   content: "\e607";
+}
+
+.ico-bullet-point:before {
+  content: "\e60c";
 }
 
 /* ===========================================================
@@ -2214,7 +2212,6 @@ p + .resource {
 }
 
 .gallery--space-around {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4332,6 +4329,19 @@ input[type=text]::-ms-clear {
   .o-page-component + .o-page-component {
     margin-top: 1.68em;
   }
+  .o-col--two .o-col {
+    display: inline;
+    float: left;
+    width: 48.21429%;
+    margin: 0 0.89286%;
+    margin-bottom: 0;
+  }
+
+  .flexbox .o-col--two {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .cover--white .cover__copy {
     max-width: 56rem;
   }
@@ -5264,6 +5274,9 @@ input[type=text]::-ms-clear {
 
   .qualities__item-heading em {
     font-size: 3.4rem;
+  }
+  .o-col + .o-col {
+    margin-top: 2.8em;
   }
   .fig--1,
   .fig--2,

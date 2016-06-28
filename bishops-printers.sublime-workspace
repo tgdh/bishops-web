@@ -383,6 +383,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "bishops-printers.sublime-project",
+			"settings":
+			{
+				"buffer_size": 979,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -565,6 +573,11 @@
 	],
 	"file_history":
 	[
+		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/icons.scss",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Quotes.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Umbraco/PartialViewMacros/Templates/Navigation.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/header.cshtml",
+		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/siteNav.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/typography/base.scss",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/quotes.scss",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/objects/page-components.scss",
@@ -577,7 +590,6 @@
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/breadcrumb.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Master.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js",
-		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Quotes.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/App_Plugins/NestedContent/Views/nestedcontent.html",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Umbraco/PartialViewMacros/Templates/Breadcrumb.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/style.scss",
@@ -603,7 +615,6 @@
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/tables.scss",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/Tips.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/assets/sass/component/tips.scss",
-		"/Users/User1/Sites/Projects/bishops-web/assets/sass/base/icons.scss",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/Partials/PageComponents/PageComponents.cshtml",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/assets/iconfont/style.css",
 		"/Users/User1/Sites/Projects/bishops-web/umbraco/Views/MacroPartials/Contact details.cshtml",
@@ -689,10 +700,7 @@
 		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/header.scss",
 		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/GatewayPage.cshtml",
 		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Partials/Components/GatewayLinks.cshtml",
-		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/page.scss",
-		"/Users/User1/Sites/Projects/mayerbrown/MayerBrown/Views/Contact.cshtml",
-		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/trumps/overrides.scss",
-		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/components/footer.scss"
+		"/Users/User1/Sites/Projects/mayerbrown/assets/sass/objects/page.scss"
 	],
 	"find":
 	{
@@ -954,8 +962,98 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "bishops-printers.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1016,6 +1114,26 @@
 		"selected_items":
 		[
 			[
+				"icons",
+				"assets/sass/base/icons.scss"
+			],
+			[
+				"sitena",
+				"umbraco/Views/Partials/siteNav.cshtml"
+			],
+			[
+				"hea",
+				"umbraco/Views/Partials/header.cshtml"
+			],
+			[
+				"navig",
+				"umbraco/Umbraco/PartialViewMacros/Templates/Navigation.cshtml"
+			],
+			[
+				"quotes",
+				"umbraco/Views/Partials/PageComponents/Quotes.cshtml"
+			],
+			[
 				"quote",
 				"assets/sass/component/quotes.scss"
 			],
@@ -1050,10 +1168,6 @@
 			[
 				"main",
 				"umbraco/Umbraco/lib/jquery/jquery.upload/js/main.js"
-			],
-			[
-				"quotes",
-				"assets/sass/component/quotes.scss"
 			],
 			[
 				"quot",
@@ -1166,10 +1280,6 @@
 			[
 				"splits",
 				"assets/sass/component/split.scss"
-			],
-			[
-				"icons",
-				"assets/sass/base/icons.scss"
 			],
 			[
 				"contactde",
@@ -1514,18 +1624,6 @@
 			[
 				"ma",
 				"PortsmouthFestivities/Views/Master.cshtml"
-			],
-			[
-				"maste",
-				"PortsmouthFestivities/Views/Master.tpl.html"
-			],
-			[
-				"eventsu",
-				"PortsmouthFestivities/Views/EventSummary.cshtml"
-			],
-			[
-				"whatso",
-				"PortsmouthFestivities/Views/WhatsOn.cshtml"
 			]
 		],
 		"width": 0.0
@@ -1533,9 +1631,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "star",
 		"selected_items":
 		[
+			[
+				"star",
+				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
+			],
 			[
 				"mayer",
 				"~/Sites/Projects/mayerbrown/mayerbrown.sublime-project"
@@ -1578,10 +1680,6 @@
 			],
 			[
 				"sarter",
-				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
-			],
-			[
-				"star",
 				"~/Sites/Internal/umbraco-starterkit/umbraco-starterkit.sublime-project"
 			],
 			[

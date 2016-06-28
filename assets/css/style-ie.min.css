@@ -322,10 +322,8 @@ textarea {
   color: #464748;
   font-family: 'Open Sans',Arial,Helvetica,Geneva,sans-serif;
   -webkit-font-feature-settings: 'liga','kern';
-  -moz-font-feature-settings: 'liga','kern';
   font-feature-settings: 'liga','kern';
   -webkit-font-kerning: normal;
-  -moz-font-kerning: normal;
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1003,24 +1001,28 @@ p+table {
   font-size: 1.6rem;
 }
 
-.ico-flickr:before {
+.ico-lightbulb:before {
   content: "\e900";
 }
 
-.ico-googleplus:before {
+.ico-flickr:before {
   content: "\e901";
 }
 
-.ico-instagram:before {
+.ico-googleplus:before {
   content: "\e902";
 }
 
-.ico-linkedIn:before {
+.ico-instagram:before {
   content: "\e903";
 }
 
-.ico-pinterest:before {
+.ico-linkedIn:before {
   content: "\e904";
+}
+
+.ico-pinterest:before {
+  content: "\e906";
 }
 
 .ico-vimeo:before {
@@ -1028,11 +1030,7 @@ p+table {
 }
 
 .ico-youtube:before {
-  content: "\e906";
-}
-
-.ico-lightbulb:before {
-  content: "\e900";
+  content: "\e907";
 }
 
 .ico-arrow-down:before {
@@ -2283,7 +2281,6 @@ p+.resource {
 }
 
 .gallery--space-around {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4451,6 +4448,19 @@ p+.wrap--leaflet-fold {
 
 .o-page-component+.o-page-component {
   margin-top: 1.68em;
+}
+
+.o-col--two .o-col {
+  display: inline;
+  float: left;
+  width: 48.21429%;
+  margin: 0 .89286%;
+}
+
+.flexbox .o-col--two {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .JanPromo .cover__copy,
