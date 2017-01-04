@@ -1,4 +1,4 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "Master.cshtml";
 }
@@ -25,16 +25,20 @@
 				@CurrentPage.RightContent
 			</div>
 		</div>
-	@if( CurrentPage.Id == 1535 ) {
+	@if( CurrentPage.HasValue("previousWinners") || CurrentPage.HasValue("todaysWinner") ) {
 		<hr>
 		<div class="row row--winners clearfix">
 			<div class="col col--winners">
-				<h3 class="alpha">Congratulations to our winners so far</h3>
-				@CurrentPage.previousWinners
+				@if( CurrentPage.HasValue("previousWinners") ) {
+					<h3 class="alpha">Congratulations to our winners so far</h3>
+					@CurrentPage.previousWinners
+				}
 			</div>
 			<div class="col col--todays-winner col--last">
-				<h3 class="col__title alpha">This week's winner is...</h3>
-				<h4 class="col__winner tera text--red">@CurrentPage.TodaysWinner</h4>
+				@if( CurrentPage.HasValue("todaysWinner") ) {
+					<h3 class="col__title alpha">This week's winner is...</h3>
+					<h4 class="col__winner tera text--red">@CurrentPage.TodaysWinner</h4>
+				}
 			</div>
 		</div>
 	}
