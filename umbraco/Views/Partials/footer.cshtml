@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var homePage = CurrentPage.AncestorsOrSelf(1).First();
+}
+<footer id="contact" class="page-footer">
+	<div class="wrap clearfix">
+		<h2 class="title--section giga">Contact</h2>
+		<section class="page-footer__section page-footer__section--form">
+			@*
+			<div id="formSelector" class="form__radio-group">
+				<input type="radio" name="formType" value="Request quote" class="radio--form-selector" id="requestQuote" data-form-name="quote" checked/>
+				<label for="requestQuote">Request quote</label>
+
+				<input type="radio" name="formType" value="General Enquiry" id="generalEnquiry" class="radio--form-selector" data-form-name="general" />
+				<label for="generalEnquiry">General enquiry</label>
+			</div>
+			*@
+
+			@Umbraco.RenderMacro("FormsRenderForm", new {FormGuid="69d4442a-fb52-4543-9827-c0057c41b939"})
+
+@*
+			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="d30e4276-5edb-4425-89c3-781c50e0cf64"})
+*@
+@*
+			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="ddf7f98c-a5af-43a6-a04b-8c8c91b464fe"})
+			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="1e2c0dc8-3792-47c6-b80e-a0e9c9220182"})
+			@Umbraco.RenderMacro("umbracoContour.RazorRenderForm", new {FormGuid="a084d28a-bfaf-4995-8c2d-ac85dc39d71f"})
+*@
+		</section>
+		<section class="page-footer__section">
+			<h4 class="title--contact">Contact details</h4>
+			<p class="contact__address">Bishops Printers, Walton Road,<br/>
+				Farlington, Portsmouth PO6 1TR
+			</p>
+			<a href="mailto:enquiries@bishops.co.uk" class="page-footer__link"><i class="ico-mail"></i> enquiries@bishops.co.uk</a>
+			<a href="tel:02392334900" class="page-footer__link page-footer__link--tel"><i class="ico-phone"></i> 023 9233 4900</a>
+			@if(homePage.HasValue("twitterUrl")) {
+				<a href="@homePage.twitterUrl" target="_blank" class="page-footer__link"><i class="ico-twitter" class="page-footer__link"></i> Join the conversation</a>
+			}
+			@if(homePage.HasValue("facebookUrl")) {
+				<a href="@homePage.facebookUrl" target="_blank" class="page-footer__link"><i class="ico-facebook" class="page-footer__link"></i> Like us</a>
+			}
+			@if(homePage.HasValue("linkedinUrl")) {
+				<a href="@homePage.linkedinUrl" target="_blank" class="page-footer__link"><i class="ico-linkedIn" class="page-footer__link"></i> Follow us</a>
+			}
+			<div class="footer__content">
+				@homePage.footerContent
+			</div>
+		</section>
+	</div>
+	<a href="#pageWrap" class="going-up"><i class="ico-arrow-up"></i></a>
+	<div class="page-footer__copyright small">
+		<p>@if(homePage.HasValue("sitemap")) {
+				<a href="@Umbraco.Content(homePage.sitemap).Url">Sitemap</a>
+			} &#124; Created by <a href="http://tgdh.co.uk" target="_blank">TGDH</a> &#124; &copy; Bishops Printers 2014</p>
+	</div>
+</footer>

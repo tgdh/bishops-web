@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{ 
+	var quote = Model.MacroParameters["quote"]; 
+	var author = Model.MacroParameters["author"]; 
+}
+<blockquote class="quote quote--work">
+	<div class="quote__copy">
+		<p>&#8220; @Html.Raw(quote.ToString().Replace("\n", "<br/>")) &#8221;</p>
+	</div>
+	@if( author.ToString() != "null" ) {
+		<footer class="quote__author">@author</footer>
+	}
+</blockquote>

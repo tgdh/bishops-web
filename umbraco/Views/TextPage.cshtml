@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+	var pageTitle = CurrentPage.Name;
+	if(CurrentPage.HasValue("pageTitle")) {
+		pageTitle = CurrentPage.pageTitle;	
+	}
+}
+<div class="wrap wrap--section">
+	<article class="article wrap__medium clearfix">
+		<h1 class="title--page">@pageTitle</h1>
+		@{ Html.RenderPartial("gallery"); }
+		@CurrentPage.Content
+		@if(CurrentPage.HasValue("quote")) {
+			<blockquote class="quote quote--work">
+				<div class="quote__copy">
+					@CurrentPage.quote
+				</div>
+				@if(CurrentPage.HasValue("quoteAuthor")) {
+					<footer class="quote__author">@CurrentPage.quoteAuthor</footer>
+				}
+			</blockquote>	
+		}
+	</article>
+</div>

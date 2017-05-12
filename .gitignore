@@ -38,3 +38,11 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+.grunt/ftpush/build.json
+
+.grunt/ftpush/build.json
+
+umbraco/Config/connectionStrings.config
+
+
+**/umbraco/App_Data/cache/

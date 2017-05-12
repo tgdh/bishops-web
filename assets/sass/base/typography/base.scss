@@ -20,7 +20,7 @@ button {
 	font-family: 'Open Sans', Arial, Helvetica, Geneva, sans-serif;
 	font-size: $base-font-size;
 	font-feature-settings: 'liga', 'kern'; //= http://elliotjaystocks.com/blog/kerning/
-	font-kerning: normal; 
+	font-kerning: normal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	line-height: $base-line-height;
@@ -34,24 +34,35 @@ ol + p {
 	margin-top: $base-line-height; //= Preserves verticle rythm being equal to line-height
 }
 
-p + h1, 
-p + h2, 
-p + h3, 
-p + h4, 
-p + h5, 
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
 p + h6,
-ul + h1, 
-ul + h2, 
-ul + h3, 
-ul + h4, 
-ul + h5, 
+ul + h1,
+ul + h2,
+ul + h3,
+ul + h4,
+ul + h5,
 ul + h6,
-ol + h1, 
-ol + h2, 
-ol + h3, 
-ol + h4, 
-ol + h5, 
+ol + h1,
+ol + h2,
+ol + h3,
+ol + h4,
+ol + h5,
 ol + h6 {
+	padding-top: $base-line-height;
+}
+
+p + .o-page-component,
+ol + .o-page-component,
+ul + .o-page-component,
+.o-page-component + p,
+.o-page-component + ol,
+.o-page-component + ul,
+.o-page-component + form,
+.o-page-component + table {
 	padding-top: $base-line-height;
 }
 
@@ -74,6 +85,10 @@ h2,
 .title--page,
 .title--section {
 	text-transform: uppercase;
+}
+
+p + .button {
+	margin-top: $line-height;
 }
 
 ::selection,

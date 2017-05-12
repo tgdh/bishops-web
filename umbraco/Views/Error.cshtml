@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div class="wrap wrap--section">
+	<article class="article wrap__medium clearfix">
+		<h1 class="title--page">@CurrentPage.Name</h1>
+		@{ Html.RenderPartial("gallery"); }
+		@CurrentPage.Content
+	</article>
+</div>

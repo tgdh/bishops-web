@@ -1,0 +1,170 @@
+{
+  "name": "Sample order form",
+  "created": "2015-08-20T09:14:52.2733882+01:00",
+  "pages": [
+    {
+      "fieldSets": [
+        {
+          "caption": null,
+          "sortOrder": 0,
+          "id": "00000000-0000-0000-0000-000000000000",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": null,
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "Name",
+                  "tooltip": "Your full name",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "fullName",
+                  "id": "3da75989-3098-4dfb-fdeb-85cc15760330",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Company name",
+                  "tooltip": "Your company name",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "companyName",
+                  "id": "871c4c8d-f241-4415-d990-fcf7b00dd828",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Address line 1",
+                  "tooltip": "First line of your address",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "addressLine1",
+                  "id": "808e503e-d73f-451b-a19d-b9a374b81470",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Address line 2",
+                  "tooltip": "Second line of your address",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "addressLine2",
+                  "id": "1c177495-1c47-4272-ba47-950f2be7e95a",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Town or City",
+                  "tooltip": "Your Town or City",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "townOrCity",
+                  "id": "f9244327-eaa6-42bf-9203-97448faa7a41",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Postcode",
+                  "tooltip": "Your postcode",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "postcode",
+                  "id": "b69c8fad-3b11-4aca-e957-a43f939a7b63",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "caption": null,
+      "sortOrder": 0,
+      "id": "00000000-0000-0000-0000-000000000000",
+      "form": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "id": "cb60559e-a1ba-4f58-be0d-22afc8d4b992",
+  "fieldIndicationType": "MarkMandatoryFields",
+  "indicator": "*",
+  "showValidationSummary": false,
+  "hideFieldValidation": false,
+  "requiredErrorMessage": "Please provide a value for {0}",
+  "invalidErrorMessage": "Please provide a valid value for {0}",
+  "messageOnSubmit": "Thank you. Your 'Print Can Move You' sample pack should be with you in a few days. \n\nShould you need to change your delivery address, please email enquiries@bishops.co.uk.",
+  "goToPageOnSubmit": 0,
+  "xPathOnSubmit": null,
+  "manualApproval": false,
+  "storeRecordsLocally": true,
+  "cssClass": "js-simple-form",
+  "disableDefaultStylesheet": true,
+  "useClientDependency": false,
+  "workflows": [
+    "a007da0b-3252-4237-9d73-68ce8dd58e5b"
+  ],
+  "datasource": null,
+  "submitLabel": "Submit",
+  "nextLabel": "Next",
+  "prevLabel": "Previous"
+}

@@ -1,0 +1,8 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{ 
+	var leafletOptions = CurrentPage.Children();
+}
+
+@foreach(var item in leafletOptions) {
+	<p>@item.Name</p>
+}

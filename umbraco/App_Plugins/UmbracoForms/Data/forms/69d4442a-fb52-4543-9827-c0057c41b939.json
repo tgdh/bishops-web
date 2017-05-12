@@ -1,0 +1,214 @@
+{
+  "name": "Contact",
+  "created": "2015-03-25T12:09:15.7109914+00:00",
+  "pages": [
+    {
+      "fieldSets": [
+        {
+          "caption": null,
+          "sortOrder": 0,
+          "id": "00000000-0000-0000-0000-000000000000",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": null,
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "Name",
+                  "tooltip": "Name",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "name",
+                  "id": "f6718dda-0e45-48f9-bf8f-ecfe8a500a9e",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Company",
+                  "tooltip": "Company",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "company",
+                  "id": "4dd0fb27-1564-46ad-ea4a-f0838d816ac1",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Position",
+                  "tooltip": "Position",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "position",
+                  "id": "ddde4bf8-14e9-4182-835f-e04a4cd91b32",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Email",
+                  "tooltip": "Email",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "email",
+                  "id": "c9204231-7756-4e10-cb50-60870fb4bb73",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": "^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$",
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Telephone",
+                  "tooltip": "Telephone",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "telephone",
+                  "id": "f5b7c6e0-0829-4d9f-ca8a-bbe9fb14ab1a",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Promotion code",
+                  "tooltip": "Promotion code",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "promotionCode",
+                  "id": "5644209b-ec7a-46a6-d42d-33feaa17b5b4",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Details",
+                  "tooltip": "Details",
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "message",
+                  "id": "d69e4ea5-4957-4b27-f572-cae872e2dc75",
+                  "fieldTypeId": "023f09ac-1445-4bcb-b8fa-ab49f33bd046",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": true,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Form type",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "formType",
+                  "id": "db990ae4-97df-4d2a-e21a-a4b9549a629a",
+                  "fieldTypeId": "903df9b0-a78c-11de-9fc1-db7a56d89593",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "DefaultValue": "General enquiry"
+                  },
+                  "preValues": [
+                    "General enquiry",
+                    "Request brochure",
+                    "Request quote"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "caption": "",
+      "sortOrder": 0,
+      "id": "00000000-0000-0000-0000-000000000000",
+      "form": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "id": "69d4442a-fb52-4543-9827-c0057c41b939",
+  "fieldIndicationType": "MarkMandatoryFields",
+  "indicator": "*",
+  "showValidationSummary": false,
+  "hideFieldValidation": false,
+  "requiredErrorMessage": "Please provide a value for {0}",
+  "invalidErrorMessage": "Please provide a valid value for {0}",
+  "messageOnSubmit": "Thank you for your enquiry. A member of the Bishops team will be in touch shortly",
+  "goToPageOnSubmit": 1567,
+  "xPathOnSubmit": null,
+  "manualApproval": false,
+  "storeRecordsLocally": true,
+  "cssClass": null,
+  "disableDefaultStylesheet": true,
+  "useClientDependency": false,
+  "workflows": [
+    "d774bf4e-a061-4540-8121-ad52e1b686bb"
+  ],
+  "datasource": null,
+  "submitLabel": "Submit",
+  "nextLabel": "Next",
+  "prevLabel": "Prev"
+}

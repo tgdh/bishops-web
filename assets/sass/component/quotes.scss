@@ -1,0 +1,49 @@
+//                      __
+//   ____ ___  ______  / /____  _____
+//  / __ `/ / / / __ \/ __/ _ \/ ___/
+// / /_/ / /_/ / /_/ / /_/  __(__  )
+// \__, /\__,_/\____/\__/\___/____/
+//   /_/
+
+.c-quotes {
+    max-width: 77rem;
+    margin: 0 auto;
+
+    .c-quote {
+        margin-top: .5rem;
+    }
+
+    .c-quote__copy {
+        color: $blue-1;
+        margin-bottom: 3.5rem;
+    }
+
+    .c-quote__src {
+        color: $blue-1;
+        float: right;
+        font-weight: normal;
+    }
+}
+
+.s-quotes {
+
+    .owl-controls {
+
+        .owl-dots {
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .owl-dot {
+            border: .2rem solid $pri;
+            box-shadow: none;
+            height: 1.4rem;
+            width: 1.4rem;
+
+            &.active {
+                background: $pri;
+            }
+        }
+    }
+}

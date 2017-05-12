@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+	var selection = Umbraco.Content(1226);
+}
+
+<div class="wrap wrap--section">
+	<article class="article wrap__medium clearfix">
+		<h1 class="title--page">@selection.Name</h1>
+		@CurrentPage.Parent().content
+		@{Html.RenderPartial("glossary"); }
+	</article>
+</div>

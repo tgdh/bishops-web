@@ -1,0 +1,36 @@
+@using Umbraco.Web
+@inherits UmbracoViewPage<IPublishedContent>
+@{
+    var subPages = Model.Children.Where( x => x.IsVisible() );
+    var homePage = Model.AncestorOrSelf(1);
+}
+
+@foreach( IPublishedContent item in subPages ) {
+    var tileName = item.Name;
+    var description = item.GetPropertyValue<HtmlString>("intro");
+    var url = item.Url;
+
+    bool hasDescription = item.HasValue("description");
+    var tileClasses = hasDescription ? null : "c-tile--no-description";
+
+    var imageId = item.HasValue("coverImage2") ? item.GetPropertyValue<string>("coverImage2") : "";
+    var image = Umbraco.Media( imageId );
+
+    var aspectRatio = "3:2";
+    int imageWidth = 400;
+    var imageUrl = image.GetCropUrl(aspectRatio);
+
+    <div class="c-tile @tileClasses o-grid__item">
+        <a href="@url" class="c-tile__link">
+            <div class="c-tile__image-wrap js-lazyload" data-bg="@imageUrl" style="background-image: url(@imageUrl);"></div>
+            <div class="c-tile__content">
+                <h3 class="c-tile__name">@tileName</h3>
+                @if( hasDescription ) {
+                    <div class="c-tile__description">
+                        <p>@description</p>
+                    </div>
+                }
+            </div>
+        </a>
+    </div>
+}

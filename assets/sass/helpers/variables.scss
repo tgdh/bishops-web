@@ -7,6 +7,7 @@
 $white: #FFF;
 $black: #000;
 
+$dark-0: #06171c;
 $dark-1: #464748;
 $dark-2: #666768;
 
@@ -18,6 +19,9 @@ $red-2: #ae061a;
 
 $blue-1: #004970;
 $blue-2: #003857;
+$blue-3: #195a7e;
+
+$light-grey--1:     #f2f6f8;
 
 $green-1: #53a93f;
 
@@ -39,6 +43,8 @@ $transition-speed: 			0.3s;
 $speed: 					$transition-speed;
 $hover-opacity:				0.5;
 $hover-opacity-ie:			alpha(opacity=50);
+
+$line-height: 				1.4em;
 
 // ===========================================================
 //

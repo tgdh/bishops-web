@@ -1,0 +1,63 @@
+//                ___ __
+//    _________  / (_) /______
+//   / ___/ __ \/ / / __/ ___/
+//  (__  ) /_/ / / / /_(__  )
+// /____/ .___/_/_/\__/____/
+//     /_/
+
+
+.c-split {
+    display: block;
+    position: relative;
+
+    .c-split__column {
+
+        + .c-split__column {
+            margin-top: 3rem;
+        }
+    }
+}
+
+@include respond-min($mq-medium) {
+
+    .c-split {
+
+        .c-split__column {
+
+            + .c-split__column {
+                margin-top: 0rem;
+            }
+        }
+    }
+
+    .c-split__column--65 {
+        width: 60%;
+        float: left;
+        padding-right: 3rem;
+        position: relative;
+        // border-right: .1rem solid $blue-1;
+
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 1px;
+            background: $blue-1;
+        }
+    }
+
+    .c-split__column--35 {
+        width: 40%;
+        float: right;
+        padding-left: 3rem;
+        position: relative;
+        // border-left: .1rem solid $blue-1;
+
+        &:before {
+            background: $blue-1;
+        }
+    }
+
+}

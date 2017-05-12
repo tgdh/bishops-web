@@ -1,0 +1,109 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var pageClass = "page--" + CurrentPage.Name.ToLower().Replace(" ", "-");
+}
+
+@if(CurrentPage.DocumentTypeAlias == "Home") {
+	var item = Umbraco.Content(CurrentPage.coverPicker);
+
+	<section class='cover cover--img @(item.brightness.ToString().Contains("0") ? "cover--dark" : "cover--white")'>
+		<div class="cover__content wrap">
+			@if( item.HasValue("coverTitle") || item.HasHavlue("coverContent") ) {
+				<div class="cover__copy pre-animate">
+					<h1 class="alpha">@item.coverTitle</h1>
+					<div class="cover__text">@item.coverContent</div>
+					@if(item.includeQuoteButtons == true) {
+						<div class="cover__buttons">
+							<a href="#contact" class="button button--primary button--cover" data-form-target="db990ae4-97df-4d2a-e21a-a4b9549a629a_1">Request a brochure</a>
+							@*
+							<a href="/promotions/may15" class="button button--primary button--cover">Our May promotion</a>
+							*@
+							<a href="#contact" class="button button--primary button--cover" data-form-target="db990ae4-97df-4d2a-e21a-a4b9549a629a_2">Request a quote</a>
+						</div>
+					}else if( item.HasValue("coverLink") ) {
+						<div class="cover__buttons">
+							<a href="@Umbraco.Content(item.CoverLink.ToString()).Url" class="button button--primary button--cover">@item.ButtonText</a>
+						</div>
+					}
+				</div>
+			}
+		</div>
+
+		<picture class="cover__img-wrap">
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source srcset='@item.GetCropUrl("coverImage", "large desktop")' media="(min-width: 1600px)">
+				<source srcset='@item.GetCropUrl("coverImage", "desktop")' media="(min-width: 800px)">
+				<source srcset='@item.GetCropUrl("coverImage", "tablet")' media="(min-width: 480px)">
+				<source srcset='@item.GetCropUrl("coverImage", "mobile")' media="(max-width: 479px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset='@item.GetCropUrl("coverImage", "desktop")' alt="" class="cover__img" style="display: block !important;">
+		</picture>
+	</section>
+
+}else if(CurrentPage.HasValue("coverImage")) {
+	<section class="cover cover--img">
+		<div class="cover__content wrap">
+			@if( CurrentPage.HasValue("coverTitle") || CurrentPage.HasHavlue("coverContent") ) {
+				<div class="cover__copy pre-animate">
+					<h1 class="alpha">@CurrentPage.coverTitle</h1>
+					<div class="cover__text">@CurrentPage.coverContent</div>
+					@if(pageClass == "page--home") {
+						<div class="cover__buttons">
+							<a href="#contact" class="button button--primary button--cover" data-form-target="6546839d-b1e1-4c56-9aa8-3e7feb9d4ea1_81b79a25-6885-4c48-bee9-a2d8c8770f92">Request a brochure</a>
+							<a href="#contact" class="button button--primary button--cover" data-form-target="6546839d-b1e1-4c56-9aa8-3e7feb9d4ea1_14e40d79-5102-47fd-8748-8a8ca9bfde78">Request a quote</a>
+						</div>
+					}
+				</div>
+			}
+		</div>
+
+		<picture class="cover__img-wrap">
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "large desktop")' media="(min-width: 1600px)">
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "desktop")' media="(min-width: 800px)">
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "tablet")' media="(min-width: 480px)">
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "mobile")' media="(max-width: 479px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset='@CurrentPage.GetCropUrl("coverImage", "desktop")' alt="" class="cover__img" style="display: block !important;">
+		</picture>
+	</section>
+}
+
+
+@*
+
+OLD COVER
+
+
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var pageClass = "page--" + CurrentPage.Name.ToLower().Replace(" ", "-");
+}
+
+@if(CurrentPage.HasValue("coverImage")) {
+	<section class="cover cover--img">
+		<div class="cover__content wrap">
+			<div class="cover__copy pre-animate">
+				<h1 class="alpha">@CurrentPage.coverTitle</h1>
+				<div class="cover__text">@CurrentPage.coverContent</div>
+				@if(pageClass == "page--home") {
+					<div class="cover__buttons">
+						<a href="#contact" class="button button--primary button--cover" data-form-target="6546839d-b1e1-4c56-9aa8-3e7feb9d4ea1_81b79a25-6885-4c48-bee9-a2d8c8770f92">Request a brochure</a>
+						<a href="#contact" class="button button--primary button--cover" data-form-target="6546839d-b1e1-4c56-9aa8-3e7feb9d4ea1_14e40d79-5102-47fd-8748-8a8ca9bfde78">Request a quote</a>
+					</div>
+				}
+			</div>
+		</div>
+
+		<picture class="cover__img-wrap">
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "large desktop")' media="(min-width: 1600px)">
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "desktop")' media="(min-width: 800px)">
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "tablet")' media="(min-width: 480px)">
+				<source srcset='@CurrentPage.GetCropUrl("coverImage", "mobile")' media="(max-width: 479px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset='@CurrentPage.GetCropUrl("coverImage", "desktop")' alt="" class="cover__img">
+		</picture>
+	</section>
+}
+*@

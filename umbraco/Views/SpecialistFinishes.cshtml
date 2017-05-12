@@ -1,0 +1,112 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+	var pageTitle = CurrentPage.Name;
+	if(CurrentPage.HasValue("pageTitle")) {
+		pageTitle = CurrentPage.pageTitle;	
+	}
+}
+<div class="wrap wrap--main">
+		<h1 class="page__title">Did you spot all of the <strong>print finishes</strong> we used?</h1>
+			
+		<article class="section">
+			<h2 class="section__title alpha">Feast your eyes mailshot</h2>
+			<div class="owl-carousel carousel--off-canvas js-carousel--off-canvas">
+				
+				<div class="slide slide--white">
+					<span class="tooltip__marker" style="top: 18%; left: 54%;" title="@CurrentPage.DieCuttingDescription" data-tooltip-title="Die cutting"></span>
+
+					<span class="tooltip__marker" style="top: 84%; left: 85%;" title="@CurrentPage.MattLaminateDescription" data-tooltip-title="Matt laminate"></span>
+						
+					<img src="/assets/img/egg.png" class="slide__image" alt="Die cut egg" />
+				</div>
+					
+				<div class="slide slide--red">
+					<span class="tooltip__marker" style="top: 84%; left: 10%;" title="@CurrentPage.spotGlossUVVarnishDescription"></span>
+						
+						
+					<img src="/assets/img/egg-cup.png" class="slide__image" alt="Spot gloss UV varnished egg cup" />
+				</div>
+						
+				<div class="slide slide--white">
+					<span class="tooltip__marker" style="top:54%; left: 40%;" title="@CurrentPage.spotGlossUVVarnishDescription"></span>
+						
+					<span class="tooltip__marker" style="top: 84%; left: 85%;" title="@CurrentPage.MattLaminateDescription"></span>
+						
+					<img src="/assets/img/tulip.png" class="slide__image" alt="Matt laminate tulip" />
+				</div>
+					
+				<div class="slide slide--blue">
+					<span class="tooltip__marker" style="top: 24%; left: 40%;" title="@CurrentPage.spotGlossUVVarnishDescription"></span>
+					<span class="tooltip__marker" style="top: 84%; left: 85%;" title="@CurrentPage.MattLaminateDescription"></span>
+						
+					<img src="/assets/img/umbrella.png" class="slide__image" alt="Matt laminate umbrella" />
+				</div>
+						
+				<div class="slide slide--white">
+					<span class="tooltip__marker" style="top:52%; left: 76%;" title="@CurrentPage.spotGlossUVVarnishDescription"></span>
+					<span class="tooltip__marker" style="top: 84%; left: 85%;" title="@CurrentPage.MattLaminateDescription"></span>
+						
+					<img src="/assets/img/back-page.png" class="slide__image" alt="Matt laminate back page" />
+				</div>
+							
+			</div>
+		</article>
+
+														
+		<article class="section">
+			<h2 class="section__title alpha">Spring forth mailshot</h2>
+			<div class="owl-carousel carousel--off-canvas js-carousel--off-canvas">
+				
+				<div class="slide slide--white">
+
+					<span class="tooltip__marker" style="top: 48%; left: 54%;" title="@CurrentPage.SpotGlossUVVarnishDescription2"></span>
+					
+					<img src="/assets/img/tulip-cover.png" class="slide__image" alt="Spot gloss UV varnish cover" />
+				</div>
+							
+				<div class="slide slide--white">
+					<span class="tooltip__marker" style="top: 38%; left: 54%;" title="@CurrentPage.SpotGlossUVVarnishDescription2"></span>
+
+					<span class="tooltip__marker" style="top: 84%; left: 85%;" title="@CurrentPage.MattLaminateDescription2"></span>
+					
+					<img src="/assets/img/water-droplet.png" class="slide__image" alt="Spot gloss UV varnish water droplet" />
+				</div>
+						
+				<div class="slide slide--blue">
+					<span class="tooltip__marker" style="top: 10%; left: 10%;" title="@CurrentPage.SpotMattUVVarnishDescription"></span>
+					<span class="tooltip__marker" style="top: 36%; left: 54%;" title="@CurrentPage.FoilBlockingDescription"></span>
+					
+					<img src="/assets/img/sun.png" class="slide__image" alt="" />
+				</div>
+							
+				<div class="slide slide--white">
+
+					<span class="tooltip__marker" style="top: 3%; left: 54%;" title="@CurrentPage.SpotGlossUVVarnishDescription2"></span>
+
+					<span class="tooltip__marker" style="top: 84%; left: 85%;" title="@CurrentPage.MattLaminateDescription2"></span>
+					
+					<img src="/assets/img/tulip-stem.png" class="slide__image" alt="Spot gloss UV varnish tulip stem" />
+				</div>
+						
+				<div class="slide slide--white">
+					<span class="tooltip__marker" style="top: 84%; left: 85%;" title="@CurrentPage.MattLaminateDescription2"></span>
+					<img src="/assets/img/address.png" class="slide__image" alt="Matt laminate back page" />
+				</div>
+						
+				<div class="slide slide--white">
+					<span class="tooltip__marker" style="top: 10%; left: 10%;" title="@CurrentPage.SpotMattUVVarnishDescription"></span>
+					<span class="tooltip__marker" style="top:72%; left: 38%;" title="@CurrentPage.spotGlossUVVarnishDescription2"></span>
+						
+					<img src="/assets/img/back-page.png" class="slide__image" alt="Spot matt UV varnish back page" />
+				</div>
+				
+			</div>
+		</article>							
+											
+</div>
+		
+@section pageScripts {
+
+	
+}

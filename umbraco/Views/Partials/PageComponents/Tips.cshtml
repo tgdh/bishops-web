@@ -1,0 +1,30 @@
+@using Umbraco.Web
+@inherits UmbracoViewPage<IPublishedContent>
+@{
+    var tips = Model.GetPropertyValue<IEnumerable<IPublishedContent>>("content");
+    var hasTips = tips.Any();
+}
+
+@if( hasTips )
+{
+    <div class="c-tips s-tips o-page-component">
+        <h2 class="c-tips__title">
+            <i class="ico-lightbulb"></i>
+            <span>Tips</span>
+        </h2>
+        <ul class="c-tips__list">
+            @foreach( var item in tips )
+            {
+                var tip = item.GetPropertyValue<HtmlString>("content");
+                var renderTip = tip != null && tip.ToString() != "" ? true : false;
+
+                if( renderTip )
+                {
+                    <li class="c-tips__item">@tip</li>
+                }
+
+            }
+        </ul>
+    </div>
+}
+

@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Archetype.Models;
+@using Archetype.Extensions;
+@{
+    Layout = "MasterResource.cshtml";
+}
+<article class="wrap wrap--section">
+	<div class="wrap__medium">
+		<h1 class="title--page">@CurrentPage.Name</h1>
+		@CurrentPage.Content
+		<dl class="accordion">
+		@foreach (var fieldset in Model.Content.GetPropertyValue<ArchetypeModel>("Faqs")) {
+			<dt class="accordion__title">
+				<h3>@fieldset.GetValue("faqQuestion")</h3>
+			</dt>
+			<dd class="accordion__copy">
+				<div class="accordion__copy-wrap">
+					@Html.Raw(fieldset.GetValue("faqAnswer"))
+				</div>
+			</dd>
+		}
+		</dl>
+	</div>
+</article>
+@{ Html.RenderPartial("relatedContent"); }

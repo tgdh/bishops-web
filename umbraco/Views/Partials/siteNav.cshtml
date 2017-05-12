@@ -1,0 +1,51 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{    
+	var homePage = CurrentPage.AncestorsOrSelf(1).First();
+	var menuItems = homePage.Children.Where("UmbracoNaviHide == false");
+}
+
+
+<nav class="nav nav--main" role="navigation">
+	<ul class="nav__list wrap">
+		@foreach (var item in menuItems){
+			<li class="nav__item nav__item--level-2">
+				<a href="@item.Url" class="nav__link @item.IsAncestorOrSelf(CurrentPage, "active", "")">@item.Name</a>
+				@Traverse(item)
+			</li>
+		}
+		<li class="nav__item">
+			<a href="#contact" class="nav__link">Contact</a>
+		</li>
+		@*
+		<li class="nav__item">
+			<a href="@Umbraco.Content(homePage.searchPage).Url" class="nav__link clearfix" id="toggleSearch"><i class="ico-search"></i>
+				<form action="/search" method="GET" class="search-form"> 
+					<input id="searchInput" type="text" name="q" class="search__input" />
+				</form> 
+				@Umbraco.RenderMacro("ezSearch", new {hideFromSearchField="null", indexType="null", pageSize="5", previewFields="null", previewLength="null", rootContentNodeId="1067", rootMediaNodeId="null", searchFields="null", searchFormLocation="none"})
+			</a>
+		</li>
+		*@
+	</ul>
+</nav>
+
+@* Helper method to travers through all descendants *@
+@helper Traverse(dynamic node) {
+    var maxLevelForNav = 6;
+    var items = node.Children.Where("Visible").Where("Level <= " + maxLevelForNav).Where("NodeTypeAlias != @0", "photoCaseStudy").Where("NodeTypeAlias != @0", "smallCaseStudy").Where("NodeTypeAlias != @0", "folderTemplate").Where("NodeTypeAlias != @0", "LeafletOption").Where("NodeTypeAlias != @0", "AlphabetFolder").Where("NodeTypeAlias != @0", "LeafletFolder").Where("NodeTypeAlias != @0", "WorkQuote").Where("NodeTypeAlias != @0", "SpecialistFinish");
+    if (items.Any()) {
+	        <ul class="nav__list--sub">
+    	        @foreach (var item in items) {
+					<li class="nav__item nav__item--child nav__item-level--@item.Level">
+						@if(item.DocumentTypeAlias == "WorkEntry") {
+							var sectionId = item.Name.Replace(" ", "-").ToLower();
+							<a href='@item.Parent().Url#@sectionId' class="nav__link @(CurrentPage.Id == item.Id ? "active" : null)">@item.Name</a>
+						} else {
+							<a href="@item.Url" class="nav__link @(CurrentPage.Id == item.Id ? "active" : null)">@item.Name</a>
+						}
+                    	@Traverse(item)
+	                </li>
+    	        }
+        	</ul>
+    }
+}

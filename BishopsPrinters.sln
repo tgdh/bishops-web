@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "umbraco(3)", "http://localhost:49821", "{46013C37-AC8C-447B-9429-35555640AD7D}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49821"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Sites\Projects\bishops-web\umbraco\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49821\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49821"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Sites\Projects\bishops-web\umbraco\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49821\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\Sites\Projects\bishops-web\umbraco\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46013C37-AC8C-447B-9429-35555640AD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46013C37-AC8C-447B-9429-35555640AD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

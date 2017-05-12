@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterResource.cshtml";
+}
+<div class="wrap wrap--section">
+	<div class="wrap__medium">
+		<h1 class="title--page">@CurrentPage.Name</h1>
+		@CurrentPage.Content
+			
+		@if(CurrentPage.Name == "Paper sizes") {
+			Html.RenderPartial("paperSizes");
+		}
+			
+		@if(CurrentPage.Name == "Folder templates") {
+			Html.RenderPartial("folderTemplates");
+		}
+
+		@if(CurrentPage.Id == 1226) {
+			Html.RenderPartial("glossary");
+		}
+
+		@if(CurrentPage.Name == "Leaflet options") {
+			Html.RenderPartial("leafletOptions");
+		}
+	</div>
+</div>
+@{ Html.RenderPartial("relatedContent"); }

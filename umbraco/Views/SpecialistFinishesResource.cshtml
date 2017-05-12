@@ -1,0 +1,79 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterResource.cshtml";	
+	var selection = CurrentPage.Children().Where("Visible");
+}
+@*
+	<section class="cover cover--img">
+		<div class="owl-carousel js-fixed-cover">
+			@foreach( var item in selection ) {
+				var image = Umbraco.Media( item.graphic );
+				var sectionId = item.Name.Replace(' ','-');	
+				<a href="#@sectionId">
+					<picture class="cover__img-wrap">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+							<source srcset='@image.Url?width=1600&height=1600&mode=crop' media="(min-width: 1600px)">
+							<source srcset='@image.Url?width=1400&height=1400&mode=crop' media="(min-width: 800px)">
+							<source srcset='@image.Url?width=820&height=820&mode=crop' media="(min-width: 480px)">
+							<source srcset='@image.Url?width=400&height=400&mode=crop' media="(max-width: 479px)">
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset='@image.Url?width=1400&height=1400&mode=crop' alt="@item.Name" class="cover__img">
+					</picture>
+					<div class="cover__text"><h3>@item.Name</h3></div>
+				</a>
+			}
+		</div>
+	</section>
+	<div class="wrap intro--copy giga">
+		@CurrentPage.intro
+	</div>
+	<div class="wrap">
+	<ul class="wrap wrap__medium list--grid clearfix">
+		@foreach( var item in selection ) {
+			var sectionId = item.Name.Replace(' ','-');	
+			<li><a href="#@sectionId">@item.Name</a></li>	
+		}
+	</ul>
+	</div>
+*@	
+
+<div class="wrap__medium intro--copy wrap--large wrap--section" style="padding-bottom: 0;">
+	<h1 class="title--page">@CurrentPage.Name</h1>
+	@CurrentPage.intro
+</div>
+
+@if( CurrentPage.HasValue("IntroImage") ) {
+	var introImage = Umbraco.Media(CurrentPage.IntroImage);
+	<img src="@introImage.Url?width=1400&upscale=false" alt="@CurrentPage.Name" class="intro-image wrap wrap--large" style="display:block; width:100%;">
+}
+
+@if( selection.Any() ) {
+	<article class="work clearfix">
+		@foreach( var item in selection ) {
+			var image = Umbraco.Media( item.graphic );
+			var sectionId = item.Name.Replace(' ','-');
+			<div id="@sectionId" class='wrap wrap--section wrap--overlay clearfix @(item.HasValue("graphic") ? "has--img" : "")'>
+				<h2 class="work__title title--section giga">@item.Name</h2>
+				<div class="work__wrap">
+					<div class="work__img-wrap">
+						<img src="@image.Url?width=800&height=800&mode=crop" alt="@CurrentPage.Name" class="work__img pre-animate" />						
+					</div>
+					<div class="work__content">
+						@item.content
+						@if( item.HasValue("features") ){
+							<ul class="feature__list clearfix">
+							@foreach( var feature in item.features ){
+								<li class="listing__feature">@feature.GetValue("featureText")</li>	
+							}
+							</ul>
+						}
+					</div>
+				</div>
+			</div>
+		}
+	</article>				
+}
+
+@Html.Partial("Component/sampleOrderForm")
+
+@Html.Partial("relatedContent")

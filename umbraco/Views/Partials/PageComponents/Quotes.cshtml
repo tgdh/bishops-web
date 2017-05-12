@@ -1,0 +1,35 @@
+@using Umbraco.Web
+@inherits UmbracoViewPage<IPublishedContent>
+@{
+    var quotes = Model.GetPropertyValue<IEnumerable<IPublishedContent>>("quotes");
+    var hasQuotes = quotes.Any();
+    var isSlider = quotes.Count() > 1;
+    var sliderClass = isSlider ? "owl-carousel js-quotes-slider" : "";
+}
+
+@if( hasQuotes )
+{
+    <div class="c-quotes s-quotes o-page-component @sliderClass">
+        @foreach( var item in quotes )
+        {
+            var quote = item.GetPropertyValue("quote");
+            var source = item.GetPropertyValue("source");
+            var alignment = item.GetPropertyValue<string>("alignment") != null ? item.GetPropertyValue<string>("alignment").ToLower() : "default";
+            var renderQuote = quote != null && quote.ToString() != "" ? true : false;
+
+            if( renderQuote )
+            {
+                <blockquote class="c-quote o-media clearfix">
+                    <div class="c-quote__copy">
+                        @quote
+                    </div>
+
+                    @if( item.HasValue("source") ) {
+                        <footer class="c-quote__src u-small">@source</footer>
+                    }
+                </blockquote>
+            }
+        }
+    </div>
+}
+

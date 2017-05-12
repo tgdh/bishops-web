@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<section id="sampleOrderForm" class="wrap wrap--large section--highlight"  style="background-color: #004970 !important; color: #fff !important;">
+	@if( CurrentPage.HasValue("OrderFormTitle") ) {
+		<h2 class="title--section giga">@CurrentPage.OrderFormTitle</h2>
+	}
+	@if( CurrentPage.HasValue("OrderFormCopy") ) {
+		@CurrentPage.OrderFormCopy
+	}
+	@Umbraco.RenderMacro("FormsRenderForm", new {FormGuid="cb60559e-a1ba-4f58-be0d-22afc8d4b992"})
+</section>

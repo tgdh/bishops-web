@@ -1,0 +1,107 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+	var selection = CurrentPage.Children();
+}
+
+@foreach(var item in selection ){ 
+	if(item.DocumentTypeAlias == "photoCaseStudy") {
+		<article id="@item.Name.ToLower().Replace(' ','-')" class="owl-carousels case-study case-study--macro js-case-study clearfix">
+			@* SECTION 1 *@
+			<section class="case-study__section case-study__section--first">
+				
+				<div class="case-study__wrap">
+					<div class="case-study__content">
+						<div class="case-study__header clearfix">
+							@if(item.HasValue("logo")) {
+								<img src="@Umbraco.Media(item.logo).Url?height=65" alt="@item.Name" class="case-study__img--logo" />
+							}
+							<div class="case-study__title--wrap">
+								<h2 class="case-study__title">@item.Name</h2>
+								@if( item.HasValue("Subtitle1") ) {
+									<small class="alpha title--sub">@item.Subtitle1</small>
+								}
+							</div>
+						</div>
+						@item.intro
+					</div>
+				</div>
+									
+				@if(item.HasValue("introPhoto")) {
+					<img src="@Umbraco.Media(item.introPhoto).Url?width=1400&height=565&mode=crop" alt="@item.Name" class="case-study__img" />
+				}
+			</section>
+			@* SECTION 2 *@
+			<section class="case-study__section case-study__section--second">
+				<div class="case-study__wrap">
+					<div class="case-study__content">
+						<div class="case-study__title--wrap">
+							@if( item.HasValue("title2") ) {
+								<h2 class="case-study__title">@item.title2</h2>	
+							}
+							@if( item.HasValue("Subtitle2") ) {
+								<small class="alpha title--sub">@item.Subtitle2</small>
+							}
+						</div>
+						@item.spec
+					</div>
+				</div>
+				@if(item.HasValue("specPhoto")) {
+					<img src="@Umbraco.Media(item.specPhoto).Url?width=1400&height=565&mode=crop" alt="@item.Name" class="case-study__img" />
+				}
+			</section>
+			@* SECTION 3 *@
+			<section class="case-study__section case-study__section--third">
+				<div class="case-study__wrap">
+					<div class="case-study__content">
+						<div class="case-study__title--wrap">
+							@if( item.HasValue("title3") ) {
+								<h2 class="case-study__title">@item.title3</h2>	
+							}
+							@if( item.HasValue("Subtitle3") ) {
+								<small class="alpha title--sub">@item.Subtitle3</small>
+							}
+						</div>
+						@item.resultContent
+								
+					</div>
+				</div>
+				@if(item.HasValue("resultPhoto")) {
+					<img src="@Umbraco.Media(item.resultPhoto).Url?width=1400&height=565&mode=crop" alt="@item.Name" class="case-study__img" />
+				}
+			</section>
+		</article>
+	} else {
+		<article id="@item.Name.ToLower().Replace(' ','-')" class="case-study case-study--micro clearfix">
+			<div class="clearfix">
+				<div class="case-study__header clearfix">
+					@if(item.HasValue("logo")) {
+						<img src="@Umbraco.Media(item.logo).Url?height=65" alt="@item.Name" class="case-study__img--logo" />
+					}
+					<div class="case-study__title--wrap">
+						<h2 class="case-study__title">@item.Name</h2>
+						@if( item.HasValue("Subtitle") ) {
+							<small class="alpha title--sub">@item.Subtitle</small>
+						}
+					</div>
+				</div>
+				<section class="case-study__section">
+					@item.Content1
+				</section>
+				<section class="case-study__section case-study__section--last">
+					@item.Content2
+					@if( item.HasValue("Gallery") ) {
+						<aside class="gallery--space-around js-gallery">
+							@foreach( var id in item.Gallery.Split(',') ) {
+								var img = Umbraco.Media(id);
+								<a href="@img.Url" class="gallery__img-link">
+									<img src="@img.Url?height=190" class="gallery__img" alt="@img.Name" />
+								</a>
+							}
+						</aside>
+					}
+				</section>
+			</div>
+		</article>
+	}
+}

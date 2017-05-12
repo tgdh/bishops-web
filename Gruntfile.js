@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -7,14 +7,14 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['assets/sass/*/*.scss', 'assets/sass/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'cssmin', 'ftpush'],
+                tasks: ['sass', 'autoprefixer', 'css_mqpacker', 'stripmq', 'cssmin'],
                 options: {
                     spawn: false,
                 }
             },
             scripts: {
-                files: ['assets/js/*.js'],
-                tasks: ['concat', 'uglify', 'ftpush'],
+                files: ['assets/js/**/*.js'],
+                tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,
                 }
@@ -88,7 +88,7 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'assets/css/',
                 src: '*.css',
-                dest: 'assets/build/css/',
+                dest: 'umbraco/assets/css/',
                 ext: '.min.css'
             }
         },
@@ -96,18 +96,23 @@ module.exports = function (grunt) {
         //COMBINE JS & MINIFY
         concat: {
             dist: {
-                src: ['assets/js/plugin/*.js','assets/js/module/*.js','assets/js/*.js'],
+                src: [
+                    'assets/js/plugin/*.js',
+                    'assets/js/module/*.js',
+                    'assets/js/component/*.js',
+                    'assets/js/*.js'
+                ],
                 dest: 'assets/build/js/script.min.js'
             }
         },
         uglify: {
             build: {
                 src: 'assets/build/js/script.min.js',
-                dest: 'assets/build/js/script.min.js'
+                dest: 'umbraco/assets/js/script.min.js'
             }
         },
 
-/*
+        /*
 
 
         concat: {
@@ -137,21 +142,21 @@ module.exports = function (grunt) {
                 sizes: [{
                     name: 'small',
                     width: 450
-                },{
+                }, {
                     name: 'small',
                     width: 675,
                     suffix: '_x2'
-                },{
+                }, {
                     name: 'medium',
                     width: 900
-                },{
+                }, {
                     name: 'medium',
                     width: 1350,
                     suffix: '_x2'
-                },{
+                }, {
                     name: 'large',
                     width: 1200
-                },{
+                }, {
                     name: 'large',
                     width: 1800,
                     suffix: '_x2'
@@ -178,11 +183,13 @@ module.exports = function (grunt) {
         },
         svgmin: {
             options: {
-                plugins: [
-                    {removeViewBox: true}, 
-                    {removeUselessStrokeAndFill: false},
-                    {removeEmptyAttrs: false}
-                ]
+                plugins: [{
+                    removeViewBox: true
+                }, {
+                    removeUselessStrokeAndFill: false
+                }, {
+                    removeEmptyAttrs: false
+                }]
             },
             dist: {
                 files: [{
@@ -198,7 +205,7 @@ module.exports = function (grunt) {
         'ftpush': {
             build: {
                 auth: {
-                    host: '217.147.85.119',
+                    host: '176.74.18.115',
                     port: 21,
                     authKey: 'key1'
                 },
@@ -227,7 +234,7 @@ module.exports = function (grunt) {
             }
         }*/
 
-        
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -243,7 +250,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-imageoptim');
     grunt.loadNpmTasks('grunt-svgmin');
-    
+
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftpush');
 
@@ -260,11 +267,11 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('css', [
-        'sass', 
-        'autoprefixer', 
-        'css_mqpacker', 
-        'stripmq', 
-        'remfallback', 
+        'sass',
+        'autoprefixer',
+        'css_mqpacker',
+        'stripmq',
+        'remfallback',
         'cssmin'
     ]);
 

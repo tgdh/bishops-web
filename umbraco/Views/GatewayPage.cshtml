@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+
+    var pageTitle = CurrentPage.Name;
+
+    if(CurrentPage.HasValue("pageTitle")) {
+        pageTitle = CurrentPage.pageTitle;
+    }
+
+    bool hasDescription = Model.Content.HasValue("introduction");
+
+}
+
+<div class="wrap wrap--section">
+    <article class="article wrap__medium clearfix">
+        <h1 class="title--page">@pageTitle</h1>
+        @if( hasDescription )
+        {
+            <div class="c-hero__description u-intro">
+                @(Model.Content.GetPropertyValue<HtmlString>("introduction"))
+            </div>
+        }
+        <div class="clearfix">
+            @Html.Partial("~/Views/Partials/PageComponents/GatewayLinks.cshtml")
+        </div>
+    </article>
+</div>

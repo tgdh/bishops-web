@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Archetype.Models;
+@using Archetype.Extensions;
+@{
+    Layout = "MasterResource.cshtml";
+}
+<div class="wrap wrap--section">
+	<article class="article wrap__medium clearfix">
+		<h1 class="title--page">@CurrentPage.Name</h1>
+		@if(CurrentPage.HasValue("Image")) {
+			<img src="@Umbraco.Media(CurrentPage.Image).Url" alt="@CurrentPage.Name" class="image-align--center" data-fallback-src='@(CurrentPage.HasValue("fallbackImage") ? Umbraco.Media(CurrentPage.fallbackImage).Url : "")' style="max-width:522px;" />
+		} else if(CurrentPage.HasValue("fallbackImage")) {
+			<img src="@Umbraco.Media(CurrentPage.fallbackImage).Url" alt="@CurrentPage.Name" class="image-align--center" />
+		}
+
+
+		<div class="wrap--block-clear o-col--two clearfix">
+				@foreach (var fieldset in Model.Content.GetPropertyValue<ArchetypeModel>("trimmedStock")) {
+					<article class="block o-col">
+						<h3 class="block__title">@fieldset.GetValue("blockTitle")</h3>
+						<div>@Html.Raw(fieldset.GetValue("content"))</div>
+					</article>
+				}
+		</div>
+
+		@CurrentPage.Content
+	</article>
+</div>
+@{ Html.RenderPartial("relatedContent"); }

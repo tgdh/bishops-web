@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	var selection = Umbraco.Content(1226);
+}
+<nav class="nav--glossary">
+	<div class="nav__wrap">
+		@foreach(var page in selection.children) {
+			<a href="@page.Url" class='nav__link @(CurrentPage.Id == page.Id ? "active" : "")'>@page.Name</a>
+		}
+	</div>
+	<div class="select-wrap">
+		<select class="select" onchange="window.location=this.value;">
+			<option>Letters...</option>
+			@foreach(var page in selection.children) {
+				<option value="@page.Url">@page.Name</option>
+			}
+		</select>
+	</div>
+</nav>
+	
+<dl class="accordion">
+	@foreach(var item in (CurrentPage.Id == 1226 ? CurrentPage.children.First().children : CurrentPage.children)) {
+		<dt class="accordion__title">
+			<h3>@item.Name</h3>
+		</dt>
+		<dd class="accordion__copy">
+			<div class="accordion__copy-wrap">
+				@item.content
+			</div>
+		</dd>
+	}
+</dl>
+	

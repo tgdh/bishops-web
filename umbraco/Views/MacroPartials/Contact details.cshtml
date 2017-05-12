@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{
+	var phoneNumber = Model.MacroParameters["phoneNumber"];
+	var emailAddress = Model.MacroParameters["emailAddress"];
+    var hasPhone = phoneNumber != null;
+    var hasEmail = emailAddress != null;
+}
+
+@if( hasPhone || hasEmail )
+{
+    <div class="c-contacts">
+        @if( hasPhone )
+        {
+            <div class="c-contacts__line">
+                <i class="ico-phone"></i>
+                <span>Call: @phoneNumber</span>
+            </div>
+        }
+        @if( hasEmail )
+        {
+            <div class="c-contacts__line">
+                <i class="ico-mail"></i>
+                <span>Email: <a href="mailto:@emailAddress">@emailAddress</a></span>
+            </div>
+        }
+    </div>
+}
+

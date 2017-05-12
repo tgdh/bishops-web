@@ -1,0 +1,20 @@
+@using Umbraco.Web
+@inherits UmbracoViewPage<IPublishedContent>
+@{
+    bool hasContent = Model.HasValue("wideSplit") && Model.HasValue("narrowSplit");
+}
+
+@if( hasContent )
+{
+    var wideSplitContent = Model.GetPropertyValue<HtmlString>("wideSplit");
+    var narrowSplitContent = Model.GetPropertyValue<HtmlString>("narrowSplit");
+
+    <div class="c-split o-page-component clearfix">
+        <div class="c-split__column c-split__column--65">
+            @wideSplitContent
+        </div>
+        <div class="c-split__column c-split__column--35">
+            @narrowSplitContent
+        </div>
+    </div>
+}

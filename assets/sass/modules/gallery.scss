@@ -4,6 +4,20 @@
 //
 // ===========================================================
 
+.gallery--space-around {
+	display: flex;
+	justify-content: space-around;
+
+	.gallery__img-link {
+		display: inline-block;
+		margin: 0 1rem;
+	}
+}
+
+.gallery {
+	position: relative;
+	z-index: 1;
+}
 
 @include respond-max( $mq-medium ) {
 
@@ -22,7 +36,7 @@
 
 	.gallery__img-thumb {
 		display: block;
-		margin-bottom: $base-line-height;
+		margin-bottom: 1.4rem;
 	}
 
 }
