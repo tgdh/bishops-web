@@ -38630,3 +38630,147 @@ Found 1 .lic file(s):
 Could not validate license:
 
 Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost
+Looking for *.lic in \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin
+Found 1 .lic file(s):
+- \\vmware-host\Shared Folders\Sites\projects\bishops-web\umbraco\bin\umbracoForms.lic
+Could not validate license:
+
+Your license has been approved for the following IPs/Domains: - Domain: bishops.co.uk
+- Domain: www.bishops.co.uk
+- Domain: *.bishops.co.uk
+- Domain: bishops.co.uk.local
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: www.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: *.dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk
+- Domain: dev.bishops.co.uk.217-147-85-119.tgdh-web.co.uk.local
+- Domain: localhost

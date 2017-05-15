@@ -177,6 +177,26 @@
                     "Request brochure",
                     "Request quote"
                   ]
+                },
+                {
+                  "caption": "Recaptcha field",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "recaptchaField",
+                  "id": "12100d89-9d14-4d51-9d08-e20278cc8ed4",
+                  "fieldTypeId": "4a2e8e12-9613-4720-9bcd-f9871262d6ac",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": null,
+                  "settings": {
+                    "Theme": "clean"
+                  },
+                  "preValues": []
                 }
               ]
             }
